@@ -311,6 +311,8 @@ score_text = update_score(d)
 
 # MAIN LOOPING
 while running:
+	score_text = update_score(d)
+
 	# CHECKING IF THE EXIT BUTTON HAS BEEN CLICKED OR NOT
 	for event in py.event.get():
 		# IF CLICKED THEN CLOSE THE WINDOW
@@ -390,7 +392,6 @@ while running:
 		side = True
 		ques,ans,num,found = qna.get_next(q,a,d)
 		d = qna.correct(num,d)
-		score_text = update_score(d)
 		card_text = ques
 		buttoncorrect_clicked = False # allow it to be clicked again
 		time.sleep(0.1)
