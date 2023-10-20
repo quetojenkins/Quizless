@@ -19,9 +19,14 @@ def get_qnas(file_path):
             i += 1  # Move to the next question or "#" line
     return q,a
 
+def initialise(file_path):
+    q,a = get_qnas(file_path)
+    return q, a, [0 for _ in range(len(q))]
+
 if __name__ == '__main__':
-    q,a = get_qnas("main/qnas/example.txt")
+    q,a,d = initialise("FileHandling Section/qnas/example.txt")
     print(q)
     print(a)
+    print(d)
     
 
