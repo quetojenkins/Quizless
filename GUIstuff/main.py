@@ -217,7 +217,6 @@ score_y = 0
 score_color = background_color
 text_color = (255, 167, 16)  # RGB color for the text on the button
 font = py.font.Font(None, 30)  # You can choose a different font if you prefer
-score_text = "this is the score/ttal index"
 
 def draw_score():
     # Get the surface from the control_bar screen when it's active
@@ -230,12 +229,6 @@ def draw_score():
         text_surface = font.render(score_text, True, text_color)
         text_rect = text_surface.get_rect(center=(score_x + score_width // 2, score_y + score_height // 2))
         screen.blit(text_surface, text_rect)
-
-#def update_score():
-	# code here to update the score
-	#if the homie doing the quiz clicks the correctButton then the score must be updated
-	#so update the score_text variable to represent it
-	#eg the score is the number of correct flashcards done over the total number of flashcardds
 
 ##Flip Button
 
@@ -305,6 +298,11 @@ running = True
 q,a,d = qna.initialise("FileHandeling Section/qnas/chapter12.txt")
 ques,ans,num,found = qna.get_next(q,a,d)
 card_text = ques
+
+def update_score(d):
+	corr, tot = qna.get_num_correct(d)
+	return str(corr) + "/" + str(tot)
+score_text = update_score(d)
 
 # MAIN LOOPING
 while running:
@@ -383,10 +381,11 @@ while running:
 
 	if buttoncorrect_clicked:
 		#if the button correct is clicked, gett the next array index and put the question into card_text
-		#update_score() # update the score
+
 		side = True
 		ques,ans,num,found = qna.get_next(q,a,d)
 		d = qna.correct(num,d)
+		score_text = update_score(d)
 		card_text = ques
 		buttoncorrect_clicked = False # allow it to be clicked again
 		time.sleep(0.1)

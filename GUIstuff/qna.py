@@ -43,6 +43,14 @@ def get_next(q,a,d):
                 r_num += 1
     return wrap_text(q[r_num],50), wrap_text(a[r_num],50), r_num, found
 
+def get_num_correct(d):
+    count = 0
+    for element in d:
+        if element == 1:
+            count += 1
+    return count, len(d)
+
+
 def wrap_text(text, line_length):
     wrapped_text = ""
     remaining_text = text
