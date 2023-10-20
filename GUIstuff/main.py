@@ -236,6 +236,7 @@ def update_score():
 	#eg the score is the number of correct flashcards done over the total number of flashcardds
 
 ##Flip Button
+
 button_width = 200
 button_height = 75
 buttonflip_x = 350
@@ -363,7 +364,7 @@ while running:
 		side = False # now the side is an answer
 		buttonflip_clicked = False # allow it to be clicked again
 	
-	if buttonflip_clicked and !side:
+	if buttonflip_clicked and not side:
 		#it is currently on the answer and you now want to make the card_text writing the question
 		card_text = "what is the capital of italy"
 		side = True # now the side is an question
@@ -385,4 +386,3 @@ while running:
 	
 # CLOSE THE PROGRAM
 py.quit()
-
