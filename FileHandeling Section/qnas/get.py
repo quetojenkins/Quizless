@@ -1,0 +1,2 @@
+string = "patriarchy monarchy plutocracy gynaecocracy oligarchy ochlocracy gerontocracy diarchy meritocrac democracy technocracy stratocracyaristocracy anarchy theocracy"
+answer = ["ruling of the father","the rule of one","wealthy","women", "rule of teh few", "mob rule", "old people", "two", ""]

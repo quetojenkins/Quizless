@@ -1,0 +1,92 @@
+#
+Who do you consult if you have skin problems?
+dermatologist
+#
+Who do you consult if you are interested in the aspect and influence of the stars on your future?
+astrologer
+#
+Who do you consult if you are troubled concerning matters of the soul?
+theologian
+#
+Who do you consult if you are interested in the origin and development of your own species?
+anthropologist 
+#
+Who do you consult if you need your planter’s wart removed?
+podiatrist
+#
+Who do you consult if you are experiencing problems associated with old age?
+gerontologist
+#
+Who do you consult if you need advice on the care and feeding of your honey bees?
+entomologist
+#
+Who do you consult if you find an ancient burial site on your property?
+archaeologist
+#
+Who do you consult if you discover natural gas on your property?
+geologist
+#
+Who do you consult if you are designing your own home?
+architect
+#
+Who do you consult if you are tracing your family tree?
+genealogist
+#
+Who do you consult if you want your pet parrot (now deceased) preserved by having it stuffed and mounted?
+taxidermist
+#
+Who do you consult if you want to buy a rare book?
+bibliopole
+#
+Who do you consult if you need to know the true meaning of a word?
+etymologist
+#
+Who do you consult if your children’s teeth need straightening
+orthodontist
+#
+Give one word for a connoisseur of wine
+oenophile
+#
+Give one word for affection for mankind
+philanthropy
+#
+Give one word for thriving in strong light
+photophilous
+#
+Give one word for a lover of France or the French
+Francophile
+#
+Give one word for a lover of learning and literature
+philologist
+#
+Give one word for a bacterium that grows best in warm temperatures
+thermophile
+#
+Give one word for having an affinity for animals
+zoophilous
+#
+Give one word for fond of music
+philharmonic
+#
+Give one word for a friend or supporter of the Greeks
+philhellene
+#
+Give one word for a book lover
+bibliophile 
+#
+Give one word for a tree-loving plant
+philodendron
+#
+Give one word for a connoisseur of high-fidelity sound reproduction
+audiophile
+#
+Give one word for having a strong affinity for water
+hydrophilic
+#
+Give one word for a tendency to bleed profusely
+haemophilia 
+#
+Give one word for  a lover of England or the English
+Anglophile
+#
+What is this form of governance: 
