@@ -1,0 +1,116 @@
+#
+What qualities are described in: avuncular
+#
+#
+What qualities are described in: leonine
+#
+#
+What qualities are described in: simian
+#
+#
+What qualities are described in: nepotism
+#
+#
+What qualities are described in: feline
+#
+#
+What qualities are described in: vulpine
+#
+#
+What qualities are described in: aquiline
+#
+#
+What qualities are described in: sorority
+#
+#
+What qualities are described in: capricious
+#
+#
+What is the collective noun for: lions
+#
+pride
+#
+What is the collective noun for: leopards
+#
+leap
+#
+What is the collective noun for: dogs
+#
+kernel/pack
+#
+What is the collective noun for: elephants
+#
+herd
+#
+What is the collective noun for: crows
+#
+murder
+#
+What is the collective noun for: hippos
+#
+crash
+#
+What is the collective noun for: kittens
+#
+kindle
+#
+What is the collective noun for: owls
+#
+parliment
+#
+What is the collective noun for: monkeys
+#
+troop
+#
+What is the collective noun for: racehorses
+#
+string
+#
+What is the collective noun for: players
+#
+team
+#
+What is the collective noun for: thieves
+#
+gang/pack
+#
+What is the collective noun for: savages
+#
+horde
+#
+What is the collective noun for: people
+#
+crowd
+#
+What is the collective noun for: actors
+#
+company
+#
+What is the collective noun for: angels
+#
+host
+#
+What is the collective noun for: friends
+#
+party
+#
+What is the collective noun for: policemen
+#
+posse
+#
+What is the collective noun for: soldiers
+#
+army
+#
+What is the collective noun for: directors
+#
+board
+#
+Is the species in the binomial classification capitalised?
+#
+No it is as follows: Genus species
+#
+Why is the fiscal shrike sometimes called the butcher bird?
+#
+this common bird is so-called because it catches its prey, smaller animals, and impales them on thorns or sharp objects. It then waits for the dead animal to rot and for the maggots to appear - a delicious dinner for the butchering bird! A fiscus is a ‘purse’ or ‘treasury’, so its common name ‘fiscal shrike’ refers to the ‘treasures’ awaiting the bird inside the ‘purse’, i.e. inside the stomach of the dead animal.
+#
