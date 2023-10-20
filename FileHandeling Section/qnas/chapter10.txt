@@ -1,102 +1,76 @@
 #
 Give a synynom for: disguised
-#
 incognito
 #
 Give a synynom for: slaughter
-#
 carnage
 #
 Give a synynom for: preference for
-#
 prediliction
 #
 Give a synynom for: to feel humiliated
-#
 mortified
 #
 Give a synynom for: having foresight
-#
 prescience
 #
 Give a synynom for: traveller on foot
-#
 pedestrian
 #
 Give a synynom for: exhume
-#
 disinter
 #
 Give a synynom for: vague
-#
 ambigous
 #
 Give a synynom for: inborn
-#
 irrate
 #
 Give a synynom for: treachary
-#
 perfidy
 #
 Give a synynom for: make impossible
-#
 preclude
 #
 Give a synynom for: able to bounce back
-#
 resilient
 #
 Give a synynom for: brainwahs
-#
 indoctrinate
 #
 Give a synynom for: temporary
-#
 transient
 #
 Give a synynom for: uprising
-#
 sedition
 #
-#
 Give a synynom for: intransigent
-#
 stubborn
 #
 Give a synynom for: diffident
-#
 shy
 #
 Give a synynom for: nefarious
-#
 evil
 #
 Give a synynom for: invalidate
-#
 weakend
 #
 Give a synynom for: ambit
-#
 scope
 #
 Give a synynom for: exigent
-#
 urgent
 #
 Give a synynom for: coherent
-#
 logial
 #
 Give a synynom for: portracted
-#
-drwan out
+drawn out
 #
 Give a synynom for: impassioned
-#
-fulle of passion
+full of passion
 #
 Give a synynom for: fractious
-#
 irratable
 #
