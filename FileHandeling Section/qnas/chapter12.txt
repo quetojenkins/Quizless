@@ -89,4 +89,93 @@ haemophilia
 Give one word for  a lover of England or the English
 Anglophile
 #
-What is this form of governance: 
+What is this form of governance: patriarchy
+ruling of the father
+#
+What is this form of governance: monarchy
+the rule of one
+#
+What is this form of governance: plutocracy
+wealthy
+#
+What is this form of governance: gynaecocracy
+women
+#
+What is this form of governance: oligarchy
+rule of teh few
+#
+What is this form of governance: ochlocracy
+mob rule
+#
+What is this form of governance: gerontocracy
+old people
+#
+What is this form of governance: diarchy
+two
+#
+What is this form of governance: meritocrac
+people selected according to merit
+#
+What is this form of governance: democracy
+the people
+#
+What is this form of governance: technocracy
+skill,art
+#
+What is this form of governance: stratocracy
+miltary forces
+#
+What is this form of governance: aristocracy
+best qualified citizen
+#
+What is this form of governance: anarchy
+without rulee
+#
+What is this form of governance: theocracy
+priests
+#
+What fears are indicated by this word: agoraphobia
+place of assemble
+#
+What fears are indicated by this word: necrophobia
+corpse
+#
+What fears are indicated by this word: triskaidekaphobia
+number 13
+#
+What fears are indicated by this word: nyctophobia
+right
+#
+What fears are indicated by this word: heliophobia
+sun
+#
+What fears are indicated by this word: ailurophobia
+cats
+#
+What fears are indicated by this word: ornithophobia
+bird
+#
+What fears are indicated by this word: ponophobia
+fatigue
+#
+What fears are indicated by this word: zoophobia
+animals
+#
+What fears are indicated by this word: arachnophobia
+spider
+#
+What fears are indicated by this word: thanatophobia
+death
+#
+What fears are indicated by this word: homophobia
+gay peopls
+#
+What fears are indicated by this word: photophobia
+light
+#
+What fears are indicated by this word: acrophobia
+heights
+#
+What fears are indicated by this word: xenophobia
+foreigners
+#
