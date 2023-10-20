@@ -1,205 +1,154 @@
 #
 What is the Roman Numeral for: one
-#
 I
 #
 What is the Roman Numeral for: two
-#
 II
 #
 What is the Roman Numeral for: three
-#
 III
 #
 What is the Roman Numeral for: four
-#
 IV
 #
 What is the Roman Numeral for: five
-#
 V
 #
 What is the Roman Numeral for: six
-#
 VI
 #
 What is the Roman Numeral for: seven
-#
 VII
 #
 What is the Roman Numeral for: eight
-#
 VIII
 #
 What is the Roman Numeral for: nine
-#
 IX
 #
 What is the Roman Numeral for: ten
-#
 X
 #
 What is the Roman Numeral for: fifty
-#
 L
 #
 What is the Roman Numeral for: one hundred
-#
 C
 #
 What is the Roman Numeral for: five hundred
-#
 D
 #
 What is the Roman Numeral for: one thousand
-#
 M
 #
 What principle to roman numerals apply?
-#
 Roman numerals apply the principle of addition and subtraction, using the bigger symbol as the main number, i.e. X is bigger than V; L is bigger than X; C is bigger than L; D is bigger than C and M is larger than D. Only one number may be subtracted from the next bigger one but up to three can be added. 
 #
 Give the Arabic or Roman Numeral Equivalent: MCMXCVIII
-#
 1998
 #
 Give the Arabic or Roman Numeral Equivalent: DCCLIV
-#
 754
 #
 Give the Arabic or Roman Numeral Equivalent: xliv
-#
 44
 #
 Give the Arabic or Roman Numeral Equivalent: xxxvi
-#
 36
 #
 Give the Arabic or Roman Numeral Equivalent: 1976
-#
 MCMLXXVI
 #
 Give the Arabic or Roman Numeral Equivalent: 1764
-#
 MDCCLXIV
 #
 Give the Arabic or Roman Numeral Equivalent: 3329
-#
 MMMCCXXIX
 #
 Give the Arabic or Roman Numeral Equivalent: 14
-#
 XIV
 #
 When are lower case letters used in roman numerals?
-#
 Start of a journal entry, appendices or start of a play
 #
 Where does the Ivy League Come From?
-#
 Originally there were four univerities and it was called the "Four League" and abbreviated to IV League. This then was corrupted to ne the IVY leagye
 #
 Give one word for: a contest between two
-#
 duel
 #
 Give one word for: a doctrin
-#
 principLE
 #
 Give one word for: simultaneous
-#
 concurrent
 #
 Give one word for: twice a year
-#
 biannual
 #
 Give one word for: one sided
-#
 unilateral
 #
 Give one word for: group of five
-#
 quintet
 #
 Give one word for: excessive
-#
 inordinate
 #
 Give one word for: retired
-#
 superannuated
 #
 Give one word for: a period of ten years
-#
 decade
 #
 Give one word for: definite
-#
 unequivocal
 #
 Give one word for: having great variety
-#
 multifarious
 #
 Give one word for: deception
-#
 duplicity
 #
 Give one word for: advantageous 
-#
 beneficial
 #
 Give one word for: excellent
-#
 optimal
 #
 Give one word for: to slander
-#
 malign
 #
 Give the definition of : bimanual
-#
 requiring the use of both hands to operate
 #
 Give the definition of : duodecimal
-#
 a twelfth of the whole
 #
 Give the definition of : nonagenerian
-#
 a person between the ages of 90 and 99 years
 #
 Give the definition of : quatrain
-#
 a poetic stanza of four lines
 #
 Give the definition of : multilingual
-#
 speaking many languages
 #
 Give the definition of : paucity
-#
 fewness
 #
 Give the definition of : milipede
-#
 a creature with a thousand legs
 #
 Give the definition of : primary
-#
 first
 #
 Give the definition of : triennial
-#
 happening every three years
 #
 Give the definition of : century
-#
 a period of 100 yeards
 #
 What does quintessential mean?
-#
 The modern meaning of the words, quintessence and quintessential, has nothing to do with the number five which is at the root of the word. It originally referred to the ‘fifth essence’ (ether)- which the ancient philosopher, Aristotle, believed existed in addition to earth, air, fire and water, permeating all things and forming the substance of the heavenly bodies. This was eventually disproved and the meaning which we apply today is ‘the most typical example of something’, ‘the most important thing’ or ‘the purest form of something.
 #
