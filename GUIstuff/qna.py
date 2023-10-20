@@ -41,7 +41,7 @@ def get_next(q,a,d):
                 r_num = 0
             else:
                 r_num += 1
-    return wrap_text(q[r_num],50), wrap_text(a[r_num],50), r_num, found
+    return wrap_text(q[r_num],60), wrap_text(a[r_num],60), r_num, found
 
 def get_num_correct(d):
     count = 0

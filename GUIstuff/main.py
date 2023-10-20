@@ -205,9 +205,14 @@ def draw_card():
         # Draw the rectangle on the control_bar screen
         py.draw.rect(screen, card_color, (card_x, card_y, card_width, card_height))
 
-        text_surface = font.render(card_text, True, writing)
-        text_rect = text_surface.get_rect(center=(card_x + card_width // 2, card_y + card_height // 2))
-        screen.blit(text_surface, text_rect)
+        lines = card_text.split('\n')  # Split the text into lines
+
+        y_position = card_y
+        for line in lines:
+            text_surface = font.render(line, True, writing)
+            text_rect = text_surface.get_rect(center=(card_x + card_width // 2, y_position + card_height // 2))
+            screen.blit(text_surface, text_rect)
+            y_position += text_rect.height  # Move down for the next line
 
 ##Score
 score_width = 100
