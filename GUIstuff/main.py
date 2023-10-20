@@ -1,5 +1,7 @@
 import pygame as py
 from pygame.locals import *
+import qna
+import time
 
 # Colors
 background_color = (45, 92, 199)
@@ -229,7 +231,7 @@ def draw_score():
         text_rect = text_surface.get_rect(center=(score_x + score_width // 2, score_y + score_height // 2))
         screen.blit(text_surface, text_rect)
 
-def update_score():
+#def update_score():
 	# code here to update the score
 	#if the homie doing the quiz clicks the correctButton then the score must be updated
 	#so update the score_text variable to represent it
@@ -295,8 +297,15 @@ buttonflip_clicked = False
 buttoncorrect_clicked = False
 buttonincorrect_clicked = False
 
+
+
 side = True #when the side of the flashcard is true, then it is a question side, if false it is an answer side
 running = True
+
+q,a,d = qna.initialise("FileHandeling Section/qnas/chapter12.txt")
+ques,ans,num,found = qna.get_next(q,a,d)
+card_text = ques
+
 # MAIN LOOPING
 while running:
 	# CHECKING IF THE EXIT BUTTON HAS BEEN CLICKED OR NOT
@@ -360,26 +369,37 @@ while running:
 
 	if buttonflip_clicked and side:
 		# if the flip button is clicked, then the writing must change to the answer of the variable, the writing is in variable card_text
-		card_text = "Rome"
+		card_text = ans
 		side = False # now the side is an answer
 		buttonflip_clicked = False # allow it to be clicked again
+		time.sleep(0.1)
 	
 	if buttonflip_clicked and not side:
 		#it is currently on the answer and you now want to make the card_text writing the question
-		card_text = "what is the capital of italy"
+		card_text = ques
 		side = True # now the side is an question
 		buttonflip_clicked = False # allow it to be clicked again
+		time.sleep(0.1)
 
 	if buttoncorrect_clicked:
 		#if the button correct is clicked, gett the next array index and put the question into card_text
-		update_score() # update the score
+		#update_score() # update the score
 		side = True
-		card_text = "This is a new flash card"
+		ques,ans,num,found = qna.get_next(q,a,d)
+		d = qna.correct(num,d)
+		card_text = ques
+		buttoncorrect_clicked = False # allow it to be clicked again
+		time.sleep(0.1)
 
 	if buttonincorrect_clicked:
 		#if the incorrect button is clicked, get the next array index and put the question on the screen
 		#dont update the score
-		card_text = 'This is a new flash card and you were previously incorrect!'
+		side = True
+		ques,ans,num,found = qna.get_next(q,a,d)
+		card_text = ques
+		buttonincorrect_clicked = False # allow it to be clicked again
+		time.sleep(0.1)
+	
 
 
 	py.display.update()
