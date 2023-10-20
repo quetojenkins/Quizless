@@ -1,99 +1,75 @@
 # 
 Choose the Correct Answer: a dead body
-#
 corpse
 #
 Choose the Correct Answer: a disagreement
-#
 dissidence
 #
 Choose the Correct Answer: a yielding
-#
 cession
 #
 Choose the Correct Answer: a sleep talker
-#
 somniloquist
 #
 Choose the Correct Answer: a begining
-#
 ????
 #
 Choose the Correct Answer: a native
-#
 indigenous
 #
 Choose the Correct Answer: economic slowdow
-#
 recession
 #
 Choose the Correct Answer: renounce and oath
-#
 abjure
 #
 Choose the Correct Answer: can be maintained
-#
 tenable
 #
 Choose the Correct Answer: beyond the limit
-#
 excessive
 #
 Choose the Correct Answer: of the same kind
-#
 generic
 #
 Choose the Correct Answer: overstepping the bounds
-#
 transgression
 #
 Choose the Correct Answer: result
-#
 effect
 #
 Choose the Correct Answer: oppose
-#
 contravene
 #
 Choose the Correct Answer: talkative
-#
 verbose
 #
 Give the English meaning for: prima facie
-#
-
+cd
 #
 Give the English meaning for: bona fide
-#
-
+dd
 #
 Give the English meaning for: non compos mentis
-#
-
+dd
 #
 Give the English meaning for: Re:
-#
-
+dd
 #
 Give the English meaning for: ipso facto
-#
-
+ff
 #
 Give the English meaning for: subpoena
-#
-  
+ff
 #
 Give the English meaning for: alibi
-#
-
+ff
 #
 Give the English meaning for: audi alteram partem
-#
-
+ff
 #
 Give the English meaning for: in flagrante delicto
-#
-
+ff
 #
 Where is the question mark from?
 #
