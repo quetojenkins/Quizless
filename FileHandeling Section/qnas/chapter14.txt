@@ -1,0 +1,286 @@
+#
+What type of word/phrase/combo is this:  Hollywood (for US film industry)
+metonymy
+#
+What type of word/phrase/combo is this: Marilyn Munroe
+pseudonym
+#
+What type of word/phrase/combo is this: buzz
+onomatopoeia
+#
+What type of word/phrase/combo is this: synergy - collaboration
+synonym
+#
+What type of word/phrase/combo is this: Mandela Park
+eponym
+#
+What type of word/phrase/combo is this: AIDS
+acronym
+#
+What type of word/phrase/combo is this: love - hate
+antonym
+#
+What type of word/phrase/combo is this: vein - vain
+homophone
+#
+What type of word/phrase/combo is this: authentic replica
+oxymoron
+#
+What type of word/phrase/combo is this: contract (v) – contract (n)
+homograph
+#
+Give one word for: identification of a disease
+diagnosis
+#
+Give one word for: shapeless
+amorphous
+#
+Give one word for: offspring
+progeny
+#
+Give one word for: producing fever
+pyretic
+#
+Give one word for: inscription on a tomb
+epitath
+#
+Give one word for: teamwork
+synergy
+#
+Give one word for: leader of the people
+demagogue
+#
+Give one word for: marriage within a tribe
+endogamy
+#
+Give one word for: named after a place
+toponym
+#
+Give one word for: a differing opinion
+heterodox
+#
+Give one word for: worship of images
+iconolatry
+#
+Give one word for: pleasant sound
+euphonym
+#
+Give one word for: transparent
+diaphonous
+#
+Give one word for: dictionary
+lexicon
+#
+Give one word for: putting off till tomorrow
+procrastination
+#
+Give a word of Greek origin that means: irritated
+antagonized
+#
+Give a word of Greek origin that means: dunious
+aporyphal
+#
+Give a word of Greek origin that means: factual
+empirical
+#
+Give a word of Greek origin that means: elated
+euphoric
+#
+Give a word of Greek origin that means: less harsh phrase
+euphemism
+#
+Give a word of Greek origin that means: puzzling
+cryptic
+#
+Give a word of Greek origin that means: revelation
+epiphany
+#
+Give a word of Greek origin that means: peculiarity
+anomaly
+#
+Give a word of Greek origin that means: coded
+encryption
+#
+Give a word of Greek origin that means: educational
+pedagogical
+#
+Give a word of Greek origin that means: Study of the universe: c _ _ _ _ _ _ g _
+cosmology
+#
+Give a word of Greek origin that means: The art of stuffing dead animals t_ _ _ d _ _ _ _
+taxidermy
+#
+Give a word of Greek origin that means: Moral e _ _ _ _ _ _
+ethical
+#
+Give a word of Greek origin that means: New word n_ _ _ _ _ _ s _
+neologism
+#
+Give a word of Greek origin that means: Feeling the suffering of others e _ _ _ t _ _
+empathy
+#
+Give a word of Greek origin that means: Something that speeds up change c a _ _ _ _ _ _
+catalyst
+#
+Give a word of Greek origin that means: Prediction p _ _ p _ _ _ _
+prophecy
+#
+Give a word of Greek origin that means: Inability to speak a _ h _ _ _ _
+aphasia
+#
+Give a word of Greek origin that means: Study of cause and nature of disease p _ _ _ _ l _ _ _ 
+pathology
+#
+Give a word of Greek origin that means: Study of the environment e _ _ _ _ _ _
+ecology
+#
+Give one word for this phrase/word: irregular, unusual
+anomalous
+#
+Give one word for this phrase/word: temple dedicated to all the gods
+pantheon
+#
+Give one word for this phrase/word: not knowing
+agnostic
+#
+Give one word for this phrase/word: at the same time
+synchronous
+#
+Give one word for this phrase/word: leading actor
+protagonist
+#
+Give one word for this phrase/word: praising
+eulogistic
+#
+Give one word for this phrase/word: worship of statues
+iconolatry
+#
+Give one word for this phrase/word: meeting place
+synogogue
+#
+Give one word for this phrase/word: many colored
+polychrome
+#
+Give one word for this phrase/word: in direct contrast to
+antitheticel
+#
+Give one word for this phrase/word: science of the structure of the universe
+cosmography
+#
+Give one word for this phrase/word: belief that the sun revolves around the earth
+geocentrism
+#
+Give one word for this phrase/word: believing that one is totally powerful
+megalomaniac
+#
+Give one word for this phrase/word: one who studies handwriting
+graphologist
+#
+Give one word for this phrase/word: conventional
+orthodox
+#
+True or False: Dogmatic and canine are etymologically related.
+F
+#
+True or False: A dekalitre is one tenth of a litre.
+F
+#
+True or False: Petrified indicates that one has been turned into rock/stone out of fear.
+T
+#
+True or False: A necrophiliac would love to work in a mortuary.
+T
+#
+True or False: Demotic writing refers to the symbols of black magic.
+F
+#
+True or False: The metre as a unit of length is defined in terms of the speed of light.
+T
+#
+True or False: A photosensitive person is camera-shy.
+T
+#
+True or False: The Oxford dictionary is a famous lexicon.
+T
+#
+True or False: A man who suffers from gynaephobia is likely to be a philanderer.
+F
+#
+True or False: A polymath is knowledgeable in many disciplines.
+T
+#
+True or False: Xenogamy refers to cross-fertilization.
+T
+#
+True or False: Cosmonaut and astronaut are synonyms.
+T
+#
+True or False: Pantheism refers to the study of panthers and their habits.
+F
+#
+True or False: Hieroglyphics is an archaic form of writing.
+T
+#
+True or False: Encrypted writing is easily understood.
+F
+#
+Sense or Nonsense: The anomalous test results mean that the rocket is ready to launch.
+NS
+#
+Sense or Nonsense: It may sound odd, but I actually enjoy the cacophonous sound of an orchestra tuning up.
+S
+#
+Sense or Nonsense: Cartography has helped scientists gain a good understanding of the fundamental workings of the human brain.
+NS
+#
+Sense or Nonsense: Catalysts for change on the school board blocked attempts to implement reforms.
+NS
+#
+Sense or Nonsense: Demographic trends in Japan show that the proportion of old people to young people is increasing.
+S
+#
+Sense or Nonsense: In many traditional societies women wear diaphanous clothing to hide their bodies.
+NS
+#
+Sense or Nonsense: Knowing the entomology of a difficult word can help you remember it.
+NS
+#
+Sense or Nonsense: It is advisable to see a doctor before traveling to countries in which malaria or other infectious diseases are endemic.
+S
+#
+Sense or Nonsense: The patient was given euthanasia before undergoing major surgery.
+NS
+#
+Sense or Nonsense: The euphoria in the stadium rose to a fever pitch as the seconds ticked down to the Stormers’ rugby team’s victory in the final.
+S
+#
+Sense or Nonsense: The ethnocentric villagers have no interest in anything outside their own little world.
+S
+#
+Sense or Nonsense: The eulogy talked only about the many flaws in the dead man’s character.
+NS
+#
+Sense or Nonsense: The poem harks back to an imagined halcyon Golden Age.
+S
+#
+Sense or Nonsense: Religious leaders are arguing that the only way to save the country is to establish a theocracy.
+S
+#
+Sense or Nonsense: Since he regularly questioned conventional wisdom, the philosopher Socrates can be described as an iconoclast.
+S
+#
+Sense or Nonsense: The heterodox pastor teaches only doctrines approved by his church.
+NS
+#
+Sense or Nonsense: “Not only do I not like human beings in the abstract, I don’t like even one individual member of the human race!” the misanthrope declared.
+S
+#
+Sense or Nonsense: Mnemonic devices currently supply nearly 20% of the country’s electric power.
+NS
+#
+Sense or Nonsense: The speaker’s misogynistic comments drew the anger of several women’s rights groups.
+S
+#
+Sense or Nonsense: The emergency room doctor trained herself to be phlegmatic despite the great suffering she witnessed every day.
+S
+#

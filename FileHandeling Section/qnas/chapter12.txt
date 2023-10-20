@@ -179,3 +179,48 @@ heights
 What fears are indicated by this word: xenophobia
 foreigners
 #
+What studies are indicated by this word: ichthyology
+fish
+#
+What studies are indicated by this word: dendrology
+tree
+#
+What studies are indicated by this word: microbiology
+microscopic organisms
+#
+What studies are indicated by this word: dermatology
+skin
+#
+What studies are indicated by this word: gerontology
+disease of older people
+#
+What studies are indicated by this word: herpetology
+amphibians and reptiles
+#
+What studies are indicated by this word: seismology
+earthqakes
+#
+What studies are indicated by this word: pathology
+diseases
+#
+What studies are indicated by this word: pharmacology
+drugs and medicine
+#
+What studies are indicated by this word: petrology
+rock
+#
+What studies are indicated by this word: anthropology
+humanity
+#
+What studies are indicated by this word: ethnology
+humans as cultulral beings
+#
+What studies are indicated by this word: conchology
+shell
+#
+What studies are indicated by this word: speleology
+caves
+#
+What studies are indicated by this word: oenology
+wines and winemaking
+#

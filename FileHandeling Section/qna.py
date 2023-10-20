@@ -1,3 +1,5 @@
+import random
+
 def get_qnas(file_path):
     q = []
     a = []
@@ -23,10 +25,29 @@ def initialise(file_path):
     q,a = get_qnas(file_path)
     return q, a, [0 for _ in range(len(q))]
 
-if __name__ == '__main__':
-    q,a,d = initialise("FileHandling Section/qnas/example.txt")
-    print(q)
-    print(a)
-    print(d)
-    
+def correct(i,d):
+    d[i] = 1
+    return d
 
+def get_next(q,a,d):
+    r_num = random.randint(0, len(q)-1)
+    found = False
+    count = 0
+    while found == False and count < len(q):
+        if d[r_num] != 1: found = True
+        else:
+            count += 1
+            if r_num == len(q) - 1:
+                r_num = 0
+            else:
+                r_num += 1
+    return q[r_num], a[r_num], r_num, found
+
+if __name__ == '__main__':
+    q,a,d = initialise("FileHandeling Section/qnas/example.txt")
+    found = True
+    while found == True:
+        ques, ans, num, found = get_next(q,a,d)
+        correct(num,d)
+        print(ques)
+        print(ans)
