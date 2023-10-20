@@ -1,241 +1,152 @@
 #
 change of shape
-#
 metamorphosis
 #
 back in time, misplaced in time
-#
 anachronism
 #
 without belief in God
-#
 atheism
 #
 beyond normal explanation
-#
 paranormal
 #
 across time, historical
-#
 diachronic
 #
 a praising speech
-#
 eulogy
 #
 marriage outside the cultural group
-#
 exogamy
 #
 occurring at the same time
-#
 synchronous
 #
 abnormal writing
-#
 dysgraphia
 #
 instrument for looking around
-#
 periscope
 #
 with feet opposite
-#
 antipodal
 #
 capable of life on both land and water
-#
 amphibious
 #
 person who believes in many gods
-#
 polytheist
 #
 deficiency of glucose in the system
-#
 hypoglacaemia
 #
 without a name
-#
 anonymous
 #
 Transliterate: αραχνη
-#
 arachne = spider
 #
 Transliterate: χρονος
-#
 chrorus = measure of time
 #
 Transliterate: ψυχη
-#
 psuche = a living being
 #
 Transliterate: ανθρωπος
-#
 anthropos = human
 #
 Transliterate: πνρ
-#
 pur = fire
 #
-Transliterate: φιλος 
-#
-
-#
-Transliterate: πετρα
-#
-
-#
-Transliterate: μσρφη
-#
-#
-Transliterate: φωνη
-#
-
-#
-Transliterate: αιτια
-#
-
-#
 Transliterate: γη
-#
 ge = earth
 #
 Transliterate: νικη
-#
 nike = victory
 #
 Transliterate: λογος
-#
 logos = word, study of thought, speech
 #
 Transliterate: ευλογια
-#
 eulogia = a blessing
 #
 #Transliterate: κρατος
-#
 kratos = power or strength
 #
-Transliterate: φοβος
-#
-
-#
-#Transliterate: βοτανη
-#
-
-#
-Transliterate: ληθη
-#
-
-#
-#Transliterate: βιβιον
-#
-
-#
-Transliterate: μυθος
-#
-
-#
 Give the transliteratio of: α alpha
-#
 a
 #
 Give the transliteratio of: β beta
-#
 b
 #
 Give the transliteratio of: γ gamma
-#
 g
 #
 Give the transliteratio of: δ delta
-#
 d
 #
 Give the transliteratio of: ε epsilon
-#
 short e
 #
 Give the transliteratio of: ζ zeta
-#
 dz or z
 #
 Give the transliteratio of: η eta
-#
 long e
 #
 Give the transliteratio of: θ theta
-#
 th
 #
 Give the transliteratio of: ι iota
-#
 i
 #
 Give the transliteratio of: ι iota
-#
 i
 #
 Give the transliteratio of: κ kappa
-#
 k
 #
 Give the transliteratio of: λ lambda
-#
 l
 #
 Give the transliteratio of: μ mu
-#
 m
 #
 Give the transliteratio of: ν nu
-#
 n
 #
 Give the transliteratio of: ξ xi
-#
 x
 #
 Give the transliteratio of: ο omicron
-#
 short o
 #
 Give the transliteratio of: π pi
-#
 p
 #
 Give the transliteratio of: ρ rho
-#
 r
 #
 Give the transliteratio of: ς σ sigma
-#
 t
 #
 Give the transliteratio of: τ tau
-#
 t
 #
 Give the transliteratio of: υ upsilon
-#
 u
 #
 Give the transliteratio of: φ phi
-#
 f or ph
 #
 Give the transliteratio of: χ chi
-#
 ch/k
 #
 Give the transliteratio of: ψ psi
-#
 ps
 #
 Give the transliteratio of: ω omega
-#
 long o
 #
 
