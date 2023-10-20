@@ -256,6 +256,40 @@ def draw_flipButton():
         text_rect = text_surface.get_rect(center=(buttonflip_x + button_width // 2, buttonflip_y + button_height // 2))
         screen.blit(text_surface, text_rect)
 
+button7_x = 200
+button7_y = 100
+button7_color = (255, 167, 16)
+text_color = (255, 255, 255)  # RGB color for the text on the button
+button7_text = "Chapter 7"
+
+def draw_chapter7Button():
+    if menuScreen.checkUpdate(background_color):
+        screen = menuScreen.screen
+
+        # Draw the rectangle on the control_bar screen
+        py.draw.rect(screen, button7_color, (button7_x, button7_y, button_width, button_height))
+
+        text_surface = font.render(button7_text, True, text_color)
+        text_rect = text_surface.get_rect(center=(button7_x + button_width // 2, button7_y + button_height // 2))
+        screen.blit(text_surface, text_rect)
+
+button8_x = 200
+button8_y = 200
+button8_color = (255, 167, 16)
+text_color = (255, 255, 255)  # RGB color for the text on the button
+button8_text = "Chapter 8"
+
+def draw_chapter7Button():
+    if menuScreen.checkUpdate(background_color):
+        screen = menuScreen.screen
+
+        # Draw the rectangle on the control_bar screen
+        py.draw.rect(screen, button8_color, (button8_x, button8_y, button_width, button_height))
+
+        text_surface = font.render(button8_text, True, text_color)
+        text_rect = text_surface.get_rect(center=(button8_x + button_width // 2, button8_y + button_height // 2))
+        screen.blit(text_surface, text_rect)
+
 ##Correct and Next Button
 buttoncorrect_x = 600
 buttoncorrect_y = 700
@@ -294,15 +328,14 @@ def draw_IncorrectButton():
 buttonflip_clicked = False
 buttoncorrect_clicked = False
 buttonincorrect_clicked = False
+button7_clicked = False
+button8_clicked = False
 
 
 
 side = True #when the side of the flashcard is true, then it is a question side, if false it is an answer side
 running = True
 
-q,a,d = qna.initialise("FileHandeling Section/qnas/chapter12.txt")
-ques,ans,num,found = qna.get_next(q,a,d)
-card_text = ques
 
 def update_score(d):
 	corr, tot = qna.get_num_correct(d)
@@ -367,6 +400,7 @@ while running:
 	draw_CorrectButton()
 	draw_IncorrectButton()
 	draw_score()
+	draw_chapter7Button()
 
 	if event.type == py.MOUSEBUTTONDOWN and event.button == 1 and flashCards.checkUpdate(background_color):
 		mouse_x, mouse_y = py.mouse.get_pos()
@@ -391,6 +425,19 @@ while running:
 			if current_time - last_incorrect_click_time > 500:  # Adjust the debounce time (500 milliseconds)
 				last_incorrect_click_time = current_time
 				buttonincorrect_clicked = True
+
+		if button7_x <= mouse_x <= button7_x + button_width and button7_y <= mouse_y <= button7_y + button_height:
+			# Check for debouncing the incorrect button
+			current_time = py.time.get_ticks()
+			if current_time - last_incorrect_click_time > 500:  # Adjust the debounce time (500 milliseconds)
+				last_incorrect_click_time = current_time
+				button7_clicked = True
+		if button8_x <= mouse_x <= button8_x + button_width and button8_y <= mouse_y <= button8_y + button_height:
+			# Check for debouncing the incorrect button
+			current_time = py.time.get_ticks()
+			if current_time - last_incorrect_click_time > 500:  # Adjust the debounce time (500 milliseconds)
+				last_incorrect_click_time = current_time
+				button8_clicked = True
 
 	if buttonflip_clicked and side:
 		# if the flip button is clicked, then the writing must change to the answer of the variable, the writing is in variable card_text
@@ -424,7 +471,15 @@ while running:
 		buttonincorrect_clicked = False # allow it to be clicked again
 		time.sleep(0.1)
 	
-
+	if button7_clicked:
+		q,a,d = qna.initialise("FileHandeling Section/qnas/chapter7.txt")
+		ques,ans,num,found = qna.get_next(q,a,d)
+		card_text = ques
+	
+	if button8_clicked:
+		q,a,d = qna.initialise("FileHandeling Section/qnas/chapter8.txt")
+		ques,ans,num,found = qna.get_next(q,a,d)
+		card_text = ques
 
 	py.display.update()
 	
