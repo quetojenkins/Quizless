@@ -279,7 +279,7 @@ button8_color = (255, 167, 16)
 text_color = (255, 255, 255)  # RGB color for the text on the button
 button8_text = "Chapter 8"
 
-def draw_chapter7Button():
+def draw_chapter8Button():
     if menuScreen.checkUpdate(background_color):
         screen = menuScreen.screen
 
@@ -289,6 +289,75 @@ def draw_chapter7Button():
         text_surface = font.render(button8_text, True, text_color)
         text_rect = text_surface.get_rect(center=(button8_x + button_width // 2, button8_y + button_height // 2))
         screen.blit(text_surface, text_rect)
+
+button9_x = 200
+button9_y = 300
+button9_color = (255, 167, 16)
+text_color = (255, 255, 255)  # RGB color for the text on the button
+button9_text = "Chapter 9"
+
+def draw_chapter9Button():
+    if menuScreen.checkUpdate(background_color):
+        screen = menuScreen.screen
+
+        # Draw the rectangle on the control_bar screen
+        py.draw.rect(screen, button9_color, (button9_x, button9_y, button_width, button_height))
+
+        text_surface = font.render(button9_text, True, text_color)
+        text_rect = text_surface.get_rect(center=(button9_x + button_width // 2, button9_y + button_height // 2))
+        screen.blit(text_surface, text_rect)
+
+button10_x = 200
+button10_y = 400
+button10_color = (255, 167, 16)
+text_color = (255, 255, 255)  # RGB color for the text on the button
+button10_text = "Chapter 10"
+
+def draw_chapter10Button():
+    if menuScreen.checkUpdate(background_color):
+        screen = menuScreen.screen
+
+        # Draw the rectangle on the control_bar screen
+        py.draw.rect(screen, button10_color, (button10_x, button10_y, button_width, button_height))
+
+        text_surface = font.render(button10_text, True, text_color)
+        text_rect = text_surface.get_rect(center=(button9_x + button_width // 2, button10_y + button_height // 2))
+        screen.blit(text_surface, text_rect)
+
+button11_x = 200
+button11_y = 500
+button11_color = (255, 167, 16)
+text_color = (255, 255, 255)  # RGB color for the text on the button
+button11_text = "Chapter 11"
+
+def draw_chapter11Button():
+    if menuScreen.checkUpdate(background_color):
+        screen = menuScreen.screen
+
+        # Draw the rectangle on the control_bar screen
+        py.draw.rect(screen, button11_color, (button11_x, button11_y, button_width, button_height))
+
+        text_surface = font.render(button11_text, True, text_color)
+        text_rect = text_surface.get_rect(center=(button11_x + button_width // 2, button11_y + button_height // 2))
+        screen.blit(text_surface, text_rect)
+
+button12_x = 200
+button12_y = 600
+button12_color = (255, 167, 16)
+text_color = (255, 255, 255)  # RGB color for the text on the button
+button12_text = "Chapter 12"
+
+def draw_chapter12Button():
+    if menuScreen.checkUpdate(background_color):
+        screen = menuScreen.screen
+
+        # Draw the rectangle on the control_bar screen
+        py.draw.rect(screen, button12_color, (button12_x, button12_y, button_width, button_height))
+
+        text_surface = font.render(button12_text, True, text_color)
+        text_rect = text_surface.get_rect(center=(button12_x + button_width // 2, button12_y + button_height // 2))
+        screen.blit(text_surface, text_rect)
+
 
 ##Correct and Next Button
 buttoncorrect_x = 600
@@ -330,12 +399,19 @@ buttoncorrect_clicked = False
 buttonincorrect_clicked = False
 button7_clicked = False
 button8_clicked = False
-
+button9_clicked = False
+button10_clicked = False
+button11_clicked = False
+button12_clicked = False
+button13_clicked = False
 
 
 side = True #when the side of the flashcard is true, then it is a question side, if false it is an answer side
 running = True
 
+q,a,d = qna.initialise("FileHandeling Section/qnas/chapter9.txt")
+ques,ans,num,found = qna.get_next(q,a,d)
+card_text = ques
 
 def update_score(d):
 	corr, tot = qna.get_num_correct(d)
@@ -401,6 +477,11 @@ while running:
 	draw_IncorrectButton()
 	draw_score()
 	draw_chapter7Button()
+	draw_chapter8Button()
+	draw_chapter9Button()
+	draw_chapter10Button()
+	draw_chapter11Button()
+	draw_chapter12Button()
 
 	if event.type == py.MOUSEBUTTONDOWN and event.button == 1 and flashCards.checkUpdate(background_color):
 		mouse_x, mouse_y = py.mouse.get_pos()
@@ -432,12 +513,39 @@ while running:
 			if current_time - last_incorrect_click_time > 500:  # Adjust the debounce time (500 milliseconds)
 				last_incorrect_click_time = current_time
 				button7_clicked = True
+
 		if button8_x <= mouse_x <= button8_x + button_width and button8_y <= mouse_y <= button8_y + button_height:
 			# Check for debouncing the incorrect button
 			current_time = py.time.get_ticks()
 			if current_time - last_incorrect_click_time > 500:  # Adjust the debounce time (500 milliseconds)
 				last_incorrect_click_time = current_time
 				button8_clicked = True
+		if button9_x <= mouse_x <= button9_x + button_width and button9_y <= mouse_y <= button9_y + button_height:
+			# Check for debouncing the incorrect button
+			current_time = py.time.get_ticks()
+			if current_time - last_incorrect_click_time > 500:  # Adjust the debounce time (500 milliseconds)
+				last_incorrect_click_time = current_time
+				button9_clicked = True
+
+		if button10_x <= mouse_x <= button10_x + button_width and button10_y <= mouse_y <= button10_y + button_height:
+			# Check for debouncing the incorrect button
+			current_time = py.time.get_ticks()
+			if current_time - last_incorrect_click_time > 500:  # Adjust the debounce time (500 milliseconds)
+				last_incorrect_click_time = current_time
+				button10_clicked = True
+
+		if button11_x <= mouse_x <= button11_x + button_width and button11_y <= mouse_y <= button11_y + button_height:
+			# Check for debouncing the incorrect button
+			current_time = py.time.get_ticks()
+			if current_time - last_incorrect_click_time > 500:  # Adjust the debounce time (500 milliseconds)
+				last_incorrect_click_time = current_time
+				button11_clicked = True
+		if button12_x <= mouse_x <= button12_x + button_width and button12_y <= mouse_y <= button12_y + button_height:
+			# Check for debouncing the incorrect button
+			current_time = py.time.get_ticks()
+			if current_time - last_incorrect_click_time > 500:  # Adjust the debounce time (500 milliseconds)
+				last_incorrect_click_time = current_time
+				button12_clicked = True
 
 	if buttonflip_clicked and side:
 		# if the flip button is clicked, then the writing must change to the answer of the variable, the writing is in variable card_text
@@ -475,11 +583,50 @@ while running:
 		q,a,d = qna.initialise("FileHandeling Section/qnas/chapter7.txt")
 		ques,ans,num,found = qna.get_next(q,a,d)
 		card_text = ques
-	
+		button7_clicked = False # allow it to be clicked again
+		time.sleep(0.1)
+
 	if button8_clicked:
 		q,a,d = qna.initialise("FileHandeling Section/qnas/chapter8.txt")
 		ques,ans,num,found = qna.get_next(q,a,d)
 		card_text = ques
+		button8_color = (46,181,115)
+		button8_clicked = False # allow it to be clicked again
+		time.sleep(0.1)
+
+	if button9_clicked:
+		q,a,d = qna.initialise("FileHandeling Section/qnas/chapter9.txt")
+		ques,ans,num,found = qna.get_next(q,a,d)
+		card_text = ques
+		button9_color = (46,181,115)
+		button9_clicked = False # allow it to be clicked again
+		time.sleep(0.1)
+	
+	if button10_clicked:
+		q,a,d = qna.initialise("FileHandeling Section/qnas/chapter10.txt")
+		ques,ans,num,found = qna.get_next(q,a,d)
+		card_text = ques
+
+		button10_color = (46,181,115)
+		button10_clicked = False # allow it to be clicked again
+		time.sleep(0.1)	
+	if button11_clicked:
+		q,a,d = qna.initialise("FileHandeling Section/qnas/chapter11.txt")
+		ques,ans,num,found = qna.get_next(q,a,d)
+		card_text = ques
+		button11_color = (46,181,115)
+		button11_clicked = False # allow it to be clicked again
+		time.sleep(0.1)
+	if button12_clicked:
+		q,a,d = qna.initialise("FileHandeling Section/qnas/chapter12.txt")
+		ques,ans,num,found = qna.get_next(q,a,d)
+		card_text = ques
+		button12_color = (46,181,115)
+		button12_clicked = False # allow it to be clicked again
+		time.sleep(0.1)
+
+
+
 
 	py.display.update()
 	
