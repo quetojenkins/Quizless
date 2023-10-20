@@ -41,7 +41,25 @@ def get_next(q,a,d):
                 r_num = 0
             else:
                 r_num += 1
-    return q[r_num], a[r_num], r_num, found
+    return wrap_text(q[r_num],50), wrap_text(a[r_num],50), r_num, found
+
+def wrap_text(text, line_length):
+    wrapped_text = ""
+    remaining_text = text
+
+    while len(remaining_text) > line_length:
+        # Find the last space within the line_length
+        last_space = remaining_text.rfind(" ", 0, line_length)
+
+        if last_space == -1:
+            # If there's no space within the line_length, add a newline character at line_length
+            last_space = line_length
+
+        wrapped_text += remaining_text[:last_space] + "\n"
+        remaining_text = remaining_text[last_space + 1:]
+
+    wrapped_text += remaining_text  # Add the remaining text
+    return wrapped_text
 
 if __name__ == '__main__':
     q,a,d = initialise("FileHandeling Section/qnas/example.txt")
@@ -51,3 +69,4 @@ if __name__ == '__main__':
         correct(num,d)
         print(ques)
         print(ans)
+    print(wrap_text("This is a long text that we want to wrap around to fit within a fixed line length.",20))
