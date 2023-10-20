@@ -309,6 +309,11 @@ def update_score(d):
 	return str(corr) + "/" + str(tot)
 score_text = update_score(d)
 
+#debouncing stuff
+last_flip_click_time = 0
+last_correct_click_time = 0
+last_incorrect_click_time = 0
+
 # MAIN LOOPING
 while running:
 	score_text = update_score(d)
@@ -365,12 +370,27 @@ while running:
 
 	if event.type == py.MOUSEBUTTONDOWN and event.button == 1 and flashCards.checkUpdate(background_color):
 		mouse_x, mouse_y = py.mouse.get_pos()
+
 		if buttonflip_x <= mouse_x <= buttonflip_x + button_width and buttonflip_y <= mouse_y <= buttonflip_y + button_height:
-			buttonflip_clicked = True
+			# Check for debouncing the flip button
+			current_time = py.time.get_ticks()
+			if current_time - last_flip_click_time > 500:  # Adjust the debounce time (500 milliseconds)
+				last_flip_click_time = current_time
+				buttonflip_clicked = True
+
 		if buttoncorrect_x <= mouse_x <= buttoncorrect_x + button_width and buttoncorrect_y <= mouse_y <= buttoncorrect_y + button_height:
-			buttoncorrect_clicked = True
+			# Check for debouncing the correct button
+			current_time = py.time.get_ticks()
+			if current_time - last_correct_click_time > 500:  # Adjust the debounce time (500 milliseconds)
+				last_correct_click_time = current_time
+				buttoncorrect_clicked = True
+
 		if buttonincorrect_x <= mouse_x <= buttonincorrect_x + button_width and buttonincorrect_y <= mouse_y <= buttonincorrect_y + button_height:
-			buttonincorrect_clicked = True
+			# Check for debouncing the incorrect button
+			current_time = py.time.get_ticks()
+			if current_time - last_incorrect_click_time > 500:  # Adjust the debounce time (500 milliseconds)
+				last_incorrect_click_time = current_time
+				buttonincorrect_clicked = True
 
 	if buttonflip_clicked and side:
 		# if the flip button is clicked, then the writing must change to the answer of the variable, the writing is in variable card_text
@@ -388,7 +408,6 @@ while running:
 
 	if buttoncorrect_clicked:
 		#if the button correct is clicked, gett the next array index and put the question into card_text
-
 		side = True
 		ques,ans,num,found = qna.get_next(q,a,d)
 		d = qna.correct(num,d)
