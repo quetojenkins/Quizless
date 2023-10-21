@@ -454,6 +454,9 @@ while running:
 		d = qna.correct(num,d)
 		card_text = ques
 		buttoncorrect_clicked = False # allow it to be clicked again
+		if not found:	
+			flashCards.endCurrentScreen()
+			win = menuScreen.makeCurrentScreen()
 		time.sleep(0.1)
 
 	if buttonincorrect_clicked:
