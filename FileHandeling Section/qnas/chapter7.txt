@@ -1,47 +1,44 @@
 # 
-Choose the Correct Answer: a dead body
+Give the word for: a dead body
 corpse
 #
-Choose the Correct Answer: a disagreement
+Give the word for: a disagreement
 dissidence
 #
-Choose the Correct Answer: a yielding
+Give the word for: a yielding
 cession
 #
-Choose the Correct Answer: a sleep talker
+Give the word for: a sleep talker
 somniloquist
 #
-Choose the Correct Answer: a begining
-????
-#
-Choose the Correct Answer: a native
+Give the word for: a native
 indigenous
 #
-Choose the Correct Answer: economic slowdow
+Give the word for: economic slowdow
 recession
 #
-Choose the Correct Answer: renounce and oath
+Give the word for: renounce and oath
 abjure
 #
-Choose the Correct Answer: can be maintained
+Give the word for: can be maintained
 tenable
 #
-Choose the Correct Answer: beyond the limit
+Give the word for: beyond the limit
 excessive
 #
-Choose the Correct Answer: of the same kind
+Give the word for: of the same kind
 generic
 #
-Choose the Correct Answer: overstepping the bounds
+Give the word for: overstepping the bounds
 transgression
 #
-Choose the Correct Answer: result
+Give the word for: result
 effect
 #
-Choose the Correct Answer: oppose
+Give the word for: oppose
 contravene
 #
-Choose the Correct Answer: talkative
+Give the word for: talkative
 verbose
 #
 Give the English meaning for: prima facie
