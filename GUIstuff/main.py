@@ -305,7 +305,7 @@ dropdown = Dropdown(
 	choices=qna.get_quizes("FileHandeling Section/qnas"),
 	borderRadius=3,
 	colour=(255, 167, 16),
-	values=qna.get_values(len(qna.get_quizes("FileHandeling Section/qnas"))),
+	#values=qna.get_values(len(qna.get_quizes("FileHandeling Section/qnas"))),
 	direction='down',
 	textHAlign='left'
 )
@@ -314,19 +314,16 @@ buttonflip_clicked = False
 buttoncorrect_clicked = False
 buttonincorrect_clicked = False
 
-print(qna.get_quizes("FileHandeling Section/qnas"))
 
 side = True #when the side of the flashcard is true, then it is a question side, if false it is an answer side
 running = True
 
-q,a,d = qna.initialise("FileHandeling Section/qnas/chapter9.txt")
-ques,ans,num,found = qna.get_next(q,a,d)
-card_text = ques
 
 def update_score(d):
 	corr, tot = qna.get_num_correct(d)
 	return str(corr) + "/" + str(tot)
-score_text = update_score(d)
+
+# score_text = update_score(d)
 
 #debouncing stuff
 last_flip_click_time = 0
@@ -335,7 +332,7 @@ last_incorrect_click_time = 0
 
 # MAIN LOOPING
 while running:
-	score_text = update_score(d)
+	#score_text = update_score(d)
 
 	# CHECKING IF THE EXIT BUTTON HAS BEEN CLICKED OR NOT
 	events = py.event.get()
@@ -369,12 +366,17 @@ while running:
 	if menuScreen.checkUpdate(background_color):
 		dropdown.enable()
 		dropdown.show()
-		control_barbutton = MENU_BUTTON.focusCheck(mouse_pos, mouse_click)
-		MENU_BUTTON.showButton(menuScreen.returnTitle())
 
-		if control_barbutton:
-			win = flashCards.makeCurrentScreen()
-			menuScreen.endCurrentScreen()
+		if dropdown.getSelected() is not None:
+			q,a,d = qna.initialise("FileHandeling Section/qnas/"+dropdown.getSelected())
+			ques,ans,num,found = qna.get_next(q,a,d)
+			card_text = ques
+			control_barbutton = MENU_BUTTON.focusCheck(mouse_pos, mouse_click)
+			MENU_BUTTON.showButton(menuScreen.returnTitle())
+
+			if control_barbutton:
+				win = flashCards.makeCurrentScreen()
+				menuScreen.endCurrentScreen()
 		
     
 	# CONTROL BAR CODE TO ACCESS
@@ -382,6 +384,7 @@ while running:
 	elif flashCards.checkUpdate(background_color):
 		dropdown.hide()
 		dropdown.disable()
+		score_text = update_score(d)
 		return_back = CONTROL_BUTTON.focusCheck(mouse_pos, mouse_click)
 		CONTROL_BUTTON.showButton(flashCards.returnTitle())
 		if return_back:
@@ -393,7 +396,9 @@ while running:
 	draw_flipButton()
 	draw_CorrectButton()
 	draw_IncorrectButton()
+	
 	draw_score()
+
 
 	if event.type == py.MOUSEBUTTONDOWN and event.button == 1 and flashCards.checkUpdate(background_color):
 		mouse_x, mouse_y = py.mouse.get_pos()
