@@ -367,6 +367,7 @@ while running:
 # MENU BAR CODE TO ACCESS
 	# CHECKING MENU SCREEN FOR ITS UPDATE
 	if menuScreen.checkUpdate(background_color):
+		dropdown.enable()
 		dropdown.show()
 		control_barbutton = MENU_BUTTON.focusCheck(mouse_pos, mouse_click)
 		MENU_BUTTON.showButton(menuScreen.returnTitle())
