@@ -450,8 +450,8 @@ while running:
 	if buttoncorrect_clicked:
 		#if the button correct is clicked, gett the next array index and put the question into card_text
 		side = True
-		ques,ans,num,found = qna.get_next(q,a,d)
 		d = qna.correct(num,d)
+		ques,ans,num,found = qna.get_next(q,a,d)
 		card_text = ques
 		buttoncorrect_clicked = False # allow it to be clicked again
 		if not found:	
