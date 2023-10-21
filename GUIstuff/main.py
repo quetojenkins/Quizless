@@ -225,11 +225,11 @@ score_color = background_color
 text_color = (255, 167, 16)  # RGB color for the text on the button
 font = py.font.Font(None, 30)  # You can choose a different font if you prefer
 
-def draw_score():
+def draw_score(score_text):
     # Get the surface from the control_bar screen when it's active
     if flashCards.checkUpdate(background_color):
         screen = flashCards.screen
-
+	
         # Draw the rectangle on the control_bar screen
         py.draw.rect(screen, score_color, (score_x, score_y, score_width, score_height))
 
@@ -368,13 +368,14 @@ while running:
 		dropdown.show()
 
 		if dropdown.getSelected() is not None:
-			q,a,d = qna.initialise("FileHandeling Section/qnas/"+dropdown.getSelected())
-			ques,ans,num,found = qna.get_next(q,a,d)
-			card_text = ques
+			choice = dropdown.getSelected()
 			control_barbutton = MENU_BUTTON.focusCheck(mouse_pos, mouse_click)
 			MENU_BUTTON.showButton(menuScreen.returnTitle())
 
 			if control_barbutton:
+				q,a,d = qna.initialise("FileHandeling Section/qnas/"+choice)
+				ques,ans,num,found = qna.get_next(q,a,d)
+				card_text = ques
 				win = flashCards.makeCurrentScreen()
 				menuScreen.endCurrentScreen()
 		
@@ -384,7 +385,7 @@ while running:
 	elif flashCards.checkUpdate(background_color):
 		dropdown.hide()
 		dropdown.disable()
-		score_text = update_score(d)
+		
 		return_back = CONTROL_BUTTON.focusCheck(mouse_pos, mouse_click)
 		CONTROL_BUTTON.showButton(flashCards.returnTitle())
 		if return_back:
@@ -396,8 +397,9 @@ while running:
 	draw_flipButton()
 	draw_CorrectButton()
 	draw_IncorrectButton()
-	
-	draw_score()
+	if flashCards.checkUpdate(background_color):
+		draw_score(update_score(d))
+
 
 
 	if event.type == py.MOUSEBUTTONDOWN and event.button == 1 and flashCards.checkUpdate(background_color):
