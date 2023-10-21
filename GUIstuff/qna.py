@@ -1,4 +1,5 @@
 import random
+import os
 
 def get_qnas(file_path):
     q = []
@@ -68,6 +69,22 @@ def wrap_text(text, line_length):
 
     wrapped_text += remaining_text  # Add the remaining text
     return wrapped_text
+
+def get_quizes(path):
+    file_list = os.listdir(path)
+    files = []
+
+    for file in file_list:
+        if os.path.isfile(os.path.join(path, file)):
+            files.append(file)
+    return files
+
+def get_values(l):
+    vals = []
+    for i in range(1,l+1):
+        vals.append(i)
+    return vals
+
 
 if __name__ == '__main__':
     q,a,d = initialise("FileHandeling Section/qnas/example.txt")

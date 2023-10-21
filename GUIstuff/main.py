@@ -2,6 +2,8 @@ import pygame as py
 from pygame.locals import *
 import qna
 import time
+import pygame_widgets
+from pygame_widgets.dropdown import Dropdown
 
 # Colors
 background_color = (45, 92, 199)
@@ -291,11 +293,27 @@ def draw_IncorrectButton():
         screen.blit(text_surface, text_rect)
 
 
+# dropdown 
+dropdown = Dropdown(
+	win=menuScreen.screen,
+	x=650,
+	y=450,
+	width=100,
+	height=50,
+	name='Select Quiz',
+	choices=qna.get_quizes("FileHandeling Section/qnas"),
+	borderRadius=3,
+	colour=(255, 167, 16),
+	values=qna.get_values(len(qna.get_quizes("FileHandeling Section/qnas"))),
+	direction='down',
+	textHAlign='left'
+)
+
 buttonflip_clicked = False
 buttoncorrect_clicked = False
 buttonincorrect_clicked = False
 
-
+print(qna.get_quizes("FileHandeling Section/qnas"))
 
 side = True #when the side of the flashcard is true, then it is a question side, if false it is an answer side
 running = True
@@ -319,12 +337,12 @@ while running:
 	score_text = update_score(d)
 
 	# CHECKING IF THE EXIT BUTTON HAS BEEN CLICKED OR NOT
-	for event in py.event.get():
+	events = py.event.get()
+	for event in events:
 		# IF CLICKED THEN CLOSE THE WINDOW
 		if(event.type == py.QUIT):
 			running = False
-    
-
+	
 	# CALLING OF screenUpdate 
 	# function FOR MENU SCREEN
 	menuScreen.screenUpdate()
@@ -424,6 +442,7 @@ while running:
 		buttonincorrect_clicked = False # allow it to be clicked again
 		time.sleep(0.1)
 	
+	pygame_widgets.update(events)
 
 
 	py.display.update()
