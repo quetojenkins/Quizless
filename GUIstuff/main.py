@@ -8,6 +8,9 @@ from pygame_widgets.dropdown import Dropdown
 # Colors
 background_color = (45, 92, 199)
 text_color = (255, 255, 255)
+green_colour = (46,181,115)
+yellow_colour = (255, 167, 16)
+red_colour = (255,99,55)
 
 # SCREEN CLASS FOR WINDOW HAVING THE FUNCTION
 # OF UPDATING THE ONE SCREEN TO ANOTHER SCREEN
@@ -304,10 +307,14 @@ dropdown = Dropdown(
 	name='Select Quiz',
 	choices=qna.get_quizes("FileHandeling Section/qnas"),
 	borderRadius=3,
-	colour=(255, 167, 16),
+	colour = yellow_colour,
 	#values=qna.get_values(len(qna.get_quizes("FileHandeling Section/qnas"))),
 	direction='down',
-	textHAlign='left'
+	textHAlign='centre',
+	textColour = text_color,
+	inactiveColour = yellow_colour,
+	pressedColour = green_colour,
+	hoverColour = (255, 200, 20)
 )
 
 buttonflip_clicked = False
