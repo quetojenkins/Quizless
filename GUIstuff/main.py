@@ -359,10 +359,15 @@ while running:
 	# KEY PRESSED OR NOT
 	keys = py.key.get_pressed()
 
+# if Dropdown.getSelected() == None:
+# 	Dropdown.show()
+# else:
+# 	Dropdown.hide()
 
 # MENU BAR CODE TO ACCESS
 	# CHECKING MENU SCREEN FOR ITS UPDATE
 	if menuScreen.checkUpdate(background_color):
+		dropdown.show()
 		control_barbutton = MENU_BUTTON.focusCheck(mouse_pos, mouse_click)
 		MENU_BUTTON.showButton(menuScreen.returnTitle())
 
@@ -374,6 +379,8 @@ while running:
 	# CONTROL BAR CODE TO ACCESS
 	# CHECKING CONTROL SCREEN FOR ITS UPDATE
 	elif flashCards.checkUpdate(background_color):
+		dropdown.hide()
+		dropdown.disable()
 		return_back = CONTROL_BUTTON.focusCheck(mouse_pos, mouse_click)
 		CONTROL_BUTTON.showButton(flashCards.returnTitle())
 		if return_back:
