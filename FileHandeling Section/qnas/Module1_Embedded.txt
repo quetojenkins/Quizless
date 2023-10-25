@@ -26,4 +26,4 @@ It is a system that can survive task faliures if deadlines are missed as long as
 What
 #
 What is a STATIC RT system?
-Taks 
+Task times are finely predicted. 
