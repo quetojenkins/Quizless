@@ -44,7 +44,7 @@ What is a saftey critical system?
 A system where faliure could result in death or injury to people or sevre damage to environments.
 #
 What are the three types of resource availability? And what are they?
-Abundance of rescources: all computing and timing constraints easily met. \n Totally inadequate resources: major short fall. Simplifies design. Sufficient but scarce resources: makes probelems harder.
+Abundance of rescources: all computing and timing constraints easily met. ~ Totally inadequate resources: major short fall. Simplifies design. Sufficient but scarce resources: makes probelems harder.
 #
 What is a “Dynamic Synchronous Hard Real-time System?”
 It is a system that has unpredictable task arrival times but executes at a specific period. The implemntation is strict and timings are presicely adhered to.
@@ -76,4 +76,25 @@ Tools depend on the software vendor, the hardware vendor and the peripherals use
 Why is C so great?
 It is simple,~ flexible~ portable~ just enough abstraction~ just high level enough to make it friendly
 #
-What is the e
+What is the Execution ENvironemnt?
+components that are used together with the application’s code to make a complete computing system, including: the processors, networks, operating systems and so on
+#
+What is the runtime Environment?
+The runtime environment (RTEnv) is the computer-based environment in which a program is designed to run in, including various components such as processors, networks, and operating systems, and is a significant part of the broader execution environment (EE).|| It may also be responsible for setting up and managing the stack and heap, and may include features such as garbage collection, threads or other dynamic features
+#
+What issues does the RTEnv deal with?
+How the program starts ~How the functions are called and returned~ Methods for passing parameters~Memory manegement of application~ ways to interface to the OS~ How to connect peripherals
+#
+What is an Application Binary Interface (ABI)?
+defines the low-level interface between programs or between program and operating system.| An ABI standard defines
+sizes and ~structures of data types, ~endianness, ~system calls numbers or OS connection, ~calling convention, ~format of executable files, etc.
+#
+What is the compiling tool chain?
+converts source code into binary machine code~link source code and binary machine code~ seperatly assembly code modules~dissasemble binaries~convert formats
+#
+What is a cross compiler?
+A compiler capable of creating executable code for a platform other than the one on which the compiler is running.
+#
+What is a cross compiler toolchain?
+the broader collection of tools used in developing software solutions for a platform
+#
