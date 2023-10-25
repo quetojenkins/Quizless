@@ -23,8 +23,6 @@ Systems that have at least one hard RT system with a very short response time
 What is firm RT
 It is a system that can survive task faliures if deadlines are missed as long as they occur far apart.
 #
-What
-#
 What is a STATIC RT system?
 Task times are finely predicted. Static analysis is possible.
 #
