@@ -1,0 +1,51 @@
+#
+How do microcontrollers and microporcessors interact with a larger system and an external system?
+Through wired or wireless communication interfaces.
+#
+How does a parallel communication interface work?
+Parallel sends multiple bits of data in one go on separate lines.
+#
+Draw a diagram that illustrates the principle differences between serial and parallel interfaces.
+!FileHandeling Section/pictures/SerialvsParallelInterface.jpg
+#
+What is Endianness?
+It is the order or sequence of bytes of a word of digital data in computer memory.
+#
+What is the Big Endian?
+The MSB of a word is stored at the smallest memory address. Thuis it is sent first in a communication.
+#
+What is Little Endian?
+The MSB is stored at the largest memory address. It is sent last in a communication.
+#
+What does Asynchronous mean?
+The communication does not have a seperate clock to indicate when actions or desicions should occur. This means data can be transmitted intermitently.
+#
+How would asynchronous communication work?
+Both devices agree on how long it takes to transmit a bit.
+#
+What does Synchronous mean?
+A seperate clock signal is ncorporated into the code and is used to indicate when desicions occur. No start or stop bits are required.
+#
+How does sampling on an edge work?
+An action regards a occurs on a clock edge. The protocol can be rising or falling edge triggered.
+#
+What is simplex?
+Two devices communicate in one direction only.~Only unidirectional communication is possible (only one side may transmit and the other side can only recieve).
+#
+What is Half Duplex?
+Two devices can communicate in two directions. ~Not simultaneously~Transmit and recieve share the same data line.
+#
+What is full duplex?
+Two devices can communicate simultaneously~There are seperate data lines for transmit and recieve.~This is bidirectional
+#
+Draw a diagram showing simplex, half and full duplex to illustrate their differences.
+!FileHandeling Section/pictures/simplexDiagram.png
+#
+What is a parity bit?
+A single bit that is added to some string of binary code that provides low cost error detection.
+#
+Regarding I2C, what are the three main features (synchronicity, how data is sent and simplex or duplexity)?
+It is:~Half duplex (both ends can send and recieve but not simultaneously)~Serial (bits are sent sequentially one at a time)~ Synchronous (uses a shared clock)
+#
+What are the two wires of I2C? Please explain them.
+SCL is the Serial Clock Line. ~SDA is the Serial Data Line.
