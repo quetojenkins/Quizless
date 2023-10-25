@@ -84,8 +84,7 @@ What issues does the RTEnv deal with?
 How the program starts ~How the functions are called and returned~ Methods for passing parameters~Memory manegement of application~ ways to interface to the OS~ How to connect peripherals
 #
 What is an Application Binary Interface (ABI)?
-defines the low-level interface between programs or between program and operating system.| An ABI standard defines
-sizes and ~structures of data types, ~endianness, ~system calls numbers or OS connection, ~calling convention, ~format of executable files, etc.
+defines the low-level interface between programs or between program and operating system.| An ABI standard defines sizes and ~structures of data types, ~endianness, ~system calls numbers or OS connection, ~calling convention, ~format of executable files, etc.
 #
 What is the compiling tool chain?
 converts source code into binary machine code~link source code and binary machine code~ seperatly assembly code modules~dissasemble binaries~convert formats
@@ -94,7 +93,7 @@ What is a cross compiler?
 A compiler capable of creating executable code for a platform other than the one on which the compiler is running.
 #
 What is a cross compiler toolchain?
-the broader collection of tools used in developing software solutions for a platform
+the collection of tools used in developing software solutions for a platform
 #
 What are the GCC Tools? And what path does the C source code go through to become executable?
 !FileHandeling Section/pictures/pathFromCtoELF.jpg
