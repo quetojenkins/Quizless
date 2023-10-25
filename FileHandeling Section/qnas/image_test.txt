@@ -1,0 +1,10 @@
+#
+is this a dog on burgers ?
+!FileHandeling Section/pictures/dog.jpg
+#
+is this ice spice ?
+!FileHandeling Section/pictures/ice.jpeg
+#
+is this a pickle pug ?
+!FileHandeling Section/pictures/pug.jpg
+#
