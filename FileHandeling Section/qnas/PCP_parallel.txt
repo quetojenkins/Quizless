@@ -82,4 +82,122 @@ it is terminated. isAlive() will return False.
 #
 What does the join() method do?
 makes the calling thread wiat until another thread has completed its execultion. the method is on the thread you wan to wiat on.
+#
+How can you terminate a thread?
+The only way to terminate a thread is to arrange for run() to return.
+#
+What are executor objects in Java?
+They distribute tasks to worker threads in a thread pool. This seperates thread creation and manegement from the application.
+#
+Why are thread pools beneficial?
+they reduce overhead? allocating and deallocating many thread objects requires significant memory management
+#
+What is an Executor interface in Java?
+It provdes basic support for launching new tasks
+#
+What is the fork/join framework?
+it is an implementation of the executor service designed for divide and conquer algorithms. Idle tasks are stolen from busy threads.
+#
+What is the difference between RecursiveAction and RecursiveTask?
+RecursiveAction has no return value and RecursiveTask returns a value
+#
+How to find out how many threads are currently running in the progarm?
+int noThreads = Runtime.getRuntime().availableProcessors();
+#
+How do you create a ForkJoinPool?
+static final ForkJoinPool fjPool = new ForkJoinPool();
+#
+What is the parallelism of a new ForkJoinPool()?
+parallelism equal to Runtime.availableProcessors().
+# 
+What is the parallelism of a new ForkJoinPool.commonPool()?
+parallelism equal to Runtime.availableProcessors() -1.
+#
+Why is it better to create one thread that forks instead of two recursive threads that fork?
+It cuts the number of threads by half.
+#
+What is a sequential cut off?
+point in a parallel algorithm or computation where it becomes more efficient to perform the remaining work sequentially.
+#
+When is fork/join really useful?
+When there is parallel computation many times, when threads have a load imbalance and a lot to do.
+#
+What are the two types of parallel image processig?
+point processing and local operations
+#
+What is point processing in terms of parallel image processing?
+The output value of the process is based on a signel pixel value.
+#
+What is a local operation in terms of parallel image processing?
+the output of the process is based on a group of neighbouring pixels and their values. An example is image smoothing.
+#
+What is a reduction operation in basic divide and conquer algorithms?
+they produce a single answer from a collection. examples include finding the max, min, count, rightmost, sum etc...
+#
+What is a map in a basic divide and conquer algorithm?
+A map operates on each element of a collection independently to create a new collection of the same size
+#
+What is a Monte Carlo method?
+Monte Carlo methods make use of random selections in calculations that lead to the solution of numerical and physical problems
+#
+How do you demonstrate efficiency with a parallel algorithm?
+You benchmark the algorithm against a serial counter part to show it is faster.
+#
+What is speed up?
+Speed up = work/ time for p porcesses
+#
+What is work?
+How long it would take 1 processor = T1
+#
+What is span?
+How long it would take infinity processors = T_infinity
+#
+What is the maximum possible speed up?
+max speedup = work/span
+#
+Whart is a parallel algorithm?
+A paralell algorithm aims to decrease span without increaseing work.
+#
+Explain the work law? T_p>=T_1/p
+each processor executes at most 1 instruction per unit time, and hence P processors can execute at most P instructions per unit time. Thus, to do all the work on P processors, it must take at least T1/P time
+#
+Explain the span law T_p>= T_infinity
+a finite number of processors cannot outperform an infinite number of processors, because the infinite- processor machine could just ignore all but P of its processors and mimic a P-processor machine exactly.
+#
+What is a DAG graph? What are the nodes and edges representing?
+Nodes represent pieces of work (instructions), edges join nodes and represent dependencies.
+# 
+What is the work in a DAG?
+Work is the number of nodes in the graph 
+#
+What is the span in a DAG?
+the length of the longest path
+#
+What is the time complexity of work?
+O(n)
+#
+What is the time complexity of span?
+O(logn)
+#
+What is the time complexity of the maximum speed up?
+n/logn
+#
+What is parallelisation overhead?
+It is the additional time required to coordinate and synchronise parallel tasks as well as creating and managing threads.
+#
+What is Amdahls Law?
+Speed up is 1/(1-p+(p/n)). This explains that some parts of a program are inherently sequential while others should be parallised. n is the numnber of processors.
+#
+Why is Amdahls law incorrect now?
+The ratio of sequential to parallel protions of the algorithm varies and is not constant. It varies with problem size.
+#
+What is strong scaling?
+The problem size is fixed (total problem size is fixed will number of processors varies)
+#
+What is weak scaling?
+the execution time is fixed (fixed problem size per processor)
+#
+
+
+
 
