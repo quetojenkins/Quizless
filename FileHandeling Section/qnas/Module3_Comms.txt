@@ -47,5 +47,19 @@ A single bit that is added to some string of binary code that provides low cost 
 Regarding I2C, what are the three main features (synchronicity, how data is sent and simplex or duplexity)?
 It is:~Half duplex (both ends can send and recieve but not simultaneously)~Serial (bits are sent sequentially one at a time)~ Synchronous (uses a shared clock)
 #
-What are the two wires of I2C? Please explain them.
+What are the two wires of I2C?
 SCL is the Serial Clock Line. ~SDA is the Serial Data Line.
+#
+Draw a diagram of I2C in action with one master and two slaves.
+!FileHandeling Section/pictures/Screenshot 2023-10-25 at 21.17.07.png
+#
+How does I2C verify its infomation?
+Verification of every byte is built in with an ACK signal protocol after every data word.
+#
+What does the I2C have pull up/down resistors?
+This removes the chance of having a floating or undefined value by creating a default state for the pin.
+#
+ Why does the IC2 interface pin have an open drain collector on both the clock and data pins?
+ Bus signals will always default to logic high thus they must be activly pulled low for operation.
+ #
+ 
