@@ -98,3 +98,20 @@ A compiler capable of creating executable code for a platform other than the one
 What is a cross compiler toolchain?
 the broader collection of tools used in developing software solutions for a platform
 #
+What are the GCC Tools? And what path does the C source code go through to become executable?
+!FileHandeling Section/pictures/pathFromCtoELF.jpg
+#
+What are GNU Binutils?
+The GNU Binutils are a collection of binary tools commonly used with GCC
+#
+WHat is (Executable File Format)?
+It is a specific structure to store and represent machine code and data required for a program to be executed directly by an OS.|It defines how the instructions and data are stored within a file.
+#
+What is ELF (Executable and Linkable Format)?
+ELF (Executable and Linkable Format) is a widely adopted file format for executable programs and shared libraries, commonly used in Unix-like operating systems, offering platform independence and support for dynamic linking.
+#
+Draw a diagram of the ELF File Structure.
+!FileHandeling Section/pictures/ELF_file_structure.png
+#
+
+
