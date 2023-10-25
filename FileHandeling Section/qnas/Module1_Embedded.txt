@@ -1,0 +1,29 @@
+#
+What is an Embedded system?
+An embedded systems are infomation processing systems embedded within a larger product. Time and concurrency management are important.
+#
+What is a real time system?
+An event driven system that is reactive to inputs or events and produces a predictable output.
+#
+What are key characterisitcs of a RT system?
+Event driven, continous operation, tolerant, predictable behaviour.
+#
+What are the four cases of RT?
+Hard, soft, real and firm RT
+#
+What is Hard RT?
+A hard real time system is one in which it is absolutly imperative that the response occurs within the required deadline. Eg a flight contorl sysyem
+#
+What is Soft RT
+A system where deadlines of responses are important but will still function if the occasional deadline is missed. Create more on TASK optimisation and not TIMING optisimatsion.
+#
+What is Real RT
+Systems that have at least one hard RT system with a very short response time
+#
+What is firm RT
+It is a system that can survive task faliures if deadlines are missed as long as they occur far apart.
+#
+What
+#
+What is a STATIC RT system?
+Taks 
