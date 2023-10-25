@@ -93,7 +93,7 @@ What is a cross compiler?
 A compiler capable of creating executable code for a platform other than the one on which the compiler is running.
 #
 What is a cross compiler toolchain?
-the collection of tools used in developing software solutions for a platform
+A set of tools to analyse and compile an application that runs on a platform that is not the same as the platform in which the tools are executed in.
 #
 What are the GCC Tools? And what path does the C source code go through to become executable?
 !FileHandeling Section/pictures/pathFromCtoELF.jpg
@@ -109,6 +109,9 @@ ELF (Executable and Linkable Format) is a widely adopted file format for executa
 #
 Draw a diagram of the ELF File Structure.
 !FileHandeling Section/pictures/ELF_file_structure.png
+#
+What does portable mean?
+It is extremely close to the hardware and thus direct memory manipulation is much easier.
 #
 
 
