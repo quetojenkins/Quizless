@@ -26,4 +26,54 @@ It is a system that can survive task faliures if deadlines are missed as long as
 What
 #
 What is a STATIC RT system?
-Task times are finely predicted. 
+Task times are finely predicted. Static analysis is possible.
+#
+What is a DYNAMIC RT?
+Arrival times of tasks may be unpredictable.
+#
+What is periodic design?
+Each task executes repeatedly at specific periods. And well suited to hard RT.
+#
+What is aperiodic or asynchrnouns design?
+An aperiodic, or ‘sporadic’, system is designed around being reactive.
+#
+Tabulate the differences between hard real time and soft realtime.
+!FileHandeling Section/pictures/hardAndSoftRTDifferences.png
+#
+What is a saftey critical system?
+A system where faliure could result in death or injury to people or sevre damage to environments.
+#
+What are the three types of resource availability? And what are they?
+Abundance of rescources: all computing and timing constraints easily met. \n Totally inadequate resources: major short fall. Simplifies design. Sufficient but scarce resources: makes probelems harder.
+#
+What is a “Dynamic Synchronous Hard Real-time System?”
+It is a system that has unpredictable task arrival times but executes at a specific period. The implemntation is strict and timings are presicely adhered to.
+#
+I have a system comprises two computers, the one a hard RTS and the other a soft RTS, what is the whole system called then?
+A hard RTS.
+#
+What is the internet of things?
+the billions of physical embedded devices around the world that are connected to the internet, all collecting and delivering data.
+#
+Why has there been an explosion of IoT devies?
+This is possible from super cheap computer chips and ubiquity of wireless networks… together making it possible to turn (almost) anything into a part of the IoT.
+#
+What is a design metric?
+a measurable feature of an embedded system’s design, e.g. its performance, cost, time for implementation, safety, etc.
+#
+What is the development environment?
+the environment where development occurs
+#
+What does the development envionement include?
+Equipment used for development, ~ tools uised for development (compilers, linkers etc) and ~ other resources such as manuals and datasheets.
+#
+What are the benefits of the PC development environment?
+The environment is well defined ~ The toolchain is fully configured ~ Debugging is easy with an IDE~ there are libraries
+#
+What are the issues with the embedded development environment?
+Tools depend on the software vendor, the hardware vendor and the peripherals used~ the tootchain must be built from scratch ~few libraries availbale
+#
+Why is C so great?
+It is simple,~ flexible~ portable~ just enough abstraction~ just high level enough to make it friendly
+#
+What is the e
