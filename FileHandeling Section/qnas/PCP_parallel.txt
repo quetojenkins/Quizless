@@ -1,0 +1,7 @@
+#
+What is the shared memory model?
+All memory placed in a single physical address space. There is virtual address space across all memeory.
+#
+What memory model does java use?
+The shared memory model
+#

@@ -300,8 +300,8 @@ def draw_IncorrectButton():
 # dropdown 
 dropdown = Dropdown(
 	win=menuScreen.screen,
-	x=650,
-	y=450,
+	x=100,
+	y=50,
 	width=100,
 	height=50,
 	name='Select Quiz',
