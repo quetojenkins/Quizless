@@ -5,3 +5,39 @@ All memory placed in a single physical address space. There is virtual address s
 What memory model does java use?
 The shared memory model
 #
+What is a cache?
+it is a hardware or software component that stores data so future requests are serviced faster. It is the bridge between the main memory and the processor
+#
+What is a thread?
+process that has been given internal control.
+#
+How do threads communicate with each other?
+Threads communicate implicitly through shared memory. WARNING*** it is important to protect variable correctly. To communicate, a thread must write somewhere another thread will read.
+#
+How many cores will a program use?
+The programmer DOESNT KNOW. You can only make a guess.
+#
+How many threads will the program use?
+DONT KNOW. cant guess
+#
+What are the two programming models?
+Sequential Program state and shared memory state
+#
+How many program counters and call stacks does the sequential program state have? and how does it work?
+It has one program state and one call stack. Each stack frame holds local variables for a method that is running.
+#
+How does a stack work?
+In a stack, there are multiple frames. Each frame holds variables for a method that is running. Calling a method pushes a new frame on to the stack. Returning from a method pops a frame from the stack.
+#
+How does the call stack and program counter work in the shared memory program model?
+Each thread has its own program counter, call stack and local variables. Threads share all objects and static fields.
+#
+What is asynchrony?
+Threads are suceptable to sudden, unpredictable delays. These include cache misses, page faults and scheduling quantum finished.
+#
+Where does a chache miss occur and waht is it?
+A cache miss occurs when the data being requested isnt found in cache memory. This occurs between the shared emmory and the local cache.
+#
+WHhere does a page fault occur and what is it?
+A page fault occurs between the sahred memory and the disk. It is when a program attempts to access data that is in an address space but not currently in RAM.
+#
