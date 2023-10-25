@@ -1,6 +1,6 @@
 #
 What is the shared memory model?
-All memory placed in a single physical address space. There is virtual address space across all memeory.
+All memory placed in a single physical address space. There is virtual address space across all memeory. All threads can access the shared memeory model.
 #
 What memory model does java use?
 The shared memory model
@@ -9,7 +9,7 @@ What is a cache?
 it is a hardware or software component that stores data so future requests are serviced faster. It is the bridge between the main memory and the processor
 #
 What is a thread?
-process that has been given internal control.
+A thread is a lightweight process that the operating system can schedule and run concurrently with other threads. It shares the same resources and address space as the program that created it.
 #
 How do threads communicate with each other?
 Threads communicate implicitly through shared memory. WARNING*** it is important to protect variable correctly. To communicate, a thread must write somewhere another thread will read.
@@ -41,3 +41,45 @@ A cache miss occurs when the data being requested isnt found in cache memory. Th
 WHhere does a page fault occur and what is it?
 A page fault occurs between the sahred memory and the disk. It is when a program attempts to access data that is in an address space but not currently in RAM.
 #
+How does Java coordinate operations?
+Java has synchronisation primitives and thread safe and concurrent classes.
+#
+How does the JVM work?
+Executes as a process under the operating system. This supports mutliple threads. Thus Java is ALWYAYS multithreaded.
+#
+Why is Java always multithreaded?
+Every java program has more than one thread. There is the main thread which can create additional threads. There is the system threads of garbage collection and signal handeling. And threads to compile Java bytecode. Standard libraries also use threads.
+#
+What class are basic threads associated with?
+java.lang.Threads
+#
+What does a thread class do?
+It manages a single sequential thread of control.
+#
+How do you create a new thread object?
+Thread myThreadsName = new ThreadClassThatTheThreadIsBeingCreatedIn();
+#
+How does the thread class execute instructions?
+Thread class executes instructions from its method run(). The actual code executed depends on the implementation provided for run() in a derived class.
+#
+How does a class that wants to create Thread objects get the thread class?
+class ThreadClassThatTheThreadIsBeingCreatedIn extends Thread {}
+#
+What is the runnable interface and why is it soemtimes used over the Thread class?
+Java does not permit multiple inheritance. it is sometimes more convenient to implement the run() method in a class not derived from Thread, but from the interface Runnable. 
+#
+How do you create a thread object in a class that extends the runnable interface?
+Thread b = new Thread(new ThreadClassThatTheThreadIsBeingCreatedIn())
+#
+How do you begin a thread?
+call the start() method on the object of the class. The start() ethod uses the run() method as its main. start() makes the thread call its own run() method.
+#
+What happens if you call the run method on a thread?
+This is just a normal method call for the current thread.
+#
+What happens to a thread when it returns?
+it is terminated. isAlive() will return False.
+#
+What does the join() method do?
+makes the calling thread wiat until another thread has completed its execultion. the method is on the thread you wan to wiat on.
+
