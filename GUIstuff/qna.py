@@ -51,6 +51,11 @@ def get_num_correct(d):
             count += 1
     return count, len(d)
 
+def check_image(a):
+    if a[0] == "!":
+        return True
+    else:
+        return False
 
 def wrap_text(text, line_length):
     wrapped_text = ""

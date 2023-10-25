@@ -169,11 +169,7 @@ CONTROL_BUTTON = Button(1200, 150, 150, 50,
 
 toggle = False
 
-##FlashCard
-card_width = 800
-card_height = 500
-card_x = 300
-card_y = 100
+##Menu
 welcome_color = background_color
 welcometext_color = (255, 167, 16)  # RGB color for the text on the button
 welcomefont = py.font.Font(None, 100)  # You can choose a different font if you prefer
@@ -241,7 +237,6 @@ def draw_score(score_text):
         screen.blit(text_surface, text_rect)
 
 ##Flip Button
-
 button_width = 200
 button_height = 75
 buttonflip_x = 350
@@ -260,7 +255,6 @@ def draw_flipButton():
         text_surface = font.render(buttonflip_text, True, text_color)
         text_rect = text_surface.get_rect(center=(buttonflip_x + button_width // 2, buttonflip_y + button_height // 2))
         screen.blit(text_surface, text_rect)
-
 
 ##Correct and Next Button
 buttoncorrect_x = 600
@@ -296,7 +290,6 @@ def draw_IncorrectButton():
         text_rect = text_surface.get_rect(center=(buttonincorrect_x + button_width // 2, buttonincorrect_y + button_height // 2))
         screen.blit(text_surface, text_rect)
 
-
 # dropdown 
 dropdown = Dropdown(
 	win=menuScreen.screen,
@@ -317,6 +310,28 @@ dropdown = Dropdown(
 	hoverColour = (255, 200, 20)
 )
 
+
+# other useful functions 
+def update_score(d):
+	corr, tot = qna.get_num_correct(d)
+	return str(corr) + "/" + str(tot)
+
+def show_picture(display, path):
+	try:
+		image = py.image.load(path)
+		top_margin = (card_height*0.1)/2
+		old_width, old_height = image.get_size()
+		new_height = card_height-2*top_margin
+		new_width = old_width * (new_height/old_height)
+		image = py.transform.scale(image,(new_width,new_height))
+
+		image_y = card_y+top_margin
+		image_x = (card_width-new_width)/2 + card_x
+		display.screen.blit(image, (image_x, image_y))
+	except py.error as e:
+		print("Error loading the image:", str(e))
+
+# initialiazing before running
 buttonflip_clicked = False
 buttoncorrect_clicked = False
 buttonincorrect_clicked = False
@@ -324,22 +339,15 @@ buttonincorrect_clicked = False
 
 side = True #when the side of the flashcard is true, then it is a question side, if false it is an answer side
 running = True
+image_display = False
 
 
-def update_score(d):
-	corr, tot = qna.get_num_correct(d)
-	return str(corr) + "/" + str(tot)
-
-# score_text = update_score(d)
-
-#debouncing stuff
 last_flip_click_time = 0
 last_correct_click_time = 0
 last_incorrect_click_time = 0
 
 # MAIN LOOPING
 while running:
-	#score_text = update_score(d)
 
 	# CHECKING IF THE EXIT BUTTON HAS BEEN CLICKED OR NOT
 	events = py.event.get()
@@ -363,12 +371,7 @@ while running:
 	# KEY PRESSED OR NOT
 	keys = py.key.get_pressed()
 
-# if Dropdown.getSelected() == None:
-# 	Dropdown.show()
-# else:
-# 	Dropdown.hide()
-
-# MENU BAR CODE TO ACCESS
+	# MENU BAR CODE TO ACCESS
 	# CHECKING MENU SCREEN FOR ITS UPDATE
 	if menuScreen.checkUpdate(background_color):
 		dropdown.enable()
@@ -384,8 +387,7 @@ while running:
 				ques,ans,num,found = qna.get_next(q,a,d)
 				card_text = ques
 				win = flashCards.makeCurrentScreen()
-				menuScreen.endCurrentScreen()
-		
+				menuScreen.endCurrentScreen()	
     
 	# CONTROL BAR CODE TO ACCESS
 	# CHECKING CONTROL SCREEN FOR ITS UPDATE
@@ -398,6 +400,7 @@ while running:
 		if return_back:
 			flashCards.endCurrentScreen()
 			win = menuScreen.makeCurrentScreen()
+			image_display = False
 	
 	draw_welcome()
 	draw_card()
@@ -406,7 +409,6 @@ while running:
 	draw_IncorrectButton()
 	if flashCards.checkUpdate(background_color):
 		draw_score(update_score(d))
-
 
 
 	if event.type == py.MOUSEBUTTONDOWN and event.button == 1 and flashCards.checkUpdate(background_color):
@@ -435,13 +437,19 @@ while running:
 
 	if buttonflip_clicked and side:
 		# if the flip button is clicked, then the writing must change to the answer of the variable, the writing is in variable card_text
-		card_text = ans
+		if qna.check_image(ans):
+			image_display = True
+			image_path = ans[1:]
+			card_text = ""
+		else:
+			card_text = ans
 		side = False # now the side is an answer
 		buttonflip_clicked = False # allow it to be clicked again
 		time.sleep(0.1)
 	
 	if buttonflip_clicked and not side:
 		#it is currently on the answer and you now want to make the card_text writing the question
+		image_display = False
 		card_text = ques
 		side = True # now the side is an question
 		buttonflip_clicked = False # allow it to be clicked again
@@ -454,6 +462,7 @@ while running:
 		ques,ans,num,found = qna.get_next(q,a,d)
 		card_text = ques
 		buttoncorrect_clicked = False # allow it to be clicked again
+		image_display = False
 		if not found:	
 			flashCards.endCurrentScreen()
 			win = menuScreen.makeCurrentScreen()
@@ -466,10 +475,13 @@ while running:
 		ques,ans,num,found = qna.get_next(q,a,d)
 		card_text = ques
 		buttonincorrect_clicked = False # allow it to be clicked again
+		image_display = False
 		time.sleep(0.1)
 	
-	pygame_widgets.update(events)
+	if image_display:
+		show_picture(flashCards,image_path)
 
+	pygame_widgets.update(events)
 
 	py.display.update()
 	
