@@ -197,7 +197,3 @@ The problem size is fixed (total problem size is fixed will number of processors
 What is weak scaling?
 the execution time is fixed (fixed problem size per processor)
 #
-
-
-
-
