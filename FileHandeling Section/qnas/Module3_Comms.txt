@@ -75,4 +75,89 @@ Can the slave ever control the SCL line in an I2C communication?
 Yes. The Slace can control the SCL line to change the frequency of transmission. It will do this by holding the SCL LOW for jsdgfsjdguy????????? MUST CHEK THE ANSWR FOR THIS!!!!! WARNING WARNING WARNING
 #
 Draw the I2C timing diagram for the transmitting the following:| Slave Address = 0b1010020, Data = 0b01011010
-
+!FileHandeling Section/pictures/IMG_0483.jpg
+#
+What are the disadvantages of I2C?
+~Frame Overhead with address and ACK bits means that time and resources are used. ~ There is an increase in hardware complexity as master/slave devices are added.
+#
+What are the key advantages of I2C?
+~Only two wires are used. ~ACK makes communication reliable~ Can have muliple masters and slaves. ~ Easy support for Vdd Levels
+#
+What is Arbitration with regards to I2C?
+There may be multiple masters on a signle bus. Each master will monitor both lines checking whether they are idle or not. A master will onely use a line when the bus is free (ie idle). |If two masters attempt to use the bus simultaneously, the first to pull the SDA low while trying to transmit a 0 will win.
+#
+What is clock stretching with regards to I2C?
+Any device can hold the SCL low. This is done if a device wishes to slow the clock.
+#
+Regarding SPI, what are the three main features (synchronicity, how data is sent and simplex or duplexity)?
+SPI is:~Full Duplex meaning both ends can transmit and receive and do so simultaneoulsy.~Serial meaning bits are sent sequentially.~ Synchronous meaning the two communicating devices rely on a shared clock signal to interpret the data.
+#
+Draw a table to compare and contrast SPI and I2C:
+QUETO GET BACK TO THIS!!!! WARNING WARNING beep beep beep
+#
+Draw a diagramm of the SPI Interface Lines and Label them.
+!FileHandeling Section/pictures/Screenshot 2023-10-26 at 11.00.06.png
+#
+What does SPI look like when it is in its IDLE state?
+SCLK is not switching. Whether it is HIGH or LOW is decided by the CPOL. The !SS is high.
+#
+How does the Master initiate data transfer in SPI?
+The master pulls the !SS LOW. When the !SS line is low it means data is being transfered. 
+#
+Explain what the Clock Phase (CPHA) settings mean.
+When CPHA is 0, the data from the MOSI and MISO lines are sampled on the first clock edge.| WHen CPHA = 1, data is sampled on the second clock edge after teh !SS went LOW.
+#
+How does a device transmit a STOP command in SPI?
+!SS is made HIGH to disable any slave activity.
+#
+Draw an SPI timing diagram of the SCLK for all four modes for the master transmitting 0b11101101.
+Stuff here
+#
+Which device generates the clock signal?
+The Master. It moves the clock signal moves data onto its MOSI and MISO lines and from/into the shift registers every clock cycle.
+#
+Can an SPI master have multiple slaves? Explain the difference between the two possible configurations.
+Yes, an SPI configuration can have multiple slaves all connected to the same master. There are two possible configurations: Typical with dedicated SS lines and a daisy-chained. | In the typical configuration, the master has independant slaves each configured with their own SS line; this allows for individual control. In the daisy chained SPI bus configuration the master has COOPERATIVE slaves. This means that each slave shares the singular SS line. Each slave must foward its MOSI input to its MISO output on the next SCLK cycle.
+#
+WHat are the disadvantages of SPI?
+~Only one master is possible~If independant access to slaves us required, the number of SS lines grows quickly and makes it more complex.~ More complex than I2C.
+#
+What are the advantages of SPI?
+~ There is no overhead of address and the Start/Stop?ACK~ full duplex~ faster than I2C
+#
+What is meant by Baud Rate?
+The Baud rate of a communication channel is the rate at which infomation is transferred within the channel. Both devices must agree on a Baud Rate. This is used in asynchronous communication.
+#
+Is UART a protocol like SPI and I2C?
+NOOOOOOOOORRR! UART is a generic hardware interface control module. It may be the underlying driver that IMPLEMENTS a protocol.
+#
+What does UART stand for?
+Universal Asynchronous Receiver Transmitter
+#
+Draw a simple diagram of UART to illustrate its connections.
+!FileHandeling Section/pictures/Screenshot 2023-10-26 at 11.22.40.png
+#
+What is RS-232?
+It is an asynchronous serial communication SIGNALING STANDARD.
+#
+What is a SIGNALING STANDARD?
+It defines the signals between two devices. This includes: the signal's voltage levels, connectors, pin outs etc
+#
+What communication modes can RS-232 be configured in?
+Can be configured as Full Duplex, Half Duplex, or Simplex
+#
+How do UART and RS-232 relate?
+It is common to control RS-232 lines via a UART on board component and add some voltage conditioning circuitry.
+#
+What is the standard configuration for RS-232 in terms of Baud Rate?
+Baud Rate = 150 x 2^n bits per second
+#
+What is the overhead of RS-232 timing?
+There is a Start bit, Parity bit and a stop bit.
+#
+What are the disadvantages of RS-232?
+~Only one transmitter and one reciever are supported~ Signal lines are referenced wrt ground.~ Performance degrades when noise is present~limited speed of dara transfer
+#
+What makes RS-485 better than RS-232?
+It has twisted cables meaning it picks up less noise and can operate over much larger distances (1200m).
+#
