@@ -88,14 +88,15 @@ def main():
             
             if event.type == pygame.MOUSEWHEEL and is_dropdown_open:
                 # Scroll the dropdown, adjusting the scroll offset by SCROLL_SPEED
-                max_scroll = len(menu_items) * MENU_FONT_SIZE
-                if invisible_items[1] != list_len - 1 or (invisible_items[1] == list_len - 1 and SCROLL_SPEED * event.y < 0):
-                    scroll_offset = max(0, min(max_scroll, scroll_offset + SCROLL_SPEED * event.y))
-                invisible_items[0] = abs(scroll_offset/(SCROLL_SPEED * event.y))
-                if SCROLL_SPEED * event.y > 0 and invisible_items[1] < list_len -1:
-                    invisible_items[1] += 1
-                elif SCROLL_SPEED * event.y < 0 and invisible_items[1] > max_visible and not invisible_items[1] - invisible_items[0] <= max_visible:
-                    invisible_items[1] -= 1
+                if event.y != 0:
+                    max_scroll = len(menu_items) * MENU_FONT_SIZE
+                    if invisible_items[1] != list_len - 1 or (invisible_items[1] == list_len - 1 and SCROLL_SPEED * event.y < 0):
+                        scroll_offset = max(0, min(max_scroll, scroll_offset + SCROLL_SPEED * event.y))
+                    invisible_items[0] = abs(scroll_offset/(SCROLL_SPEED * event.y))
+                    if SCROLL_SPEED * event.y > 0 and invisible_items[1] < list_len -1:
+                        invisible_items[1] += 1
+                    elif SCROLL_SPEED * event.y < 0 and invisible_items[1] > max_visible and not invisible_items[1] - invisible_items[0] <= max_visible:
+                        invisible_items[1] -= 1
 
         draw_menu(option)
         pygame.display.flip()
