@@ -8,3 +8,14 @@ What are the benefits of a programmable chip?
 WHat are the types of porgrammable chips? List them from simpla and cheap to complex and expensive.
 PLAs, CPLDs and FPGAs
 #
+How is the size of a PLD (programmable logic device) measured?
+It is measured in the number of Logic Elements (LE's) that it contains.
+#
+What is a Programmable Logic Block (PLB)?
+It contains manny programabble Logic Elements (PLE's).
+#
+Draw a diagram to represent the Internal Structure of an FPGA.
+!FileHandeling Section/pictures/Screenshot 2023-10-26 at 13.07.43.png
+#
+What is the PLD/FPGA Development Flow? 
+
