@@ -59,7 +59,20 @@ Verification of every byte is built in with an ACK signal protocol after every d
 What does the I2C have pull up/down resistors?
 This removes the chance of having a floating or undefined value by creating a default state for the pin.
 #
- Why does the IC2 interface pin have an open drain collector on both the clock and data pins?
- Bus signals will always default to logic high thus they must be activly pulled low for operation.
- #
- 
+Why does the IC2 interface pin have an open drain collector on both the clock and data pins?
+Bus signals will always default to logic high thus they must be activly pulled low for operation.
+#
+Describe the process of how the master writes to the slave.
+1. Both lines are idle (HIGH)|2. Master transmits Start by pulling SDA active LOW.|3. Master transmits the 7 bit slave address. This indicates the slave should listen to the data arriving.|4. Master transmits Write bit. this indicates the master is about to begin transmitting data. |5. The recieving slave transmits an ACK bit. This is done when the recieving slave pulls the SDA active LOW for one bit. All other slaves leave the line high.|6. The master transmits 8 bits of data serially. |7. The recieveing slave transmits an ACK back.|8. Master transmits the STOP command to indicate end of communication. This is done by letting the SDA go high while the SCL is high.
+#
+How do you know if the I2C communication line is idle?
+The SDA and SCL lines are high when idle. To begin transmission and send the START bit, the SDA is pulled active low for one bit. To STOP, the master lets the SDA go high while the SCL is high.
+#
+Can the slave ever control the SDA line in an I2C communication?
+Yes, the Slave controls the SDA line when it sends an ACK bit after recieving a WRITE bit or data. An ACK bit is sent when the slave holds the SDA line Active LOW for one bit.
+#
+Can the slave ever control the SCL line in an I2C communication?
+Yes. The Slace can control the SCL line to change the frequency of transmission. It will do this by holding the SCL LOW for jsdgfsjdguy????????? MUST CHEK THE ANSWR FOR THIS!!!!! WARNING WARNING WARNING
+#
+Draw the I2C timing diagram for the transmitting the following:| Slave Address = 0b1010020, Data = 0b01011010
+
