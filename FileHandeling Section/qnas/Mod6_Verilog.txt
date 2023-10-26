@@ -1,0 +1,10 @@
+#
+What are programmable chips?
+A programmable chip can be configured according to the users needs. This means the same chip can be used for a variety of purposes.
+#
+What are the benefits of a programmable chip?
+~It can be used for many purposes including prototyping and final product~It has a low starting cost~ there is risk reduction~ increases turn around time
+#
+WHat are the types of porgrammable chips? List them from simpla and cheap to complex and expensive.
+PLAs, CPLDs and FPGAs
+#
