@@ -44,3 +44,59 @@ Sequences of actions should be organized into groups with a beginning, middle, a
 Explain how in the 8 Golden Rules of Design, it must "Prevent Errors"?
 design the interface so that users cannot make serious errors~ , the interface should offer simple, constructive, and specific instructions for recovery.
 #
+Explain how in the 8 Golden Rules of Design, it must "Permit easy reversal of actions"?
+As much as possible, actions should be reversible.~this reduces user anxiety~encourages user exploration and engagement
+#
+Explain how in the 8 Golden Rules of Design, it must "Keep users in Control"?
+Experienced users strongly desire the sense that they are in charge of the interface and that the interface responds to their actions.~ Dont introduce surprises or changes in familiar patterns
+#
+Explain how in the 8 Golden Rules of Design, it must "Reduce Short Term Memory Load"?
+avoid interfaces in which users must remember information from one display and then use that information on another display
+#
+What are guidelines?
+Guidelines are vague and the user needs to have a theoretical understanding.~ Tend to be generalisations
+#
+What are standards?
+Very specific criteria to meet~Set by an international committe
+#
+Tabulate the differences between Standards and Guidelines.
+!FileHandeling Section/pictures/Screenshot 2023-10-26 at 12.43.27.png
+#
+What are affordances?
+Affordances are the potential actions and interactions that the environment offers
+#
+What are Percieved Affordances?
+Perceived affordances of an object are those properties of the object which give users clues as to how the device is used
+#
+What are Hidden Affordances?
+fffff
+#
+Give Two examples of Visual Affordance Problems?
+The bar looks like it scrolls by actually dksfeiur
+#
+What is Mapping?
+ensure a natural correlation between objects and the interface controlling them| There should be a direct relationship between an artefact and the interface controlling it
+#
+What is a Skeuomorph?
+When a derivative object retains ornamental design cues that were necessary or essential to the original| Calculator app looks like a Calculator
+#
+What are constraints?
+limitations put on a design so that it can only be used the correct way. ~ may help a user enter data correctly and understand how to use something so they cant break it
+#
+What are transfer effects?
+People transfer expectations from known objects to similar new ones. For example, you expect a keyboard to be in look like a keyboard which is based on old type writers.
+#
+WHat is a learned affordance?
+To open a door with a knob you twist right
+#
+What are cultural dependencies?
+Is a traffic light yellow or black, round or swuare?
+#
+What are the Ten Usability Heuristics?
+1. Visibility of System Status|2. User Control and Freedom|3. Aesthertic and Minimal Design|4. Flexibility and Efficiency of Use|5. Help and Documenttion|6. Match between system and real world|7. Error Prevention|8. Consistency and Standards |9. Recofnition over Recall |10. Help users recognise, diagnose and recover from erros.
+#
+What does Recognition over Recall mean?
+pg 4 of Design Principles
+#
+
+
