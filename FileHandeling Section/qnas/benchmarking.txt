@@ -1,5 +1,5 @@
 #
-What is a benchmark in the cpmputing world.
+What is a benchmark in the computing world.
 program that quantitatively evaluates performance, cost, and computing resources (among other things) of a  computing solution
 #
 What is a benchmarking suite?
@@ -20,6 +20,12 @@ gettimeofday
 Why does wall clock time suck (sometimes) ?
 doesn’t give a full impression of how the system performed||Things it doesnt consider:~accuracy~development effort vs speed improvement~resource costs to get to new speed~power usage~maintainability~environmental impact
 #
-What should we even test when benchmarking?
+What are the "physical" compoents we should be targeting when benchmarking?
 ~compiler = converts high level to low -> need to benchmark its efficiency~processor = code in hand-crafted assembly so all comparisons are fair~OS = interrupt latencies / overhead / device limits / kernel size / availability of service~platform = saleability of memory / peripheral limits / interfaces supported / power~application#
+#
+What are the measurands when benchmarking?
+~cycle count~data & program memory usage~execution time~power consumption
+#
+What is a code review and what does it entail?
+practice (e.g. meeting or regular team-link up) of reviewing code developed for a project|~Unit testing~Function testing~Integration testing~How can this be improved
 #
