@@ -98,5 +98,3 @@ What are the Ten Usability Heuristics?
 What does Recognition over Recall mean?
 pg 4 of Design Principles
 #
-
-

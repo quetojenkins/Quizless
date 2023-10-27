@@ -57,14 +57,15 @@ def check_image(a):
     else:
         return False
 
-def wrap_text(text, line_length):
-    if text[0] == "~":
-        points = text[1:].split("~")
-    else:
-        points = text.split("~")
-    final = ""
+def wrap_text(input_string, line_length):
+    wrapped_text = ""
+    points = []
+
+    # Replace "~" with "\n•" and "|" with "\n"
+    modified_string = input_string.replace("~", "\n• ").replace("|", "\n")
+    points = modified_string.split("\n")
+
     for point in points:
-        wrapped_text = ""
         remaining_text = point
         while len(remaining_text) > line_length:
             # Find the last space within the line_length
@@ -76,12 +77,12 @@ def wrap_text(text, line_length):
 
             wrapped_text += remaining_text[:last_space] + "\n"
             remaining_text = remaining_text[last_space + 1:]
-        wrapped_text += remaining_text  # Add the remaining text
-        if len(points) != 1:
-            final = final + "\n• " + wrapped_text
+        if len(points) == 1:
+            wrapped_text += remaining_text  # Add the remaining text
         else:
-            final = final + wrapped_text
-    return final
+            wrapped_text += remaining_text + "\n"  # Add the remaining text
+
+    return wrapped_text
 
 def get_quizes(path):
     file_list = os.listdir(path)
@@ -100,11 +101,11 @@ def get_values(l):
 
 
 if __name__ == '__main__':
-    q,a,d = initialise("FileHandeling Section/qnas/example.txt")
-    found = True
-    while found == True:
-        ques, ans, num, found = get_next(q,a,d)
-        correct(num,d)
-        print(ques)
-        print(ans)
-    print(wrap_text("This is a long text that we want to wrap around to fit within a fixed line length.",20))
+    # q,a,d = initialise("FileHandeling Section/qnas/example.txt")
+    # found = True
+    # while found == True:
+    #     ques, ans, num, found = get_next(q,a,d)
+    #     correct(num,d)
+    #     print(ques)
+    #     print(ans)
+    print(wrap_text("!hello",200))

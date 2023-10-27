@@ -187,12 +187,15 @@ def draw_card():
 
         lines = card_text.split('\n')  # Split the text into lines
 
-        y_position = card_y
+        # Calculate the initial y_position to center the lines within the card height
+        total_lines_height = sum(font.size(line)[1] for line in lines)
+        y_position = card_y + (card_height - total_lines_height) // 2
+
         for line in lines:
             text_surface = font.render(line, True, writing)
-            text_rect = text_surface.get_rect(center=(card_x + card_width // 2, y_position + card_height // 2))
+            text_rect = text_surface.get_rect(center=(card_x + card_width // 2, y_position + text_surface.get_height() // 2))
             screen.blit(text_surface, text_rect)
-            y_position += text_rect.height  # Move down for the next line
+            y_position += text_surface.get_height()  # Move down for the next line
 
 ##Score
 score_width = 100

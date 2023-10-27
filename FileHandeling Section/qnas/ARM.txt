@@ -1,0 +1,91 @@
+#
+Where is ARM used?
+~consumers~gaming~networks~reliability
+#
+What is RISC?
+It is a DESIGN PHILOSOPHY known as "reduced instruction set computer".
+#
+Give 5 attribues about RISC. (no. of instructions / addressing modes ? / instructions ? / operations ? / memory ?)
+~<100 instructions~minimal addressing modes (techniques used by a CPU to access data in memory or registers)~fix length instructions all taking the same amount of cycles~only operates on registers~only load/store on memory cant operate on it
+#
+What is CISC?
+It is a DESIGN PHILOSOPHY known as "complex instruction set computer".
+#
+Give 5 attribues about CISC. (no. of instructions / operations ? / instruction length? / addressing modes ?)
+~100-250 instructions~manipulate operations in memory~variable instruction length & no. cycles~lots of memory modes
+#
+Give two alternatice processors to ARM and some brief facts about them.
+PIC~low cost/power~easy programming~pure/modified harvard architecture|AVR~lower power and cost
+#
+Specify what type of processure architecture you would use in the following cases?|~ABS brakes~Radio control of a model airplane~Car radio (e.g., auto tuning, stored stations)~Washing machine~Portable battery-operated game console~Weather sensor~Garage door opener~iPad~Burglar alarm
+~ABS brakes - ARM or AVR~Radio control of a model airplane – PIC or AVR~Car radio – PIC for auto turning feature at least~Washing machine – Probably a PIC~Portable battery-operated game console - ARM~Weather sensor – PIC (lowest power options, usually doesn’t need speed)~Garage door opener – PIC or AVR, something cheap ~iPad – ARM~Burglar alarm - probably a PIC, if there’s not much signal processing
+#
+Please explain what is meant by CORTEX when referring to the ARM processor architecture?
+CORTEX is a range of ARM proessors that is high performing compared to low power consumption, it executes thumb instructions and uses three stage pipelining.
+#
+Please describe the ARM naming convetion.
+!FileHandeling Section/pictures/arm_convention.png
+#
+What is meant by a "Thumb" instruction?
+It is a 16 instead of 32 bit instruction that allows one to store 2 instructions in one data word which increases code density.
+#
+Explain the difference between the states and modes of operation.
+The state of operation describes how individual instructions aare processed by the processor and the mode of operation describes the funtional state of teh processor that determines the general behavior/ capabilities.
+#
+Please list all 7 modes of operation and give a brief description of all of them.
+~User = where applications are run, limited registers and emory access ~Interrupt ReQuest (IRQ) = entered when low priority interrupt triggered ~fast interrupt ReQuest (FIQ) = entered when high priority interrupt triggered (sseperate registers) ~supervisor = entered on system reset & software initialisation ~abort = entered when memory exception~undef = entered when undefined instruction called ~system = privilaged, just user with fewer restrictions 
+#
+Please list all 4 states of operation and describe how each handles instructions.
+~arm32 = 32 bit address and instruction~arm64 = 64 bit address and instruction~thumb = 16 bit instruction~jazelle = 8 bit java bytecode
+#
+Name all registers used by arm32.
+~1 PC(program counter)~1 CPSR(current program status register)~5 SPSR(saved program status register)~30 GPR(general purpose register)
+#
+Name all registers accessable in any mode.
+~GPR (r0-r12)~own stack pointer (r13/sp)~own link register (r14/lr)~program counter (pc)
+#
+What register is accessible from any mode except user and system mode?
+SPSR - used to save state when handling interrupts or exceptions
+#
+Heres the register mode map with all the registers each mode has access to it. I dont know what sick fuck is going to learn this.
+!FileHandeling Section/pictures/register_mode_map.png
+#
+Try explain what each bit in the program status register is used for, i dare you !
+!FileHandeling Section/pictures/program_status_register.png
+#
+Which bits are ignored/included in the program counter register for both thumb and arm32 states?
+~Thumb = 1-31 is included and 0 is ignored~arm32 = 2-31 is included and 0-1 is ignored
+#
+Give all the steps taken when an exception is triggered.
+Handling the exception:~Exception is triggered~Change to exception mode (e.g. Undef)~change to arm32~disable interrupts~LR=PC~PC=address of the excption vector~execute exception vector handler||Going back to where you were:~change to arm32 (i know again)~CSPR = SPSR (restore the status)~PC=LR~get on with it homie
+#
+How are exceptions stored?
+They are stored as handler functions in an exception vector.
+#
+Explain bothe types of endianness, big and small.
+BE = msb stored / read first||LE = lsb stored / read first
+#
+Why would one consider using assembly within a C program?
+faster and specialised
+#
+How does one use assembly within a C program?
+C <-> ABI (an interface between two binary program modules) <-> Assembler
+#
+Give the structure of the .s file that contains the assembly function that can be called by the C program.
+.global name # ensures name can be accessed from other modules|.type name, function # label "name" is the function|name: # craete function symbol|     *function code*
+#
+Give the line inside the C header file that declares the assembly function.
+ex. char* name(char* example_in_1, char* example_in_2)
+#
+What is a calling convention and how is it defined?
+The calling convention describes the way that parameters, return values, local variables and return address are handled. They are defined by the ABI.
+#
+Explain the calling convention used between GCC and ARM.
+When a function is called a function prologue is called which sets up the stack for local variables and aafter the function is finnished the function epilogue is called which frees up the local variables.
+#
+What are stack frames?
+They are a space allocated to a specific function. The start of the stack frame is denoted by the frame pointer (SP) that points to the next free location in the stack. It also grows down which is funky.
+#
+Please give an in depth as hell explination of the function prologue. What happens the stack at each line. Name the god damn lines.
+!FileHandeling Section/pictures/prologue.png
+#
