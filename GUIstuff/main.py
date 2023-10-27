@@ -115,9 +115,6 @@ class Button:
 	def unhide(self):
 		self.hidden = False
 
-
-
-
 font = globalFont
 
 # CREATING THE OBJECT OF THE
@@ -127,6 +124,8 @@ menuScreen = Screen("Home")
 # CREATING THE OBJECT OF THE
 # CLASS Screen FOR CONTROL SCREEN
 flashCards = Screen("Flash Cards")
+
+wellDoneScreen = Screen("Well Done! Youre so Amazing :))))")
 
 # CALLING OF THE FUNCTION TO
 # MAKE THE SCREEN FOR THE WINDOW
@@ -143,17 +142,16 @@ MENU_BUTTON = Button(SCREEN_WIDTH // 2 - MB_WIDTH // 2, SCREEN_HEIGHT // 2 + SCR
 
 
 # CONTROL BUTTON
-CONTROL_BUTTON = Button(1200, 300, 150, 50,
+CONTROL_BUTTON = Button(1200, 300, 200, 75,
 						(255, 167, 16), None,
 						text_color, "DONE")
 
 
 toggle = False
-
 ##Menu
 welcome_color = background_color
 welcometext_color = (255, 167, 16)  # RGB color for the text on the button
-welcomefont = py.font.SysFont("calibri", 100)  # You can choose a different font if you prefer
+welcomefont = py.font.SysFont("calibri", 100, bold=True)  # You can choose a different font if you prefer
 welcomecard_text = "WELCOME"
 
 def draw_welcome():
@@ -169,9 +167,9 @@ def draw_welcome():
         screen.blit(text_surface, text_rect)
 
 ##FlashCard
-card_width = 800
+card_width = 900
 card_height = 500
-card_x = 300
+card_x = 250
 card_y = 100
 card_color = text_color
 writing = (0,0,0)
@@ -235,7 +233,6 @@ def draw_flipButton():
 
         # Draw the rectangle on the control_bar screen
         py.draw.rect(screen, buttonflip_color, (buttonflip_x, buttonflip_y, button_width, button_height))
-
         text_surface = font.render(buttonflip_text, True, text_color)
         text_rect = text_surface.get_rect(center=(buttonflip_x + button_width // 2, buttonflip_y + button_height // 2))
         screen.blit(text_surface, text_rect)
@@ -244,7 +241,7 @@ def draw_flipButton():
 buttoncorrect_x = 600
 buttoncorrect_y = 700
 buttoncorrect_color = (46,181,115)
-buttoncorrect_text = "Correct!"
+buttoncorrect_text = "CORRECT!"
 
 def draw_CorrectButton():
     if flashCards.checkUpdate(background_color):
@@ -261,7 +258,7 @@ def draw_CorrectButton():
 buttonincorrect_x = 850
 buttonincorrect_y = 700
 buttonincorrect_color = (255,99,55)
-buttonincorrect_text = "Incorrect :(!"
+buttonincorrect_text = "INCORRECT"
 
 def draw_IncorrectButton():
     if flashCards.checkUpdate(background_color):
@@ -326,6 +323,9 @@ def get_selected_item(mouse_pos):
 # other useful functions 
 def update_score(d):
 	corr, tot = qna.get_num_correct(d)
+	if corr > tot:
+			flashCards.endCurrentScreen()
+			win = menuScreen.makeCurrentScreen()
 	return str(corr) + "/" + str(tot)
 
 def show_picture(display, path):
@@ -367,6 +367,7 @@ while running:
 	# CHECKING IF THE EXIT BUTTON HAS BEEN CLICKED OR NOT
 	events = py.event.get()
 	for event in events:
+		
 		# IF CLICKED THEN CLOSE THE WINDOW
 		if(event.type == py.QUIT):
 			running = False
@@ -401,6 +402,7 @@ while running:
 	menuScreen.screenUpdate()
 	# CALLING THE FUNCTION OF CONTROL BAR
 	flashCards.screenUpdate()
+	wellDoneScreen.screenUpdate()
 	
     
 	# STORING THE MOUSE EVENT TO
@@ -539,6 +541,7 @@ while running:
 	
 	if image_display:
 		show_picture(flashCards,image_path)
+
 
 	pygame_widgets.update(events)
 
