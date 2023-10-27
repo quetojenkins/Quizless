@@ -472,6 +472,9 @@ while running:
     	# Perform the action associated with the 'n' key
 		buttonflip_clicked = True
 	
+	if keys[K_q]:
+		running = False
+	
 	if event.type == py.MOUSEBUTTONDOWN and event.button == 1 and flashCards.checkUpdate(background_color):
 		mouse_x, mouse_y = py.mouse.get_pos()
 
