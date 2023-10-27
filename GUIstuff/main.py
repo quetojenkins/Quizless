@@ -349,6 +349,20 @@ buttonflip_clicked = False
 buttoncorrect_clicked = False
 buttonincorrect_clicked = False
 
+keys = py.key.get_pressed()
+
+# if keys[K_c]:
+#     # Perform the action associated with the 'n' key
+# 	buttoncorrect_clicked = True
+
+# if keys[K_i]:
+#     # Perform the action associated with the 'n' key
+# 	buttonincorrect_clicked = True
+
+# if keys[K_SPACE]:
+#     # Perform the action associated with the 'n' key
+# 	buttonflip_clicked = True
+
 
 side = True #when the side of the flashcard is true, then it is a question side, if false it is an answer side
 running = True
@@ -446,7 +460,18 @@ while running:
 	if flashCards.checkUpdate(background_color):
 		draw_score(update_score(d))
 
+	if keys[K_c]:
+    	# Perform the action associated with the 'n' key
+		buttoncorrect_clicked = True
 
+	if keys[K_i]:
+    	# Perform the action associated with the 'n' key
+		buttonincorrect_clicked = True
+
+	if keys[K_SPACE]:
+    	# Perform the action associated with the 'n' key
+		buttonflip_clicked = True
+	
 	if event.type == py.MOUSEBUTTONDOWN and event.button == 1 and flashCards.checkUpdate(background_color):
 		mouse_x, mouse_y = py.mouse.get_pos()
 
