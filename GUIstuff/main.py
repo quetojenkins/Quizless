@@ -11,6 +11,7 @@ text_color = (255, 255, 255)
 green_colour = (46,181,115)
 yellow_colour = (255, 167, 16)
 red_colour = (255,99,55)
+SCREEN_WIDTH, SCREEN_HEIGHT = 1450, 850
 
 # SCREEN CLASS FOR WINDOW HAVING THE FUNCTION
 # OF UPDATING THE ONE SCREEN TO ANOTHER SCREEN
@@ -18,7 +19,7 @@ class Screen():
 	# INITIALIZATION OF WINDOW HAVING TITLE,
 	# WIDTH, HEIGHT AND COLOUR
 	# HERE (0,0,255) IS A COLOUR CODE
-	def __init__(self, title, width=1450, height=850,
+	def __init__(self, title, width=SCREEN_WIDTH, height=SCREEN_HEIGHT,
 				fill=background_color):
 		# HEIGHT OF A WINDOW
 		self.height = height
@@ -65,74 +66,49 @@ class Screen():
 
 # NAVIGATION BUTTON CLASS
 
-class Button():
+import pygame as py
 
-	# INITIALIZATION OF BUTTON
-	# COMPONENTS LIKE POSITION OF BUTTON,
-	# COLOR OF BUTTON, FONT COLOR OF BUTTON, FONT SIZE,
-	# TEXT INSIDE THE BUTTON
-	def __init__(self, x, y, sx, sy, bcolour,
-				fbcolour, font, fcolour, text):
-		# ORIGIN_X COORDINATE OF BUTTON
+class Button:
+	def __init__(self, x, y, width, height, button_color, font, font_color, text):
 		self.x = x
-		# ORIGIN_Y COORDINATE OF BUTTON
 		self.y = y
-		# LAST_X COORDINATE OF BUTTON
-		self.sx = sx
-		# LAST_Y COORDINATE OF BUTTON
-		self.sy = sy
-		# FONT SIZE FOR THE TEXT IN A BUTTON
-		self.fontsize = 25
-		# BUTTON COLOUR
-		self.bcolour = bcolour
-		# RECTANGLE COLOR USED TO DRAW THE BUTTON
-		self.fbcolour = fbcolour
-		# BUTTON FONT COLOR
-		self.fcolour = fcolour
-		# TEXT IN A BUTTON
+		self.width = width
+		self.height = height
+		self.button_color = button_color
+		self.font = py.font.SysFont(font, 30)
+		self.font_color = font_color
 		self.text = text
-		# CURRENT IS OFF
-		self.CurrentState = False
-		# FONT OBJECT FROM THE SYSTEM FONTS
-		self.buttonf = py.font.SysFont(font, self.fontsize)
+		self.button_rect = py.Rect(self.x, self.y, self.width, self.height)
+		self.hidden = False  # Add a hidden attribute
 
-	# DRAW THE BUTTON FOR THE TWO
-	# TABS MENU_SCREEN AND CONTROL TABS MENU
 	def showButton(self, display):
-		if(self.CurrentState):
-			py.draw.rect(display, self.fbcolour,
-						(self.x, self.y,
-						self.sx, self.sy))
-		else:
-			py.draw.rect(display, self.fbcolour, 
-						(self.x, self.y,
-						self.sx, self.sy))
-		# RENDER THE FONT OBJECT FROM THE SYSTEM FONTS
-		textsurface = self.buttonf.render(self.text,
-										False, self.fcolour)
+		if not self.hidden:
+			py.draw.rect(display, self.button_color, self.button_rect)
+			text_surface = self.font.render(self.text, True, self.font_color)
+			text_rect = text_surface.get_rect()
+			text_rect.center = self.button_rect.center
+			display.blit(text_surface, text_rect)
 
-		# THIS LINE WILL DRAW THE SURF ONTO THE SCREEN
-		display.blit(textsurface, 
-					((self.x + (self.sx/2) -
-					(self.fontsize/2)*(len(self.text)/2) -
-					5, (self.y + (self.sy/2) -
-						(self.fontsize/2)-4))))
-
-	# THIS FUNCTION CAPTURE WHETHER 
-	# ANY MOUSE EVENT OCCUR ON THE BUTTON
 	def focusCheck(self, mousepos, mouseclick):
 		if(mousepos[0] >= self.x and mousepos[0] <= self.x +
-				self.sx and mousepos[1] >= self.y and mousepos[1]
-				<= self.y + self.sy):
+				self.width and mousepos[1] >= self.y and mousepos[1]
+				<= self.y + self.height):
 			self.CurrentState = True
 			# IF MOUSE BUTTON CLICK THEN
 			# NAVIGATE TO THE NEXT OR PREVIOUS TABS
 			return mouseclick[0]
-
 		else:
 			# ELSE LET THE CURRENT STATE TO BE OFF
 			self.CurrentState = False
 			return False
+	
+	def hide(self):
+		self.hidden = True
+		# You can also modify other attributes, such as the dimensions or transparency, to hide the button.
+
+	def unhide(self):
+		self.hidden = False
+
 
 
 # INITIALIZATION OF THE PYGAME
@@ -156,15 +132,18 @@ win = menuScreen.makeCurrentScreen()
 
 
 # MENU BUTTON
-MENU_BUTTON = Button(625, 600, 150, 50, background_color,
-					(255, 167, 16), None,
-					text_color, "Begin")
+# MENU BUTTON
+MB_WIDTH, MB_HEIGHT = 180, 55
+MENU_BUTTON = Button(SCREEN_WIDTH // 2 - MB_WIDTH // 2, SCREEN_HEIGHT // 2 + SCREEN_HEIGHT * 0.2, MB_WIDTH, MB_HEIGHT, 
+                     (255, 167, 16),None, 
+                     text_color, "BEGIN")
+
+
 
 # CONTROL BUTTON
-CONTROL_BUTTON = Button(1200, 150, 150, 50,
-						background_color, (255, 167, 16),
-						None,
-						text_color, "Done")
+CONTROL_BUTTON = Button(1200, 300, 150, 50,
+						(255, 167, 16), None,
+						text_color, "DONE")
 
 
 toggle = False
@@ -184,7 +163,7 @@ def draw_welcome():
         py.draw.rect(screen, welcome_color, (card_x, card_y, card_width, card_height))
 
         text_surface = welcomefont.render(welcomecard_text, True, welcometext_color)
-        text_rect = text_surface.get_rect(center=(card_x + card_width // 2, card_y + card_height // 2))
+        text_rect = text_surface.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - SCREEN_HEIGHT * 0.05))
         screen.blit(text_surface, text_rect)
 
 ##FlashCard
@@ -291,25 +270,53 @@ def draw_IncorrectButton():
         screen.blit(text_surface, text_rect)
 
 # dropdown 
-dropdown = Dropdown(
-	win=menuScreen.screen,
-	x=100,
-	y=50,
-	width=100,
-	height=50,
-	name='Select Quiz',
-	choices=qna.get_quizes("FileHandeling Section/qnas"),
-	borderRadius=0,
-	colour = yellow_colour,
-	#values=qna.get_values(len(qna.get_quizes("FileHandeling Section/qnas"))),
-	direction='down',
-	textHAlign='centre',
-	textColour = text_color,
-	inactiveColour = yellow_colour,
-	pressedColour = green_colour,
-	hoverColour = (255, 200, 20)
-)
+MENU_WIDTH, MENU_HEIGHT = 400, 30  # Adjust menu width
+MENU_FONT_SIZE = 25
+SCROLL_SPEED = 25  # Adjust this value for faster or slower scrolling
 
+# Calculate the center position for the scrollable list
+MENU_X = (SCREEN_WIDTH - MENU_WIDTH) // 2
+MENU_Y = (SCREEN_HEIGHT - MENU_HEIGHT) // 2 + 30
+
+# Colors
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+YELLOW = (255, 167, 16)
+
+menu_items = qna.get_quizes("FileHandeling Section/qnas")
+is_dropdown_open = False
+scroll_offset = 0
+option = "Select a quiz"
+list_len = len(menu_items)
+max_visible = 4
+invisible_items = [0,max_visible]
+
+def draw_drop(option):
+	if menuScreen.checkUpdate(background_color):
+		screen = menuScreen.screen
+	
+		if is_dropdown_open:
+			for i, item in enumerate(menu_items):
+				if i >= invisible_items[0] and i <= invisible_items[1]:
+					text = font.render(item, True, WHITE)
+					text_rect = text.get_rect()
+					text_rect.topleft = (MENU_X + 10, MENU_Y + MENU_HEIGHT + i * MENU_FONT_SIZE - scroll_offset)
+					screen.blit(text, text_rect)
+
+		# Draw the dropdown box with text
+		py.draw.rect(screen, YELLOW, (MENU_X, MENU_Y, MENU_WIDTH, MENU_HEIGHT))
+		text = font.render(option, True, WHITE)  # Text inside the rectangle
+		text_rect = text.get_rect()
+		text_rect.center = (MENU_X + MENU_WIDTH // 2, MENU_Y + MENU_HEIGHT // 2)  # Center the text
+		screen.blit(text, text_rect)
+
+def get_selected_item(mouse_pos):
+    for i, item in enumerate(menu_items):
+        item_rect = py.Rect(MENU_X, MENU_Y + MENU_HEIGHT + i * MENU_FONT_SIZE, MENU_WIDTH, MENU_FONT_SIZE)
+        item_rect.y -= scroll_offset
+        if item_rect.collidepoint(mouse_pos):
+            return item
+    return None
 
 # other useful functions 
 def update_score(d):
@@ -341,7 +348,6 @@ side = True #when the side of the flashcard is true, then it is a question side,
 running = True
 image_display = False
 
-
 last_flip_click_time = 0
 last_correct_click_time = 0
 last_incorrect_click_time = 0
@@ -349,12 +355,40 @@ last_incorrect_click_time = 0
 # MAIN LOOPING
 while running:
 
+	if option == "Select a quiz":
+		MENU_BUTTON.hide()
+
 	# CHECKING IF THE EXIT BUTTON HAS BEEN CLICKED OR NOT
 	events = py.event.get()
 	for event in events:
 		# IF CLICKED THEN CLOSE THE WINDOW
 		if(event.type == py.QUIT):
 			running = False
+
+		if event.type == py.MOUSEBUTTONDOWN:
+			if event.button == 1:  # Left mouse button
+				mouse_pos = event.pos
+				if MENU_X <= mouse_pos[0] < MENU_X + MENU_WIDTH and MENU_Y <= mouse_pos[1] < MENU_Y + MENU_HEIGHT:
+					# Toggle dropdown
+					is_dropdown_open = not is_dropdown_open
+				elif is_dropdown_open:
+					selected_item = get_selected_item(mouse_pos)
+					if selected_item is not None:
+						option = selected_item
+						MENU_BUTTON.unhide()
+						is_dropdown_open = False
+		
+		if event.type == py.MOUSEWHEEL and is_dropdown_open:
+			# Scroll the dropdown, adjusting the scroll offset by SCROLL_SPEED
+			if event.y != 0:
+				max_scroll = len(menu_items) * MENU_FONT_SIZE
+				if invisible_items[1] != list_len - 1 or (invisible_items[1] == list_len - 1 and SCROLL_SPEED * event.y < 0):
+					scroll_offset = max(0, min(max_scroll, scroll_offset + SCROLL_SPEED * event.y))
+				invisible_items[0] = abs(scroll_offset/(SCROLL_SPEED * event.y))
+				if SCROLL_SPEED * event.y > 0 and invisible_items[1] < list_len -1:
+					invisible_items[1] += 1
+				elif SCROLL_SPEED * event.y < 0 and invisible_items[1] > max_visible and not invisible_items[1] - invisible_items[0] <= max_visible:
+						invisible_items[1] -= 1
 	
 	# CALLING OF screenUpdate 
 	# function FOR MENU SCREEN
@@ -374,16 +408,12 @@ while running:
 	# MENU BAR CODE TO ACCESS
 	# CHECKING MENU SCREEN FOR ITS UPDATE
 	if menuScreen.checkUpdate(background_color):
-		dropdown.enable()
-		dropdown.show()
-
-		if dropdown.getSelected() is not None:
-			choice = dropdown.getSelected()
+		if option is not None:
 			control_barbutton = MENU_BUTTON.focusCheck(mouse_pos, mouse_click)
 			MENU_BUTTON.showButton(menuScreen.returnTitle())
 
 			if control_barbutton:
-				q,a,d = qna.initialise("FileHandeling Section/qnas/"+choice)
+				q,a,d = qna.initialise("FileHandeling Section/qnas/"+option)
 				ques,ans,num,found = qna.get_next(q,a,d)
 				card_text = ques
 				win = flashCards.makeCurrentScreen()
@@ -392,14 +422,13 @@ while running:
 	# CONTROL BAR CODE TO ACCESS
 	# CHECKING CONTROL SCREEN FOR ITS UPDATE
 	elif flashCards.checkUpdate(background_color):
-		dropdown.hide()
-		dropdown.disable()
 		
 		return_back = CONTROL_BUTTON.focusCheck(mouse_pos, mouse_click)
 		CONTROL_BUTTON.showButton(flashCards.returnTitle())
 		if return_back:
 			flashCards.endCurrentScreen()
 			win = menuScreen.makeCurrentScreen()
+			MENU_BUTTON.hide()
 			image_display = False
 	
 	draw_welcome()
@@ -407,6 +436,7 @@ while running:
 	draw_flipButton()
 	draw_CorrectButton()
 	draw_IncorrectButton()
+	draw_drop(option)
 	if flashCards.checkUpdate(background_color):
 		draw_score(update_score(d))
 

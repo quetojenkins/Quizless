@@ -40,7 +40,7 @@ list_len = len(menu_items)
 max_visible = 6
 invisible_items = [0,max_visible]
 
-def draw_menu(option):
+def draw_drop(option):
     screen.fill(WHITE)
     
     if is_dropdown_open:
@@ -98,9 +98,9 @@ def main():
                     elif SCROLL_SPEED * event.y < 0 and invisible_items[1] > max_visible and not invisible_items[1] - invisible_items[0] <= max_visible:
                         invisible_items[1] -= 1
 
-        draw_menu(option)
+        draw_drop(option)
         pygame.display.flip()
-        clock.tick(60)
+        clock.tick(200)
 
 if __name__ == "__main__":
     main()

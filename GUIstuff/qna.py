@@ -58,22 +58,30 @@ def check_image(a):
         return False
 
 def wrap_text(text, line_length):
-    wrapped_text = ""
-    remaining_text = text
+    if text[0] == "~":
+        points = text[1:].split("~")
+    else:
+        points = text.split("~")
+    final = ""
+    for point in points:
+        wrapped_text = ""
+        remaining_text = point
+        while len(remaining_text) > line_length:
+            # Find the last space within the line_length
+            last_space = remaining_text.rfind(" ", 0, line_length)
 
-    while len(remaining_text) > line_length:
-        # Find the last space within the line_length
-        last_space = remaining_text.rfind(" ", 0, line_length)
+            if last_space == -1:
+                # If there's no space within the line_length, add a newline character at line_length
+                last_space = line_length
 
-        if last_space == -1:
-            # If there's no space within the line_length, add a newline character at line_length
-            last_space = line_length
-
-        wrapped_text += remaining_text[:last_space] + "\n"
-        remaining_text = remaining_text[last_space + 1:]
-
-    wrapped_text += remaining_text  # Add the remaining text
-    return wrapped_text
+            wrapped_text += remaining_text[:last_space] + "\n"
+            remaining_text = remaining_text[last_space + 1:]
+        wrapped_text += remaining_text  # Add the remaining text
+        if len(points) != 1:
+            final = final + "\n• " + wrapped_text
+        else:
+            final = final + wrapped_text
+    return final
 
 def get_quizes(path):
     file_list = os.listdir(path)
