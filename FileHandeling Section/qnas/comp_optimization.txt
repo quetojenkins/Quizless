@@ -1,0 +1,5 @@
+#
+Explain the diagrammatic flow of the conversion from a high level language to a low level / assembly language?
+!FileHandeling Section/pictures/high_to_low.txt.png
+#
+Explain the process in word how code is translated from the 
