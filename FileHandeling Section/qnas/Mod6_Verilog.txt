@@ -18,4 +18,43 @@ Draw a diagram to represent the Internal Structure of an FPGA.
 !FileHandeling Section/pictures/Screenshot 2023-10-26 at 13.07.43.png
 #
 What is the PLD/FPGA Development Flow? 
+!FileHandeling Section/pictures/IMG_0484.jpg
+#
+Where is most of the development time of FPGA's spent?
+In terms of the engineers time: In the Design and RTL Coding or the Timing Analysis| In terms of the PC's time: in the Place and Route
+#
+What are the four essential ingredients in Verilog Coding?
+1. Modules| 2. Ports|3. Wires|4. Registers
+#
+What is a Module in Verilog Coding?
+A module is the basic clock that does something and is connected to another. Modules are hierachical meaning they can be individual elements of composed of other modules.
+#
+What is the syntax for creating a module in Verilog?
+module<module name>(<port names>);|...|endmodule
+#
+What are module ports?
+A port is an interface used to move signals into or out of a module. You would declare these in the port names section in creating a module.
+#
+What are the wires?
+They are used to connect elements, such as different ports of modules. Wires have values that are continously driven onto them.
+#
+How would you define a wire in a circuit?
+wire a;
+#
+What is a register?
+A register stores data until another value is put into them. It doesnt need a continous driver.
+#
+How do you declare a new register?
+reg thisIsMyNewRegisterThatIAmDeclaring; // it defaults to 1 benefits
+#
+How do you change the value or set the value in a register?
+thisIsMyNewRegisterThatIAmDeclaring = 1'b1; //this sets the value to 1
+#
+What are the different levels of abstraction is Verilog? List from lowest to highest level
+1. Switch Level| 2. Gate Level|3. Data Flow Level|4. Behavioural Level
+#
+What does the Switch Level Abstraction mean?
+This means Verilog is only implemented using switches and interconnects. This is the lowest level of abstraction.
+#
+
 
