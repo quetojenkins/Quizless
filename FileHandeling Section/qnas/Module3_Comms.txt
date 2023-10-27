@@ -51,7 +51,7 @@ What are the two wires of I2C?
 SCL is the Serial Clock Line. ~SDA is the Serial Data Line.
 #
 Draw a diagram of I2C in action with one master and two slaves.
-!FileHandeling Section/pictures/Screenshot 2023-10-25 at 21.17.07.png
+!FileHandeling Section/pictures/I2C_Diagram.png
 #
 How does I2C verify its infomation?
 Verification of every byte is built in with an ACK signal protocol after every data word.
