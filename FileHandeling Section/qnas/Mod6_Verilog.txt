@@ -191,5 +191,9 @@ How many bits are in the following object res1?:| assign res1 = {{a[15]},{a[15:0
 !FileHandeling Section/pictures/IMG_0488.jpg
 !FileHandeling Section/pictures/IMG_0489.jpg
 #
-
-
+What are blocking and non-blocking statements?
+Used to describe how assignments and updates to signals are made in a hardware description. The key difference between the is that:||non-blocking assignments happen in parallel and|blocking assignments happen sequentially as they appear in the code
+#
+What are the key points about blocking statements?
+~Sequential Execution: 
+#

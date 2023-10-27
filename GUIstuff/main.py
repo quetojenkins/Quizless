@@ -5,6 +5,12 @@ import time
 import pygame_widgets
 from pygame_widgets.dropdown import Dropdown
 
+# INITIALIZATION OF THE PYGAME
+py.init()
+
+# INITIALIZATION OF SYSTEM FONTS
+py.font.init()
+
 # Colors
 background_color = (45, 92, 199)
 text_color = (255, 255, 255)
@@ -12,6 +18,7 @@ green_colour = (46,181,115)
 yellow_colour = (255, 167, 16)
 red_colour = (255,99,55)
 SCREEN_WIDTH, SCREEN_HEIGHT = 1450, 850
+globalFont = py.font.SysFont("calibri", 30)
 
 # SCREEN CLASS FOR WINDOW HAVING THE FUNCTION
 # OF UPDATING THE ONE SCREEN TO ANOTHER SCREEN
@@ -75,7 +82,7 @@ class Button:
 		self.width = width
 		self.height = height
 		self.button_color = button_color
-		self.font = py.font.SysFont(font, 30)
+		self.font = globalFont
 		self.font_color = font_color
 		self.text = text
 		self.button_rect = py.Rect(self.x, self.y, self.width, self.height)
@@ -111,12 +118,8 @@ class Button:
 
 
 
-# INITIALIZATION OF THE PYGAME
-py.init()
 
-# INITIALIZATION OF SYSTEM FONTS
-py.font.init()
-font = py.font.Font(None, 36)
+font = globalFont
 
 # CREATING THE OBJECT OF THE
 # CLASS Screen FOR MENU SCREEN
@@ -135,7 +138,7 @@ win = menuScreen.makeCurrentScreen()
 # MENU BUTTON
 MB_WIDTH, MB_HEIGHT = 180, 55
 MENU_BUTTON = Button(SCREEN_WIDTH // 2 - MB_WIDTH // 2, SCREEN_HEIGHT // 2 + SCREEN_HEIGHT * 0.2, MB_WIDTH, MB_HEIGHT, 
-                     (255, 167, 16),None, 
+                     (255, 167, 16),"Calibri", 
                      text_color, "BEGIN")
 
 
@@ -151,7 +154,7 @@ toggle = False
 ##Menu
 welcome_color = background_color
 welcometext_color = (255, 167, 16)  # RGB color for the text on the button
-welcomefont = py.font.Font(None, 100)  # You can choose a different font if you prefer
+welcomefont = py.font.SysFont("calibri", 100)  # You can choose a different font if you prefer
 welcomecard_text = "WELCOME"
 
 def draw_welcome():
@@ -174,7 +177,7 @@ card_y = 100
 card_color = text_color
 writing = (0,0,0)
 text_color = (255, 255, 255)  # RGB color for the text on the button
-font = py.font.Font(None, 36)  # You can choose a different font if you prefer
+font = py.font.SysFont("calibri", 36)  # You can choose a different font if you prefer
 card_text = "What is the capital of italy"
 
 def draw_card():
@@ -204,7 +207,7 @@ score_x = 0
 score_y = 0
 score_color = background_color
 text_color = (255, 167, 16)  # RGB color for the text on the button
-font = py.font.Font(None, 30)  # You can choose a different font if you prefer
+font = globalFont  # You can choose a different font if you prefer
 
 def draw_score(score_text):
     # Get the surface from the control_bar screen when it's active
@@ -274,8 +277,8 @@ def draw_IncorrectButton():
 
 # dropdown 
 MENU_WIDTH, MENU_HEIGHT = 400, 30  # Adjust menu width
-MENU_FONT_SIZE = 25
-SCROLL_SPEED = 25  # Adjust this value for faster or slower scrolling
+MENU_FONT_SIZE = 20
+SCROLL_SPEED = 20  # Adjust this value for faster or slower scrolling
 
 # Calculate the center position for the scrollable list
 MENU_X = (SCREEN_WIDTH - MENU_WIDTH) // 2
@@ -293,7 +296,7 @@ option = "Select a quiz"
 list_len = len(menu_items)
 max_visible = 4
 invisible_items = [0,max_visible]
-
+dropDownFont = py.font.SysFont("calibri", MENU_FONT_SIZE)
 def draw_drop(option):
 	if menuScreen.checkUpdate(background_color):
 		screen = menuScreen.screen
@@ -301,14 +304,14 @@ def draw_drop(option):
 		if is_dropdown_open:
 			for i, item in enumerate(menu_items):
 				if i >= invisible_items[0] and i <= invisible_items[1]:
-					text = font.render(item, True, WHITE)
+					text = dropDownFont.render(item, True, WHITE)
 					text_rect = text.get_rect()
 					text_rect.topleft = (MENU_X + 10, MENU_Y + MENU_HEIGHT + i * MENU_FONT_SIZE - scroll_offset)
 					screen.blit(text, text_rect)
 
 		# Draw the dropdown box with text
 		py.draw.rect(screen, YELLOW, (MENU_X, MENU_Y, MENU_WIDTH, MENU_HEIGHT))
-		text = font.render(option, True, WHITE)  # Text inside the rectangle
+		text = dropDownFont.render(option, True, WHITE)  # Text inside the rectangle
 		text_rect = text.get_rect()
 		text_rect.center = (MENU_X + MENU_WIDTH // 2, MENU_Y + MENU_HEIGHT // 2)  # Center the text
 		screen.blit(text, text_rect)
