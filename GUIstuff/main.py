@@ -462,15 +462,24 @@ while running:
 
 	if keys[K_c]:
     	# Perform the action associated with the 'n' key
-		buttoncorrect_clicked = True
+		current_time = py.time.get_ticks()
+		if current_time - last_flip_click_time > 500:  # Adjust the debounce time (500 milliseconds)
+				last_flip_click_time = current_time
+				buttoncorrect_clicked = True
 
 	if keys[K_i]:
     	# Perform the action associated with the 'n' key
-		buttonincorrect_clicked = True
+		current_time = py.time.get_ticks()
+		if current_time - last_flip_click_time > 500:  # Adjust the debounce time (500 milliseconds)
+				last_flip_click_time = current_time
+				buttonincorrect_clicked = True
 
 	if keys[K_SPACE]:
     	# Perform the action associated with the 'n' key
-		buttonflip_clicked = True
+		current_time = py.time.get_ticks()
+		if current_time - last_flip_click_time > 500:  # Adjust the debounce time (500 milliseconds)
+				last_flip_click_time = current_time
+				buttonflip_clicked = True
 	
 	if keys[K_q]:
 		running = False
