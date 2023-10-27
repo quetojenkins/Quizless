@@ -140,3 +140,56 @@ Any amount to test anything.
 How would you implement a 4-bit counter?~When the reset line is high the count walue is set to 0~If enable is high and there is a positive clock edge, increment the count~The count output value gives the count value
 !FileHandeling Section/pictures/Screenshot 2023-10-27 at 13.16.12.png
 #
+What does the following simulator (or replication) command do?: Timescale
+It specifies the timescale to use in the simulation
+#
+What does the following simulator (or replication) command do?: (hash)n    [the hash is a hashtag sympol i just cant pput it ther currently]
+it delays the simulation for n timescale periods. The delay is in the unit of timeUnitHere. The hash operator indicates a delay.||Put it to the left of the statement to delay before statement executes.|Or put it to the right of the statement to delay after statement is performed
+#
+What does the following simulator (or replication) command do?: iniitial
+used to specify a block of code that is executed only once at the beginning of a simulation. It is often used to set up initial conditions, perform initialization tasks, or define the initial state of variables and signals.| It may be used to initialise register values.|Think of it like a constructor for a verilog module simulation.
+#
+What does the following simulator (or replication) command do?: $display
+it works like printf
+#
+What does the following simulator (or replication) command do?: $monitor
+command for monitoring changes to lines and displaying pin values whenever they change. It is very helpful in debugging.
+#
+What does the following simulator (or replication) command do?: for
+it is used to indicate the begining of a for loop.
+#
+What does the following simulator (or replication) command do?: repeat
+It indicates that a certain block will be repeated. It is synthesisable
+#
+What does the following simulator (or replication) command do?: $finish
+will exit the simulation
+#
+What is the correct way to use and initialise the timescale simulator command?
+timescale timeUnitHere/timePrescisionUnitHere| so it could be:|   timescale 1ns / 1ps
+#
+What happens if the timescale is smaller?
+The simulation is slower but has more accurate precision
+#
+How do you specify a bus that that has 21 bits with the LSB at 0? (Meaning the bus is Little Endian)
+reg [20:0] busA
+#
+How do you specify a bus that that has 21 bits with the MSB at 0? (Meaning the bus is Big Endian)
+reg [0:20] busB
+#
+How could you select bit 3 in a 10 bit bus if the bus is called bussy?
+bussy[2]
+#
+How could you select a sequence of bits, from bit 3 for 3 bits, in a bus called bussy? 
+bussy[2:4]; |This would select bussy[2], bussy[3] and bussy[4]
+#
+How would i concatenate some bits in verilog?
+Concatenaation is done using the curly braces.
+#
+How many bits are in the following object res1?:| assign res1 = {{a[15]},{a[15:0]}}
+17 bits. Why?| {a[15]} means take the 16th bit of a and make a new signal from it.| {a[15:0]} means take all the bits from the 16th bit to the first bit and concatenate them together to make a new symbol.| The outside {} mean that you concatenate the afroementioned things togetehr.
+#
+!FileHandeling Section/pictures/IMG_0488.jpg
+!FileHandeling Section/pictures/IMG_0489.jpg
+#
+
+
