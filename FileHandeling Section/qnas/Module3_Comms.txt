@@ -96,7 +96,7 @@ Draw a table to compare and contrast SPI and I2C:
 QUETO GET BACK TO THIS!!!! WARNING WARNING beep beep beep
 #
 Draw a diagramm of the SPI Interface Lines and Label them.
-!FileHandeling Section/pictures/Screenshot 2023-10-26 at 11.00.06.png
+!FileHandeling Section/pictures/SPI_InterfaceLinesLabeled.png
 #
 What does SPI look like when it is in its IDLE state?
 SCLK is not switching. Whether it is HIGH or LOW is decided by the CPOL. The !SS is high.
@@ -135,7 +135,7 @@ What does UART stand for?
 Universal Asynchronous Receiver Transmitter
 #
 Draw a simple diagram of UART to illustrate its connections.
-!FileHandeling Section/pictures/Screenshot 2023-10-26 at 11.22.40.png
+!FileHandeling Section/pictures/UART_Diagram.png
 #
 What is RS-232?
 It is an asynchronous serial communication SIGNALING STANDARD.

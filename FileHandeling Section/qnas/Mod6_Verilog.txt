@@ -138,7 +138,7 @@ How many testbenches can you have?
 Any amount to test anything.
 #
 How would you implement a 4-bit counter?~When the reset line is high the count walue is set to 0~If enable is high and there is a positive clock edge, increment the count~The count output value gives the count value
-!FileHandeling Section/pictures/Screenshot 2023-10-27 at 13.16.12.png
+!FileHandeling Section/pictures/implement4BitCounter.png
 #
 What does the following simulator (or replication) command do?: Timescale
 It specifies the timescale to use in the simulation
