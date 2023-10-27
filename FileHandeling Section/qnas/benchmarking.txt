@@ -1,0 +1,25 @@
+#
+What is a benchmark in the cpmputing world.
+program that quantitatively evaluates performance, cost, and computing resources (among other things) of a  computing solution
+#
+What is a benchmarking suite?
+set of benchmarks designed to give a comprehensive view of the performance of a computer system
+#
+Why does the selection of sofware and hardware impact final profit?
+~cause no money is wasted on unused features of already bought hardware / software~development cheaper and faster with good tools~final product reliable and maintainable (less money spent maintaining)
+#
+What is the golden measure (in general and in computing)?
+general = not perfect test, but the best available one that has a standard with known results||computing = a solution that may run slowly, isn’t optimized, but you know it gives (numerically speaking excellent results
+#
+How do you use wall clock time to benchmark a program?
+start timer at start of execution and end timer at the end of execution
+#
+Name the standad C library used to measure wall clock time.
+gettimeofday
+#
+Why does wall clock time suck (sometimes) ?
+doesn’t give a full impression of how the system performed||Things it doesnt consider:~accuracy~development effort vs speed improvement~resource costs to get to new speed~power usage~maintainability~environmental impact
+#
+What should we even test when benchmarking?
+~compiler = converts high level to low -> need to benchmark its efficiency~processor = code in hand-crafted assembly so all comparisons are fair~OS = interrupt latencies / overhead / device limits / kernel size / availability of service~platform = saleability of memory / peripheral limits / interfaces supported / power~application#
+#
