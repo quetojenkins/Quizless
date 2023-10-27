@@ -3,7 +3,6 @@ from pygame.locals import *
 import qna
 import time
 import pygame_widgets
-from pygame_widgets.dropdown import Dropdown
 
 # INITIALIZATION OF THE PYGAME
 py.init()
@@ -178,7 +177,7 @@ card_color = text_color
 writing = (0,0,0)
 text_color = (255, 255, 255)  # RGB color for the text on the button
 cardFont = py.font.SysFont("calibri", 29)  # You can choose a different font if you prefer
-card_text = "What is the capital of italy"
+card_text = ""
 
 def draw_card():
     # Get the surface from the control_bar screen when it's active
@@ -350,19 +349,6 @@ buttoncorrect_clicked = False
 buttonincorrect_clicked = False
 
 keys = py.key.get_pressed()
-
-# if keys[K_c]:
-#     # Perform the action associated with the 'n' key
-# 	buttoncorrect_clicked = True
-
-# if keys[K_i]:
-#     # Perform the action associated with the 'n' key
-# 	buttonincorrect_clicked = True
-
-# if keys[K_SPACE]:
-#     # Perform the action associated with the 'n' key
-# 	buttonflip_clicked = True
-
 
 side = True #when the side of the flashcard is true, then it is a question side, if false it is an answer side
 running = True
