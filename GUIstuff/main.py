@@ -448,14 +448,14 @@ while running:
 	if flashCards.checkUpdate(background_color):
 		draw_score(update_score(d))
 
-	if keys[K_c]:
+	if keys[K_c] or keys[K_RIGHT]:
     	# Perform the action associated with the 'n' key
 		current_time = py.time.get_ticks()
 		if current_time - last_flip_click_time > 500:  # Adjust the debounce time (500 milliseconds)
 				last_flip_click_time = current_time
 				buttoncorrect_clicked = True
 
-	if keys[K_i]:
+	if keys[K_i] or keys[K_LEFT]:
     	# Perform the action associated with the 'n' key
 		current_time = py.time.get_ticks()
 		if current_time - last_flip_click_time > 500:  # Adjust the debounce time (500 milliseconds)
@@ -510,8 +510,12 @@ while running:
 	
 	if buttonflip_clicked and not side:
 		#it is currently on the answer and you now want to make the card_text writing the question
-		image_display = False
-		card_text = ques
+		if qna.check_image(ans):
+			image_display = True
+			image_path = ques[1:]
+			card_text = ""
+		else:
+			card_text = ques
 		side = True # now the side is an question
 		buttonflip_clicked = False # allow it to be clicked again
 		time.sleep(0.1)

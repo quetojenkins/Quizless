@@ -60,7 +60,7 @@ What are standards?
 Very specific criteria to meet~Set by an international committe
 #
 Tabulate the differences between Standards and Guidelines.
-!FileHandeling Section/pictures/Screenshot 2023-10-26 at 12.43.27.png
+!FileHandeling Section/pictures/standards_guidlines.png
 #
 What are affordances?
 Affordances are the potential actions and interactions that the environment offers

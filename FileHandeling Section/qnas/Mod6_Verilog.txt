@@ -15,7 +15,7 @@ What is a Programmable Logic Block (PLB)?
 It contains manny programabble Logic Elements (PLE's).
 #
 Draw a diagram to represent the Internal Structure of an FPGA.
-!FileHandeling Section/pictures/Screenshot 2023-10-26 at 13.07.43.png
+!FileHandeling Section/pictures/PLE.png
 #
 What is the PLD/FPGA Development Flow? 
 !FileHandeling Section/pictures/IMG_0484.jpg
@@ -96,7 +96,7 @@ What are the non-synthesisable data types? What are they and how can they be def
 Integer which is a 32 bit value, It can be defined as follows:~ integer i;| Real is a 32 bit floating point value. It can be described as follows:~ real r;| Time represents a 64-bit value used in simulation of delays. It can be defined as follows:~ time t;
 #
 Given the following code, draw the CLB block and its interface: module AND2(A, B, C);|    input A, B;|   output C;|   assign C = and(A,B);|endmodule
-!FileHandeling Section/pictures/Screenshot 2023-10-27 at 12.24.44.png
+!FileHandeling Section/pictures/cbl.png
 #
 What extension do Verilog files have?
 .v
@@ -244,3 +244,4 @@ What are the key things needed to implement an FSM with Verilog?
 #
 How would you create a state register in Verilog?
 states could be numbered in sequence.
+#
