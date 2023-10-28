@@ -195,5 +195,52 @@ What are blocking and non-blocking statements?
 Used to describe how assignments and updates to signals are made in a hardware description. The key difference between the is that:||non-blocking assignments happen in parallel and|blocking assignments happen sequentially as they appear in the code
 #
 What are the key points about blocking statements?
-~Sequential Execution: 
+~Sequential Execution: assignments executed sequentially, as they appear in the code. They are always done within an alwyas block.~Immediate Update: The target is updated immediatly within the same step. The last assignment in a block of blocing assignments takes precedence.
 #
+WHat are the key points about non-blocking assignments?
+~Parallel Execution: all the assignments in the nonblocking part are executed in parallel. They do not depend on one another. Typically used to model sequential logic circuit elements like flip flops.
+#
+What is the inline IF ":"?
+Use the colon for implememting an if statement
+#
+Can you rewrite the following using the in line IF ":"?|   input sela, a, b;|   output out;|   always@(*)|   begin|   if (sela)|      assign out = a;|      else|      assign out = b;| . . .
+   input sela, a, b;|   output out;|   assign out = sela? a:b;
+#
+What are functions in Verilog and how can they be used?
+Functions can be used as macros within a module. Functions~allow you to encapsulate a block of code that can be reused ~ save typing~are defined within a module~ can only have input parameters
+#
+!FileHandeling Section/pictures/IMG_0490 2.jpg
+!FileHandeling Section/pictures/IMG_0491 2.jpg
+#
+How do you decalre a bus?
+wire [N:0] bus;
+#
+Do busses store data?
+No, ther are just wires cabale of holding an N bit signal. Use a register to store the data rather.
+#
+What is BRAM (Block Random Access Memory) memory?
+BRAM (Block RAM) is a high-speed, dedicated memory found in FPGAs and some ASICs. |It offers configurable sizes, dual ports for simultaneous read and write access, and low latency, making it ideal for ~data caching, ~registers, ~lookup tables, and ~other small arrays.
+#
+How big is BRAM?
+Typically very small with only a few Kb
+#
+What type of memory does an FPGA have?
+Very commonaly it has BRAM becuase of its versatility but nowdays may have SRAM (on the chip) and DRAM (off the chip)
+#
+What is the MCU?
+The memory control unit is a module to integrate external memory with other modules. It is typically implemented as a state machine.
+#
+Design a memory module pg 19 in verilog 2
+design here 
+#
+What is a State Machine?
+It has~input events~output events~set of states~a function that maps (state,input)->(state,output)~indication of an initial state
+#
+What is different between a FSM and a normal State Machine?
+An FSM has a limitied number of states
+#
+What are the key things needed to implement an FSM with Verilog?
+~the FSM needs a resigister to store its state~it is sensitive to zero or more inputs which can change state or produce an output
+#
+How would you create a state register in Verilog?
+states could be numbered in sequence.
