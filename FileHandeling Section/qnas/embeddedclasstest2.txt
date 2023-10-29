@@ -32,3 +32,27 @@ Suppose that we are working with a successive approximation-based 4-bit ADC. The
 Is a pipeline Flash ADC likely to be quicker than an SA-ADC? Explain your answer (4)
 !FileHandeling Section/pictures/Embedded class Test Two/3bAns.png
 #
+With the aid of appropriate figures, depict the following ADC metrics: Gain metrics
+FileHandeling Section/pictures/Embedded class Test Two/gain metric.png
+#
+With the aid of appropriate figures, depict the following ADC metrics: Differential Non-Linearity (DNL)
+FileHandeling Section/pictures/Embedded class Test Two/dnl.png
+#
+As part of embedded system design, engineers often use computational models to map out and visualise the syntax and rules of a system before the embedded code is written. List any 5 embedded models commonly used in embedded systems design. (5)
+1. Data Flow Graph (DFG) model ||2. State Machine model ||3. Concurrent Process model ||4. Sequential Program model ||5. Object Oriented model
+#
+Consider an embedded system for a driver/passenger seat-belt warning system in an automotive. Given that the system requirements are captured as: ||1. When the vehicle ignition is turned on and the seat belt is not fastened within 10 seconds of ignition ON, the system generates an alarm signal for 5 seconds. |2. The alarm is turned off when the alarm time (5 seconds) expires, or when the driver/passenger fastens the belt or if the ignition is turned off – whichever happens first.||(i) What are the states and events of the FSM? (4)
+States: Alarm off, waiting, alarm on|| Events: Ignition key on, ignition key off, timer expire, alarm time expire and seat belt
+on.
+#
+Consider an embedded system for a driver/passenger seat-belt warning system in an automotive. Given that the system requirements are captured as: ||1. When the vehicle ignition is turned on and the seat belt is not fastened within 10 seconds of ignition ON, the system generates an alarm signal for 5 seconds. |2. The alarm is turned off when the alarm time (5 seconds) expires, or when the driver/passenger fastens the belt or if the ignition is turned off – whichever happens first.|| Draw the full FSM design diagram (6)
+!FileHandeling Section/pictures/Embedded class Test Two/fsm.png
+#
+List the 7 modes of operation for an ARM processor
+1. User Mode: applications run in this mode|2. Interrupt ReQuest (IRQ): mode switched to when low priority interrupt is signalled|3. Fast Interrupt reQuest (FIQ): used when a high priority interrupt is signalled|4. Supervisor: on software interrupt/reset|5. Abort: memory exceptions|6. Undef: handles undefined instructions|7. System Mode: privileged mode (for OS); similar to user mode with fewer restrictions
+#
+Interrupts are usually set up at system start-up. List and describe the four operations for setting up an Interrupt Service Routine (ISR) on an ARM processor.
+!FileHandeling Section/pictures/Embedded class Test Two/setUpInterrupt.png
+#
+Why is the use of the Advanced Interrupt Controller (AIC) more advantageous than relying on the built-in ARM interrupt lines when developing complex embedded systems? Provide four reasons.
+• Allows for 8-level priority control (individually maskable and vectored) |• Up to 32 interrupt sources |• Set status flags as needed |• Reduces software and real-time overhead in handling internal and external interrupts
