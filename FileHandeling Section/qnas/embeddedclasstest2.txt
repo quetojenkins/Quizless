@@ -1,0 +1,34 @@
+#
+!FileHandeling Section/pictures/Embedded class Test Two/1a.png
+B
+#
+!FileHandeling Section/pictures/Embedded class Test Two/1b.png
+B
+#
+!FileHandeling Section/pictures/Embedded class Test Two/1c.png
+D
+#
+!FileHandeling Section/pictures/Embedded class Test Two/1d.png
+A
+#
+!FileHandeling Section/pictures/Embedded class Test Two/1e.png
+C
+#
+!FileHandeling Section/pictures/Embedded class Test Two/2a.png
+!FileHandeling Section/pictures/Embedded class Test Two/2aAns.png
+#
+!FileHandeling Section/pictures/Embedded class Test Two/2b.png
+!FileHandeling Section/pictures/Embedded class Test Two/2bAns.png
+#
+Write an appropriate function body for the C function in ARM Assembly; as this is a very simple program, you do not need to perform any load/store operations with the stack. (7)
+!FileHandeling Section/pictures/Embedded class Test Two/2cAns.png
+#
+Write an appropriate function epilogue for the C function in ARM Assembly (2)
+since r0 already has the return value – either r2 or the value 1 (if the Greater branch was taken) – the epilogue only needs to do the "return" to the calling function: ||ldmea fp, {fp, sp, pc}
+#
+Suppose that we are working with a successive approximation-based 4-bit ADC. The input voltage range extends from Vmin = 1 V (="0000") to Vmax = 5 V (="1111"). Which two steps are used to convert the input voltage to a corresponding digital output signal? You may use pseudocode to explain your answer. (4)
+!FileHandeling Section/pictures/Embedded class Test Two/3aAns.png
+#
+Is a pipeline Flash ADC likely to be quicker than an SA-ADC? Explain your answer (4)
+!FileHandeling Section/pictures/Embedded class Test Two/3bAns.png
+#

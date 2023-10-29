@@ -90,7 +90,7 @@ How would you define an 8-bit bus wire?
 wire [7:0] thisIsMyBusWithEightBits;
 #
 What are non-synthesisable data types?
-The data types cant be translated into hardware during the synthesis process. They are used for simulation and modeling and are not intended for hardware implementation. These data types would typically be used to do high level things like checing loops or in calculations.
+The data types cant be translated into hardware during the synthesis process. They are used for simulation and modeling and are not intended for hardware implementation. These data types would typically be used to do high level things like check1ing loops or in calculations.
 #
 What are the non-synthesisable data types? What are they and how can they be defined.
 Integer which is a 32 bit value, It can be defined as follows:~ integer i;| Real is a 32 bit floating point value. It can be described as follows:~ real r;| Time represents a 64-bit value used in simulation of delays. It can be defined as follows:~ time t;
@@ -140,32 +140,32 @@ Any amount to test anything.
 How would you implement a 4-bit counter?~When the reset line is high the count walue is set to 0~If enable is high and there is a positive clock edge, increment the count~The count output value gives the count value
 !FileHandeling Section/pictures/implement4BitCounter.png
 #
-What does the following simulator (or replication) command do?: Timescale
+What does the following simulator (or replication) command do: Timescale
 It specifies the timescale to use in the simulation
 #
-What does the following simulator (or replication) command do?: (hash)n    [the hash is a hashtag sympol i just cant pput it ther currently]
+What does the following simulator (or replication) command do: (hash)n    [the hash is a hashtag sympol i just cant pput it ther currently]
 it delays the simulation for n timescale periods. The delay is in the unit of timeUnitHere. The hash operator indicates a delay.||Put it to the left of the statement to delay before statement executes.|Or put it to the right of the statement to delay after statement is performed
 #
-What does the following simulator (or replication) command do?: iniitial
-used to specify a block of code that is executed only once at the beginning of a simulation. It is often used to set up initial conditions, perform initialization tasks, or define the initial state of variables and signals.| It may be used to initialise register values.|Think of it like a constructor for a verilog module simulation.
+What does the following simulator (or replication) command do: iniitial
+used to specify a block of code that is executed only once at the beginning of a simulation. |It is often used to set up initial conditions, perform initialization tasks, or define the initial state of variables and signals.| It may be used to initialise register values.||Think of it like a constructor for a verilog module simulation.
 #
-What does the following simulator (or replication) command do?: $display
+What does the following simulator (or replication) command do: $display
 it works like printf
 #
-What does the following simulator (or replication) command do?: $monitor
+What does the following simulator (or replication) command do: $monitor
 command for monitoring changes to lines and displaying pin values whenever they change. It is very helpful in debugging.
 #
-What does the following simulator (or replication) command do?: for
+What does the following simulator (or replication) command do: for
 it is used to indicate the begining of a for loop.
 #
-What does the following simulator (or replication) command do?: repeat
+What does the following simulator (or replication) command do: repeat
 It indicates that a certain block will be repeated. It is synthesisable
 #
-What does the following simulator (or replication) command do?: $finish
+What does the following simulator (or replication) command do: $finish
 will exit the simulation
 #
 What is the correct way to use and initialise the timescale simulator command?
-timescale timeUnitHere/timePrescisionUnitHere| so it could be:|   timescale 1ns / 1ps
+timescale timeUnitHere/timePrescisionUnitHere| so it could be:||   timescale 1ns / 1ps
 #
 What happens if the timescale is smaller?
 The simulation is slower but has more accurate precision
@@ -219,7 +219,7 @@ Do busses store data?
 No, ther are just wires cabale of holding an N bit signal. Use a register to store the data rather.
 #
 What is BRAM (Block Random Access Memory) memory?
-BRAM (Block RAM) is a high-speed, dedicated memory found in FPGAs and some ASICs. |It offers configurable sizes, dual ports for simultaneous read and write access, and low latency, making it ideal for ~data caching, ~registers, ~lookup tables, and ~other small arrays.
+BRAM (Block RAM) is a high-speed, dedicated memory found in FPGAs. |It offers different sizes, dual ports for simultaneous read and write access, and low latency, making it ideal for ~data caching, ~registers, ~lookup tables, and ~other small arrays.
 #
 How big is BRAM?
 Typically very small with only a few Kb
@@ -244,4 +244,7 @@ What are the key things needed to implement an FSM with Verilog?
 #
 How would you create a state register in Verilog?
 states could be numbered in sequence.
+#
+What would a reset state register do?
+It would force the initial state at start up. Typically a reset handler does this.
 #
