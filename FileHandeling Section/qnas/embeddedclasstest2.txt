@@ -56,3 +56,4 @@ Interrupts are usually set up at system start-up. List and describe the four ope
 #
 Why is the use of the Advanced Interrupt Controller (AIC) more advantageous than relying on the built-in ARM interrupt lines when developing complex embedded systems? Provide four reasons.
 • Allows for 8-level priority control (individually maskable and vectored) |• Up to 32 interrupt sources |• Set status flags as needed |• Reduces software and real-time overhead in handling internal and external interrupts
+#
