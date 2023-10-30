@@ -42,8 +42,7 @@ As part of embedded system design, engineers often use computational models to m
 1. Data Flow Graph (DFG) model ||2. State Machine model ||3. Concurrent Process model ||4. Sequential Program model ||5. Object Oriented model
 #
 Consider an embedded system for a driver/passenger seat-belt warning system in an automotive. Given that the system requirements are captured as: ||1. When the vehicle ignition is turned on and the seat belt is not fastened within 10 seconds of ignition ON, the system generates an alarm signal for 5 seconds. |2. The alarm is turned off when the alarm time (5 seconds) expires, or when the driver/passenger fastens the belt or if the ignition is turned off – whichever happens first.||(i) What are the states and events of the FSM? (4)
-States: Alarm off, waiting, alarm on|| Events: Ignition key on, ignition key off, timer expire, alarm time expire and seat belt
-on.
+States: Alarm off, waiting, alarm on|| Events: Ignition key on, ignition key off, timer expire, alarm time expire and seat belt on.
 #
 Consider an embedded system for a driver/passenger seat-belt warning system in an automotive. Given that the system requirements are captured as: ||1. When the vehicle ignition is turned on and the seat belt is not fastened within 10 seconds of ignition ON, the system generates an alarm signal for 5 seconds. |2. The alarm is turned off when the alarm time (5 seconds) expires, or when the driver/passenger fastens the belt or if the ignition is turned off – whichever happens first.|| Draw the full FSM design diagram (6)
 !FileHandeling Section/pictures/Embedded class Test Two/fsm.png
