@@ -510,11 +510,12 @@ while running:
 	
 	if buttonflip_clicked and not side:
 		#it is currently on the answer and you now want to make the card_text writing the question
-		if qna.check_image(ans):
+		if qna.check_image(ques):
 			image_display = True
 			image_path = ques[1:]
 			card_text = ""
 		else:
+			image_display = False
 			card_text = ques
 		side = True # now the side is an question
 		buttonflip_clicked = False # allow it to be clicked again
