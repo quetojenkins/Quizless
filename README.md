@@ -20,10 +20,10 @@ Quizes are read from text files and the text files are located in the File Handl
 
 ## Quiz Format
 The standard format for all quizes are as follows:
-#
-<Question>
-<Answer>
-#
+\#
+\<Question\>
+\<Answer\>
+\#
 
 ## Special characters
 "|" - this will add a new line in teh flash card
