@@ -29,3 +29,87 @@ to have single control of something (1)
 This word contains a number. What is it? What is its definition: tetrad
 a group of four (4)
 #
+What is the number from this root? heno-
+one 
+#
+What is the number from this root? dy-
+two
+#
+What is the number from this root? tri-
+three
+#
+What is the number from this root? tetr
+four
+#
+What is the number from this root? pent-
+five 
+#
+What is the number from this root? hex-
+six
+#
+What is the number from this root? hept-/hebd-
+seven
+#
+What is the number from this root? oct-
+eight
+#
+What is the number from this root? ennea-
+nine
+#
+What is the number from this root? dec-
+ten
+#
+What is the number from this root? henodec-
+eleven
+#
+What is the number from this root? dodeko-
+twleve
+#
+What is the number from this root? hecto-
+hundred
+#
+What is the number from this root? kilo-
+thousand
+#
+What does this root mean? arithmet-
+number 
+#
+What does this root mean? dicho-
+in two
+#
+What does this root mean? di-
+twice
+#
+What does this root mean? gon-
+angle 
+#
+What does this root mean? hemi-
+half
+#
+What does this root mean? macr-
+very large
+#
+What does this root mean? metr-
+measure
+#
+What does this root mean? micr-
+small
+#
+What does this root mean? mono-
+one, single 
+#
+What does this root mean? nano-
+very small 
+#
+What does this root mean? pan-
+all 
+#
+What does this root mean? poly-
+many
+#
+What does this root mean? proto-
+first, original
+#
+How was the metric system standardised?
+Before the development of the metric system, every nation used measurement units that had grown from local customs. For example, in Britain, three dried barleycorns were used as the standard measurement of an inch. This allowed for too much variation, so, at the end of the 18th century, the National Assembly of France asked the French Academy of Sciences to create a standard system of weights and measures. The metric system was born. When it was first conceived, one of the goals was the definition of a single unit from which the essential system of measurements could be constructed. This unit was the metre, so-called from the Greek word metron, ‘measure’. Originally, the French Academy of Sciences recommended that the metre be defined as ‘equal to one ten millionth of the length of the arc from the equator to the North Pole’ but now the standard length of the metre is defined in terms of the speed of light.
+#

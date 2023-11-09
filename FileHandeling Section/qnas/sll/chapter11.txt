@@ -149,4 +149,63 @@ ps
 Give the transliteratio of: ω omega
 long o
 #
-
+What does the following Prefix Mean? a-
+not/without
+#
+What does the following Prefix Mean? amphi-
+both/around
+#
+What does the following Prefix Mean? ana-
+back/up
+#
+What does the following Prefix Mean? anit-
+against/opposite
+#
+What does the following Prefix Mean? apo-
+from/ away from
+#
+What does the following Prefix Mean? cata-
+down/against completly
+#
+What does the following Prefix Mean? dia-
+through/across
+#
+What does the following Prefix Mean? dys-
+difficult/bad
+#
+What does the following Prefix Mean? ec- (ex-)
+out/from
+#
+What does the following Prefix Mean? en-(em-)
+in/on
+#
+What does the following Prefix Mean? endo-
+within
+#
+What does the following Prefix Mean? epi-
+on
+#
+What does the following Prefix Mean? eu-
+good
+#
+What does the following Prefix Mean? exo-
+outside
+#
+What does the following Prefix Mean? hyper-
+excessive/over
+#
+What does the following Prefix Mean? hypo-
+under/below
+#
+What does the following Prefix Mean? meta
+after
+#
+What does the following Prefix Mean? para-
+beside/contrary to
+#
+What does the following Prefix Mean? pro-
+before
+#
+What does the following Prefix Mean? syn- (sym-, syl)
+with/together
+#
