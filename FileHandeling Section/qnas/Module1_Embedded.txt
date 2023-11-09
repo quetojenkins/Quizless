@@ -111,7 +111,5 @@ Draw a diagram of the ELF File Structure.
 !FileHandeling Section/pictures/ELF_file_structure.png
 #
 What does portable mean?
-It is extremely close to the hardware and thus direct memory manipulation is much easier.
+It can be used on different computer systems and platforms without significant modifications. Allows developers to write code that can run on various hardware and software environments
 #
-
-
