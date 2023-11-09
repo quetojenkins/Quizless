@@ -10,12 +10,12 @@ Flashcards made easy
 2. Select a quiz by clicking on it.
 
 # Quizing
-A random card will be selected from the quiz. Flip between the question and answer isng space/f or by clicking teh flip button. Click correct or press c/> if you got the question right, your score will increase by one and that question will not come up again. Click incorrect or press i/< if you got it wrong and the question will come up again later for you to try again. You will return to the hom epage when you get all questions correct. You can leave early by pressing done.
+Once a quiz is selected, you will enter the quiz screen. A random card will be selected from the quiz. Flip between the question and answer using space/f or by clicking the flip button. Click correct or press c/> if you got the question right, your score will increase by one and that question will not come up again. Click incorrect or press i/< if you got it wrong and the question will come up again later for you to try again. You will return to the home page when you get all questions correct. You can leave early by pressing done.
 
 Press "q" to quit quizless.
 
 # Creating a quiz
-**Currently the quiz folders are a bit funky. This will be resolved soon with a planned nested flder selection in the dropdown. The quizes are taken from the "sll" folder so just add your quiz there and it will come up in the dropdown**
+**Currently the quiz folders are a bit funky. This will be resolved soon with a planned nested folder selection in the dropdown. The quizes are taken from the "sll" folder so just add your quiz there and it will come up in the dropdown**
 Quizes are read from text files and the text files are located in the File Handling folder. 
 
 ## Quiz Format
