@@ -28,38 +28,66 @@
 # question = ["Dogmatic and canine are etymologically related.","A dekalitre is one tenth of a litre.","Petrified indicates that one has been turned into rock/stone out of fear.","A necrophiliac would love to work in a mortuary.","Demotic writing refers to the symbols of black magic.","The metre as a unit of length is defined in terms of the speed of light.","A photosensitive person is camera-shy.","The Oxford dictionary is a famous lexicon.","A man who suffers from gynaephobia is likely to be a philanderer.","A polymath is knowledgeable in many disciplines.","Xenogamy refers to cross-fertilization.","Cosmonaut and astronaut are synonyms.","Pantheism refers to the study of panthers and their habits.","Hieroglyphics is an archaic form of writing.","Encrypted writing is easily understood."]
 # answer = ["F","F","T","T","F","T","T","T","F","T","T","T","F","T","F"]
 
-question = [
-    "The anomalous test results mean that the rocket is ready to launch.",
-    "It may sound odd, but I actually enjoy the cacophonous sound of an orchestra tuning up.",
-    "Cartography has helped scientists gain a good understanding of the fundamental workings of the human brain.",
-    "Catalysts for change on the school board blocked attempts to implement reforms.",
-    "Demographic trends in Japan show that the proportion of old people to young people is increasing.",
-    "In many traditional societies women wear diaphanous clothing to hide their bodies.",
-    "Knowing the entomology of a difficult word can help you remember it.",
-    "It is advisable to see a doctor before traveling to countries in which malaria or other infectious diseases are endemic.",
-    "The patient was given euthanasia before undergoing major surgery.",
-    "The euphoria in the stadium rose to a fever pitch as the seconds ticked down to the Stormers’ rugby team’s victory in the final.",
-    "The ethnocentric villagers have no interest in anything outside their own little world.",
-    "The eulogy talked only about the many flaws in the dead man’s character.",
-    "The poem harks back to an imagined halcyon Golden Age.",
-    "Religious leaders are arguing that the only way to save the country is to establish a theocracy.",
-    "Since he regularly questioned conventional wisdom, the philosopher Socrates can be described as an iconoclast.",
-    "The heterodox pastor teaches only doctrines approved by his church.",
-    "“Not only do I not like human beings in the abstract, I don’t like even one individual member of the human race!” the misanthrope declared.",
-    "Mnemonic devices currently supply nearly 20% of the country’s electric power.",
-    "The speaker’s misogynistic comments drew the anger of several women’s rights groups.",
-    "The emergency room doctor trained herself to be phlegmatic despite the great suffering she witnessed every day."
-]
+# question = [
+#     "The anomalous test results mean that the rocket is ready to launch.",
+#     "It may sound odd, but I actually enjoy the cacophonous sound of an orchestra tuning up.",
+#     "Cartography has helped scientists gain a good understanding of the fundamental workings of the human brain.",
+#     "Catalysts for change on the school board blocked attempts to implement reforms.",
+#     "Demographic trends in Japan show that the proportion of old people to young people is increasing.",
+#     "In many traditional societies women wear diaphanous clothing to hide their bodies.",
+#     "Knowing the entomology of a difficult word can help you remember it.",
+#     "It is advisable to see a doctor before traveling to countries in which malaria or other infectious diseases are endemic.",
+#     "The patient was given euthanasia before undergoing major surgery.",
+#     "The euphoria in the stadium rose to a fever pitch as the seconds ticked down to the Stormers’ rugby team’s victory in the final.",
+#     "The ethnocentric villagers have no interest in anything outside their own little world.",
+#     "The eulogy talked only about the many flaws in the dead man’s character.",
+#     "The poem harks back to an imagined halcyon Golden Age.",
+#     "Religious leaders are arguing that the only way to save the country is to establish a theocracy.",
+#     "Since he regularly questioned conventional wisdom, the philosopher Socrates can be described as an iconoclast.",
+#     "The heterodox pastor teaches only doctrines approved by his church.",
+#     "“Not only do I not like human beings in the abstract, I don’t like even one individual member of the human race!” the misanthrope declared.",
+#     "Mnemonic devices currently supply nearly 20% of the country’s electric power.",
+#     "The speaker’s misogynistic comments drew the anger of several women’s rights groups.",
+#     "The emergency room doctor trained herself to be phlegmatic despite the great suffering she witnessed every day."
+# ]
 
-answer = ["NS","S","NS","NS","S","NS","NS","S","NS","S","S","NS","S","S","S","NS","S","NS","S","S",]
+# answer = ["NS","S","NS","NS","S","NS","NS","S","NS","S","S","NS","S","S","S","NS","S","NS","S","S",]
 
 # question = string.split()
+
+def generate(file):
+    with open(file, 'r') as file:
+        question = []
+        answer = []
+        i = 0
+        # Read and print each line
+        for line in file:
+            index1 = line.find("–")
+            index2 = line.find("-")
+            if index1 >= 0:
+                index = index1
+            elif index1<0 and index2>=0 and (line[index2-1]==" " or line[index2+1]==" "):
+                index = index2
+            else:
+                index = -1
+            if index >= 0:
+                question.append(line[:index-1])
+                answer.append(line[index+2:].replace("\n",""))
+                i = i + 1
+            else:
+                answer[i-1] = answer[i-1] + line.replace("\n","")
+    return question, answer
+
+question, answer = generate("FileHandeling Section/qnas/sll/vocab_16.txt")
+
 if len(answer) != len(question):
     print("not the same number of q and as")
     exit
 line = ""
 for qa in range(0,len(question)):
     line = line + "#\n"
-    line = line + "Sense or Nonsense: " + question[qa] + "\n"
+    line = line + "What is the meaning  of: " + question[qa] + "\n"
     line = line + answer[qa] + "\n"
-print(line)
+with open("FileHandeling Section/qnas/sll/out.txt", 'w') as file:
+    # Write the content to the file
+    file.write(line)
