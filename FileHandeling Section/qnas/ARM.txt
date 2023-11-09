@@ -129,7 +129,7 @@ Give the general structure of a branch instruction.
 B <address>
 #
 Give the general structure of a branch and link instruction
-BL <subroutine>
+BL <label>
 #
 Give the general strucure of a data processing instruction
 OP<suffix> <result>, <op1>, <op2>
@@ -144,5 +144,5 @@ Give the structures of the two status register transfer instructions.
 MSR<suffix> <sr> <reg> # move to sr||MRS<suffix> <reg> <sr> # move from sr
 #
 Tune how to load and store.
-LDR <reg>, =<label / value / address>|STR <reg> [<reg>]||then you can also add ", #no" at the end to offset the storing / loading
+LDR Rd, [Rn] ; load 32-bit number at [Rn] to Rd |LDR Rd, [Rn,#off] ; load 32-bit number at [Rn+off] to Rd ||STR Rt, [Rn] ; store 32-bit Rt to [Rn] |STR Rt, [Rn,#off] ; store 32-bit Rt to [Rn+off] 
 #
