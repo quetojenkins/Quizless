@@ -285,7 +285,7 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 YELLOW = (255, 167, 16)
 
-menu_items = qna.get_quizes("FileHandeling Section/qnas")
+menu_items = qna.get_quizes("FileHandeling Section/qnas/sll")
 is_dropdown_open = False
 scroll_offset = 0
 option = "Select a quiz"
@@ -421,7 +421,7 @@ while running:
 			MENU_BUTTON.showButton(menuScreen.returnTitle())
 
 			if control_barbutton:
-				q,a,d = qna.initialise("FileHandeling Section/qnas/"+option)
+				q,a,d = qna.initialise("FileHandeling Section/qnas/sll/"+option)
 				ques,ans,num,found = qna.get_next(q,a,d)
 				card_text = ques
 				win = flashCards.makeCurrentScreen()
