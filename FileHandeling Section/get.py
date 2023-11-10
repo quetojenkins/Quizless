@@ -71,14 +71,18 @@ def generate(file):
             else:
                 index = -1
             if index >= 0:
-                question.append(line[:index-1])
-                answer.append(line[index+2:].replace("\n",""))
+                if line[index+1]==" ":  space_f = 1
+                else: space_f = 0
+                if line[index+1]==" ":  space_b = 1 
+                else: space_b = 0
+                question.append(line[:index-space_b])
+                answer.append(line[index+1+space_f:].replace("\n",""))
                 i = i + 1
             else:
                 answer[i-1] = answer[i-1] + line.replace("\n","")
     return question, answer
 
-question, answer = generate("FileHandeling Section/qnas/sll/vocab_16.txt")
+question, answer = generate("FileHandeling Section/qnas/sll/og_chapter6.txt")
 
 if len(answer) != len(question):
     print("not the same number of q and as")
@@ -86,8 +90,21 @@ if len(answer) != len(question):
 line = ""
 for qa in range(0,len(question)):
     line = line + "#\n"
-    line = line + "What is the meaning  of: " + question[qa] + "\n"
+    line = line + question[qa] + "\n"
     line = line + answer[qa] + "\n"
+line = line + "#"
 with open("FileHandeling Section/qnas/sll/out.txt", 'w') as file:
     # Write the content to the file
     file.write(line)
+
+# def remove_empty_lines(input_file, output_file):
+#     with open(input_file, 'r') as file:
+#         lines = file.readlines()
+
+#     # Remove empty lines
+#     lines = [line.strip() for line in lines if line.strip()]
+
+#     with open(output_file, 'w') as file:
+#         file.write('\n'.join(lines))
+
+# remove_empty_lines('FileHandeling Section/qnas/sll/og_chapter6.txt', 'FileHandeling Section/qnas/sll/og_chapter6.txt')

@@ -1,0 +1,67 @@
+#
+plural of focus
+foci
+#
+plural of formula
+formulae
+#
+plural of curriculum
+curricula
+#
+plural of appendix
+appendices
+#
+plural of codex
+codices
+#
+plural of series
+series
+#
+plural of syllabus
+syllabi
+#
+plural of index
+indices
+#
+plural of locus
+loci
+#
+plural of addendum 
+addenda
+#
+- us singular
+- i plural
+#
+-a singular
+-ae plural
+#
+-um singular 
+-a plural
+#
+-ix singular
+-ices plural
+#
+-ex singular
+-ices plural
+#
+-es singular
+-es plural
+#
+gerundives
+denote obligation that something must be done.||Latin endings: -andus, -a, -um, -endus||English endings: - um and plural -a
+#
+memorandum
+Gerundive: something must be remebered
+#
+corrigendum
+gerundive: some thing must be corrected
+#
+addendum
+gerundive: something must be added
+#
+agenda
+gerundive: something must be done (used as singular in english but is actually plural in latin)
+#
+propoganda
+gerundive: something must be spread about
+#

@@ -1,0 +1,373 @@
+#
+word
+smallest free standing form representing meaning, smallest unit of sentence composition
+#
+morpheme
+words are made up of morphemes. they carry meaning but cannot be usead alone.||root|suffix|prefix
+#
+grex gregis
+flock|root: greg|congregation|segregation|gregarious
+#
+prefixes
+when latin prefixes are used in english, two lingustic phenomena occur:||vowel weakening|assimilation
+#
+assimilatio
+when a prefix ends in a consonant (ad, com, in, ob, sub, per) and is attatched to a word begining with a consonant, the final consonant of the prefix is changed.
+#
+collaborate
+com+labour+ate (consonant doubled)
+#
+illegal
+in+leg+al (consonant doubled)
+#
+impediment
+in+ped+iment
+#
+com+duct
+conduct
+#
+ad+quire
+acquire
+#
+ab+tain
+abstain
+#
+ex+levate
+elevate
+#
+vowel weakingin
+first vowel of root weakened of changed when prefix attatched
+#
+vowel weaking rule 1: before single consonent in root a, e becomes
+i
+#
+re+capere = receptus
+recipient|vowel weakingin
+#
+per+tenere = pertentus
+pertinent|vowel weakingin
+#
+vowel weaking rule 2: before two consonatns in root, a becomes
+e
+#
+in+facere = infectus
+infection|vowel weaking 2
+#
+in+capere = inceptus
+inception|vowel weakingn
+#
+vowel weaking rule 3: ae and au become
+i and u respectivly
+#
+ab -, a- , abs-
+away, from
+#
+ad-
+to, toward
+#
+ambi-
+both, around
+#
+circum-
+around
+#
+com
+with, together, very
+#
+contra-
+against
+#
+de-
+down, down from
+#
+dis-
+apart, in different directions
+#
+ex-
+out of, from , thouroughly
+#
+extra-
+outside
+#
+in- (directional)
+in, into, on
+#
+in- (negative)
+not, without
+#
+infra-
+beneath
+#
+inter-
+between, among
+#
+intra-
+within, inside
+#
+intro-
+inward, into
+#
+ob-
+in the way of, toward, very
+#
+per-
+through, thoruoughly, badly
+#
+post-
+after
+#
+prae-/ pre-
+before, in front of
+#
+pro-
+foward, in front of
+#
+re-
+back, again
+#
+retro-
+backwards
+#
+se-
+apart, without
+#
+sine-
+without
+#
+sub-
+below, beneath, under
+#
+super-
+above, over
+#
+trans-, tra-
+across, through
+#
+form the atonym by changing the prefix: assent
+dissent
+#
+form the atonym by changing the prefix: depreciate
+apreciate
+#
+form the atonym by changing the prefix: associate
+dissociate
+#
+form the atonym by changing the prefix: postnatal
+pre-natal or ante-natal
+#
+form the atonym by changing the prefix: converge
+diverge
+#
+form the atonym by changing the prefix: persuade
+dissuade
+#
+form the atonym by changing the prefix: discord
+concord
+#
+form the atonym by changing the prefix: inflate
+deflate
+#
+form the atonym by changing the prefix: regress
+regress
+#
+form the atonym by changing the prefix: accelerate
+decelerate
+#
+form the atonym by changing the prefix: infec
+disinfect
+#
+form the atonym by changing the prefix: exhale
+inhale
+#
+form the atonym by changing the prefix: proceed
+recede
+#
+form the atonym by changing the prefix: explicit
+implicit
+#
+form the atonym by changing the prefix: complicate
+explicate
+#
+form the atonym by changing the prefix: immigrate
+emigrate
+#
+form the atonym by changing the prefix: congregate
+segregate
+#
+form the atonym by changing the prefix: subscript
+
+#
+form the atonym by changing the prefix: inject
+eject
+#
+form the atonym by changing the prefix: confident
+diffident
+#
+ante-
+before
+#
+a play before ---lude
+prelude
+#
+to come around ----vent
+circumvent
+#
+one who acts between others ----mediary
+intermediaeiary
+#
+call on --- voke
+invoke
+#
+to climb down ----scend
+descend
+#
+to send across ---mit
+transmit
+#
+to go foward ---- ceed
+proceed
+#
+to throw out ---ject
+reject
+#
+soemthing left behind ---lic
+relic
+#
+to turn away ---vert
+divert
+#
+to shut out ---clude
+exclude
+#
+to cut between ---sect
+intersect
+#
+to send in different direction ---mis
+dismiss
+#
+to bring forth --duce
+induce
+#
+inside molecules ---molecular
+intramolecular
+#
+a turning away from ---version
+diversion
+#
+withou end ---finite
+infinite
+#
+speak against ---dict
+contradict
+#
+see again ---view
+review
+#
+not able to burn ---flammable
+non-flammable
+#
+suffix
+added to the end of a word||types of suffixes|noun, adjectical, verbal
+#
+type of suffix: -ity, -ety, y
+noun
+#
+type of suffix: tude
+noun
+#
+type of suffix: -ance, -ancy, -ence
+noun
+#
+type of suffix: -ion, -ure
+noun
+#
+type of suffix: -ment
+noun
+#
+type of suffix: -or
+noun
+#
+type of suffix: -ician
+noun
+#
+type of suffix: -il, -ile
+adjectival
+#
+type of suffix: -al, -ar
+adjectival
+#
+type of suffix: -an, -ane
+adjectival
+#
+type of suffix: -ose, -ous
+adjectival
+#
+type of suffix: -ine
+adjectival
+#
+type of suffix: -ic
+adjectival
+#
+type of suffix: -ary
+adjectival
+#
+type of suffix: -al
+adjectival
+#
+type of suffix: -ate
+verbal
+#
+type of suffix: -ply (to fold)
+verbial
+#
+type of suffix: -fy (to make)
+verbial
+#
+type of suffix: -ise, -ize
+verbial
+#
+english adjective from latin roots: tempor- (time)
+temporary
+#
+english adjective from latin roots: femin - (woman)
+feminine
+#
+english adjective from latin roots: vir- (man)
+vigorous
+#
+english adjective from latin roots: reg- (king)
+regal, regent, regicide
+#
+english adjective from latin roots: judic- (judge)
+judicial
+#
+english adjective from latin roots: juven- (young man)
+juvenile
+#
+english adjective from latin roots: voc- (voice)
+vocal
+#
+english adjective from latin roots: nav- (ship)
+naval
+#
+english adjective from latin roots: naut- (sailor)
+nautical
+#
+english adjective from latin roots: sol- (sun)
+solar
+#
+english adjective from latin roots: avar- (greed)
+avaricious
+#
+english adjective from latin roots: man- (hand)
+manual, manner, mannerisms
+#
+english adjective from latin roots: sol- (alone)
+sole
+#
+english adjective from latin roots: soci- (companion)
+social
+#
+english adjective from latin roots: fili- (son/daughter)
+filial
+#

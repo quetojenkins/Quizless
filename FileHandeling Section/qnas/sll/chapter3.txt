@@ -1,0 +1,340 @@
+#
+neologism
+neos (new) + logos (word)
+#
+dog
+neologism
+#
+compound
+two words or phrases are joined together (no portion lost)
+#
+new-born
+compound
+#
+boyfriend
+compound
+#
+spreadsheet
+compound
+#
+upmarket
+compound
+#
+road-rage
+compound
+#
+think-tank
+compound
+#
+hard-drive
+compound
+#
+Facebook
+compound
+#
+blend aka portmanteue 
+combining two parts of two words but both lose a portion
+#
+motel
+blend: motor + hotel
+#
+brunch
+blend: breakfast+lunch
+#
+guestimate
+blend: guess+ estimate
+#
+love in tennis 
+blend: l'oeuf
+#
+Acronym
+acros (top)+ onyma (name)||word formed by taking the initial sound of a phrase
+#
+NATO
+Acronym: North Atlantic Treaty Organisation
+#
+AIDS
+Acronym: Acquired Immune Deficiency Syndrome
+#
+Soweto 
+Acronym: South Western Township
+#
+radar 
+Acronym: radio detecting and ranging
+#
+sonar 
+Acronym: sound navigation and ranging
+#
+Abbreviations
+Word made shorter.||2 Types: Clippings and Initialisms
+#
+Initialism
+contracted form of phrase using only initial letter to represent whole word. Modern tendency is not to punctuate
+#
+UCT
+initialism
+#
+Clipping
+words created by removing a syllable.
+#
+taxi
+clipping: taximeter cab
+#
+fan
+clipping: fanatic
+#
+bus
+clipping: omnibus
+#
+conversion
+new grammatical function
+#
+to e-mail
+conversion: e-mail verb
+#
+eponym
+word derived from names of people
+#
+toponym
+words derived from places
+#
+braille
+eponym
+#
+pasteurise
+eponym
+#
+sandwhich
+eponym
+#
+sadism
+eponym
+#
+chavunism
+eponym
+#
+boycott
+eponym
+#
+champagne
+toponym
+#
+jeans
+toponym (Genoa)
+#
+demin
+toponym (de Nimes)
+#
+bedlam
+toponym (hospital for insane)
+#
+marathon
+toponym
+#
+Affixiation
+using prefixes and suffixes to change grammatical function and meaning
+#
+Borrowing
+taking words from other languages
+#
+zero
+Borrowing: Arabic
+#
+alcohol
+borrowing: arabic
+#
+tea
+borrowing: chineese
+#
+ketchuip
+borrowing: chinese
+#
+tycoon
+borrowing: japenese
+#
+SABC
+initialism
+#
+homework
+compound
+#
+sitcom
+blend - situational comedy
+#
+to skype
+conversion
+#
+mob
+clipping
+#
+scuba
+acronym
+#
+USB
+initialism
+#
+obsess
+conversion
+#
+smog
+blend
+#
+babysitter
+compound
+#
+mainframe
+compound
+#
+app
+clipping
+#
+ID
+initilism
+#
+bookkeeper
+compound
+#
+to mushroom 
+conversion
+#
+online
+compound
+#
+motherboard
+compound
+#
+crossword
+compound
+#
+goodbye
+blend
+#
+balaclava
+toponym
+#
+zoo
+clipping
+#
+laser
+acronym
+#
+rugby
+toponym
+#
+blog
+clipping
+#
+advertorial
+blend
+#
+SARS
+acronym
+#
+fascist meaning and etymology
+Latin, person who sympathises with fascim. originally bundle of rods
+#
+swastika meaning and etymology
+sanskrti, good will symbol
+#
+heroin meaning and etymology
+lation for hero drug
+#
+vaccine meaning and etymology
+latin for vaccus cow.
+#
+teddy bear
+eponym Theodore Roosevelt
+#
+hamburger
+toponym: Hamburg
+#
+gerrymander
+eponym
+#
+degeneration aka perjoration
+semantic change from neutral or good meaning to unpleasant meaning
+#
+villian
+perjoration
+#
+vulgar
+perjoration
+#
+nice
+amelioration
+#
+chancellor
+amelioration
+#
+amelioration or elevation
+semantic change to a meaning that is pleasant or agreeable
+#
+specialisation
+word shifts from general to specific
+#
+generalisation
+word shifts from specific to general
+#
+undertaker
+specialisation
+#
+disease
+specialisation
+#
+decimate
+generalisation
+#
+vaccine
+generalisation
+#
+brutal
+
+#
+officious
+
+#
+minister 
+
+#
+senile
+
+#
+egregious
+
+#
+liquor 
+
+#
+doctrine
+
+#
+campus
+
+#
+camera 
+
+#
+benediction 
+
+#
+pastor
+specialsied
+#
+persona
+generalised
+#
+science
+specialised
+#
+divine
+generalised
+#
+biblical
+specialised
+#
+google/googol
+neologism
+#
+tweet
+neologism
+#
