@@ -141,50 +141,73 @@ What is the following god/goddess the god/goddess of? Hades
 ~god of the underworld
 #
 Give the word from Greek mythology for: race of female warriors
+Amazonians
 #
 Give the word from Greek mythology for: beautiful youth who fell in love with his own image
+Narcissus
 #
 Give the word from Greek mythology for: king who wished that everything he touched would turn to gold
+Midas
 #
 Give the word from Greek mythology for: protagonist of a Greek tragedy who killed his father and married his mother
+Oedipus
 #
 Give the word from Greek mythology for: Greeks known for rigid self-discipline
+Spartans
 #
 Give the word from Greek mythology for: monster with the head of a lion, the body of a goat, and the tail of a serpent
+Chimera
 #
 Give the word from Greek mythology for: hero who performed twelve difficult tasks
+Heracles
 #
 Give the word from Greek mythology for: goddess born wearing a helmet
+Athena
 #
 Give the word from Greek mythology for: ruler of the gods renowned for philandering
+Zeus
 #
 Give the word from Greek mythology for: canine guard of the gates of Hades
+Cerberus
 #
 Give the word from Greek mythology for: the eagle is his favourite bird
+Zeus
 #
 Give the word from Greek mythology for: she was born from the foam of the sea
+Aphrodite
 #
 Give the word from Greek mythology for: the three Fates who controlled the destiny of mortals
+Clotho (Spinner), Lachesis (Allotter), and Atropos (Inflexible)
 #
 Give the word from Greek mythology for: the river at the entrance to Hades
+Styx
 #
 Give the word from Greek mythology for: he could enter the dreams of mortals under any guise
+Morpheus
 #
 Give the word from Greek mythology for: her name means “all gifts”
-#
+
+Pandora#
 Give the word from Greek mythology for: he was condemned to carry the heavens on his shoulders
+Atlas
 #
 Give the word from Greek mythology for: a handsome mortal who had an affair with Venus (Aphrodite)
+Adonis
 #
 Give the word from Greek mythology for: he was Hera’s favourite shepherd
+Argus Panopte
 #
 Give the word from Greek mythology for: they were transformed into kingfisher birds when they drowned
+Ceyx
 #
 Give the word from Greek mythology for: greed
+cupidity
 #
 Give the word from Greek mythology for: happy
+jovial
 #
 Give the word from Greek mythology for: very difficult
+Herculean Task
 #
 Give the word from Greek mythology for: belief in many gods
 polytheism
@@ -196,14 +219,19 @@ Give the word from Greek mythology for: warlike
 martial
 #
 Give the word from Greek mythology for: with the protection or sponsorhship
+under the aegis of  
 #
 Give the word from Greek mythology for: volatile
+mercurial
 #
 Give the word from Greek mythology for: endless and frustrating
+Sisyphean task
 #
 Give the word from Greek mythology for: relating to sexual intercourse
+venereal
 #
 Give the word from Greek mythology for: to think
+to muse
 #
 Give the word from Greek mythology for: arousing sexual desire
 aphrodisiac
@@ -216,4 +244,67 @@ iridescence
 #
 Give the word from Greek mythology for: tease
 to tantalize
+#
+What did Homers epic poems depict? What were their names?
+Iliad and the Odyssey.|The Iliad gives an account of the cause of the war between the Greeks and the Trojans – a war which lasted for ten years – and then deals mainly with the last few days of the Trojan War.||The Odyssey tells of the journey home of the Greek hero Odysseus.
+#
+Who was Agamemnon (Greek)?
+leader of the expedition and described as the ‘most kingly’, assassinated in his bath by his wife Clytemnestra and her lover when he returned home.
+#
+Who was Achilles(Greek)?
+son of Peleus, a mortal, and Thetis, a sea-nymph, he was invulnerable except for 113 a small part on his heel where his mother had held him when she dipped him in the river Styx in order to make him invulnerable. He was eventually killed in the last year of the war when an arrow pierced his heel.
+#
+Who was Ajax(Greek)?
+greatest warrior after Achilles. Stubborn and taciturn, he went mad when the dead Achilles’ armour was awarded to Odysseus. He committed suicide
+#
+Who was Menelaus(Greek) ?
+brother of Agamemnon and husband of Helen
+#
+Who was Nestor(Greek)?
+oldest of the Greeks who always gave wise counsel.
+#
+Who was Aeneas (Trojan ) ?
+on of Aphrodite and the mortal Anchises. He escaped the sack of Troy, and, in Roman myth, went on to found Rome.
+#
+Who was Hector (Trojan )?
+son of Priam and leading Trojan warrior. His death forms the climax of the Iliad.
+#
+Who was Paris(Trojan )?
+son of Priam, whose abduction of Helen, wife of Menelaus, caused the war.
+#
+Who was Priam (Trojan )?
+king of Troy. He ransomed the body of his son, Hector from Achilles, and died when the city fell.
+#
+Who was Cassandra (Trojan )?
+daughter of Priam, who predicted the Trojan war, but was not believed
+#
+What does this phrase mean? work like a Trojan
+to work very hard
+#
+What does this phrase mean? Achilles’ heel
+a weakness
+#
+What does this phrase mean? a Cassandra
+one who predicts misfortune but is not believed
+#
+What does this phrase mean? mentor
+a wise and trusted advisor
+#
+What does this phrase mean? odyssey
+a long adventure filled journey
+#
+What does this phrase mean? judgement of Paris
+a desicion that causes a lot of trouble
+#
+What does this phrase mean? face that launched 1000 ships
+Helen of Troy
+#
+What does this phrase mean? to hector
+to harras or bully
+#
+What does this phrase mean? between Scylla and Charybdis
+between two dangers, both of wich must be avoided
+#
+What does this phrase mean? siren
+an enticing woman
 #
