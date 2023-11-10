@@ -16,28 +16,28 @@ Press "q" to quit quizless.
 
 # Creating a quiz
 \*\* Currently the quiz folders are a bit funky. This will be resolved soon with a planned nested folder selection in the dropdown. The quizes are taken from the "sll" folder so just add your quiz there and it will come up in the dropdown \*\*
+
 Quizes are read from text files and the text files are located in the File Handling folder. 
 
 ## Quiz Format
 The standard format for all quizes are as follows:
+
 \#
 
-
 \<Question\>
-
 
 \<Answer\>
 
 \#
 
 ## Special characters
-"|" - this will add a new line in teh flash card
-"~" - this create a bullet by replacing it with "\n• " when printing to the flash card
+"|" - this will add a new line in the flash card
+"~" - this creates a bullet by replacing it with "\n• " when printing to the flash card
 
 ## File Errors
-** more file error handling is planned to be built in the near future to make creators aware of where the errors are in thier files. use the current quizes as refernce for now **
+\*\* more file error handling is planned to be built in the near future to make creators aware of where the errors are in thier files. use the current quizes as refernce for now \*\*
 
-1. Dont leave any extra empty lines at the end of teh file [this may be fixed soon]
+1. Dont leave any extra empty lines at the end of the file [this may be fixed soon]
 2. Make sure that all questions have a corresponding answer below it.
 3. Only use one "#" between questions and answers.
 4. Questions and answers must only be on one line each. New lines can be added with "|"
