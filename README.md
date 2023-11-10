@@ -15,14 +15,19 @@ Once a quiz is selected, you will enter the quiz screen. A random card will be s
 Press "q" to quit quizless.
 
 # Creating a quiz
-**Currently the quiz folders are a bit funky. This will be resolved soon with a planned nested folder selection in the dropdown. The quizes are taken from the "sll" folder so just add your quiz there and it will come up in the dropdown**
+\*\* Currently the quiz folders are a bit funky. This will be resolved soon with a planned nested folder selection in the dropdown. The quizes are taken from the "sll" folder so just add your quiz there and it will come up in the dropdown \*\*
 Quizes are read from text files and the text files are located in the File Handling folder. 
 
 ## Quiz Format
 The standard format for all quizes are as follows:
 \#
+
+
 \<Question\>
+
+
 \<Answer\>
+
 \#
 
 ## Special characters
