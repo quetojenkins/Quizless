@@ -24,13 +24,13 @@ Olympic Games
 ~first held in 776 BC in honour of Zeus at Olympia in Greece~held every 4 years and lasted for 5 days ~abolished in AD 394 but revived by Pierre de Courbetin in 1896 in Athens ~motto is citius altius fortius
 #
 spartan
-  
+  n
 #
 sybarite
-  
+  n
 #
 solecism
-  
+  n
 #
 how can myths be catogorised?
 ~an attempt to explain natural phenomena~tells of wars or heroes with a distinct and true historical element~adventure stories told for pure amusement
@@ -189,8 +189,8 @@ Give the word from Greek mythology for: he could enter the dreams of mortals und
 Morpheus
 #
 Give the word from Greek mythology for: her name means “all gifts”
-
-Pandora#
+Pandora
+#
 Give the word from Greek mythology for: he was condemned to carry the heavens on his shoulders
 Atlas
 #
