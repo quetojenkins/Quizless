@@ -132,42 +132,62 @@ What does this root mean?|paed-
 child
 #
 What inflammation is indicated by the following: arthritis
+joints
 #
 What inflammation is indicated by the following: gingivitis
+gums
 #
 What inflammation is indicated by the following: dermatitis
+skin
 #
 What inflammation is indicated by the following: angiocarditis
+heart and blood vessesl
 #
 What inflammation is indicated by the following: hepatitis
+liver
 #
 What inflammation is indicated by the following: endorhinitis
+nasal pathway
 #
 What inflammation is indicated by the following: appendicitis
+appendix
 #
 What inflammation is indicated by the following: encephalitis
+brain
 #
 What inflammation is indicated by the following: sinusitis
+cavities around the nasal passages
 #
 What inflammation is indicated by the following: nephritis
+kidney
 #
 What is being studied? otorhinolaryngology
+ENT (an ear root is ot-)
 #
 What is being studied? toxicology
+poisonss
 #
 What is being studied? oncology
+cancer und tumours
 #
 What is being studied? cardiology
+heart
 #
 What is being studied? cytology
+cells
 #
 What is being studied? ophthalmology
+eyes
 #
 What is being studied? hypnology
+sleep or hypnosis
 #
 What is being studied? haematology
+blood
 #
 What is being studied? odontology
+teeth
 #
 What is being studied? cardioangiology
+heart and blood vessels
 #
