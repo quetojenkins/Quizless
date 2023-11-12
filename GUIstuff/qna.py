@@ -4,7 +4,7 @@ import os
 def get_qnas(file_path):
     q = []
     a = []
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding = 'utf8') as file:
         lines = file.readlines()
 
     # Iterate through the lines in the file

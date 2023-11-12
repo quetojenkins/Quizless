@@ -9,7 +9,7 @@ What qualities are described in: simian
 monkey|| agile~sneaky
 #
 What qualities are described in: nepotism
-~ethnocentric
+~favoritism
 #
 What qualities are described in: feline
 cat like||~lithe~graceful~supple
@@ -24,7 +24,7 @@ What qualities are described in: sorority
 ~sister hoood
 #
 What qualities are described in: capricious
-~volatile
+goat||~unpredictable~volatile
 #
 What is the collective noun for: lions
 pride
