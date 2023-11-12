@@ -52,7 +52,9 @@ def get_num_correct(d):
     return count, len(d)
 
 def check_image(a):
-    if a[0] == "!":
+    if len(a) == 0:
+        return False
+    elif a[0] == "!":
         return True
     else:
         return False

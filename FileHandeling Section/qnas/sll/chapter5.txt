@@ -195,7 +195,7 @@ form the atonym by changing the prefix: congregate
 segregate
 #
 form the atonym by changing the prefix: subscript
-
+superscript
 #
 form the atonym by changing the prefix: inject
 eject
