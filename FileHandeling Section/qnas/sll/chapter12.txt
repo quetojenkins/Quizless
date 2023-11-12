@@ -1,349 +1,76 @@
 #
-Who do you consult if you have skin problems?
-dermatologist
+What does this root mean?|aesthet- 
+feeling
 #
-Who do you consult if you are interested in the aspect and influence of the stars on your future?
-astrologer
+What does this root mean?|alg- 
+pain
 #
-Who do you consult if you are troubled concerning matters of the soul?
-theologian
+What does this root mean?|arth- 
+joint
 #
-Who do you consult if you are interested in the origin and development of your own species?
-anthropologist 
+What does this root mean?|cardi- 
+heart
 #
-Who do you consult if you need your planter’s wart removed?
-podiatrist
+What does this root mean?|cephal- 
+head
 #
-Who do you consult if you are experiencing problems associated with old age?
-gerontologist
+What does this root mean?|crani- 
+skull
 #
-Who do you consult if you need advice on the care and feeding of your honey bees?
-entomologist
+What does this root mean?|cyt- 
+cell
 #
-Who do you consult if you find an ancient burial site on your property?
-archaeologist
+What does this root mean?|encephal- 
+brain
 #
-Who do you consult if you discover natural gas on your property?
-geologist
+What does this root mean?|enter- 
+intestine
 #
-Who do you consult if you are designing your own home?
-architect
+What does this root mean?|gastr- 
+stomach
 #
-Who do you consult if you are tracing your family tree?
-genealogist
+What does this root mean?|haem- 
+blood
 #
-Who do you consult if you want your pet parrot (now deceased) preserved by having it stuffed and mounted?
-taxidermist
+What does this root mean?|hepat- 
+liver
 #
-Who do you consult if you want to buy a rare book?
-bibliopole
+What does this root mean?|iatr- 
+physician, healer, doctor
 #
-Who do you consult if you need to know the true meaning of a word?
-etymologist
+What does this root mean?|leuk- 
+white
 #
-Who do you consult if your children’s teeth need straightening
-orthodontist
+What does this root mean?|lip- 
+fat
 #
-Give one word for a connoisseur of wine
-oenophile
+What does this root mean?|melan- 
+black
 #
-Give one word for affection for mankind
-philanthropy
+What does this root mean?|my- 
+muscle
 #
-Give one word for thriving in strong light
-photophilous
+What does this root mean?|myel- 
+bone marrow, spinal cord
 #
-Give one word for a lover of France or the French
-Francophile
+What does this root mean?|nephr- 
+kidney
 #
-Give one word for a lover of learning and literature
-philologist
+What does this root mean?|neur- 
+nerve
 #
-Give one word for a bacterium that grows best in warm temperatures
-thermophile
+What does this root mean?|odyn- 
+pain
 #
-Give one word for having an affinity for animals
-zoophilous
+What does this root mean?|ophthalm- 
+eye
 #
-Give one word for fond of music
-philharmonic
+What does this root mean?|oste- 
+bone
 #
-Give one word for a friend or supporter of the Greeks
-philhellene
+What does this root mean?|ot- 
+ear
 #
-Give one word for a book lover
-bibliophile 
-#
-Give one word for a tree-loving plant
-philodendron
-#
-Give one word for a connoisseur of high-fidelity sound reproduction
-audiophile
-#
-Give one word for having a strong affinity for water
-hydrophilic
-#
-Give one word for a tendency to bleed profusely
-haemophilia 
-#
-Give one word for  a lover of England or the English
-Anglophile
-#
-What is this form of governance: patriarchy
-ruling of the father
-#
-What is this form of governance: monarchy
-the rule of one
-#
-What is this form of governance: plutocracy
-wealthy
-#
-What is this form of governance: gynaecocracy
-women
-#
-What is this form of governance: oligarchy
-rule of teh few
-#
-What is this form of governance: ochlocracy
-mob rule
-#
-What is this form of governance: gerontocracy
-old people
-#
-What is this form of governance: diarchy
-two
-#
-What is this form of governance: meritocrac
-people selected according to merit
-#
-What is this form of governance: democracy
-the people
-#
-What is this form of governance: technocracy
-skill,art
-#
-What is this form of governance: stratocracy
-miltary forces
-#
-What is this form of governance: aristocracy
-best qualified citizen
-#
-What is this form of governance: anarchy
-without rulee
-#
-What is this form of governance: theocracy
-priests
-#
-What fears are indicated by this word: agoraphobia
-place of assemble, afraid to leave environments they know or consider to be safe
-#
-What fears are indicated by this word: necrophobia
-corpse
-#
-What fears are indicated by this word: triskaidekaphobia
-number 13
-#
-What fears are indicated by this word: nyctophobia
-right
-#
-What fears are indicated by this word: heliophobia
-sun
-#
-What fears are indicated by this word: ailurophobia
-cats
-#
-What fears are indicated by this word: ornithophobia
-bird
-#
-What fears are indicated by this word: ponophobia
-fatigue
-#
-What fears are indicated by this word: zoophobia
-animals
-#
-What fears are indicated by this word: arachnophobia
-spider
-#
-What fears are indicated by this word: thanatophobia
-death
-#
-What fears are indicated by this word: homophobia
-gay peopls
-#
-What fears are indicated by this word: photophobia
-light
-#
-What fears are indicated by this word: acrophobia
-heights
-#
-What fears are indicated by this word: xenophobia
-foreigners
-#
-What studies are indicated by this word: ichthyology
-fish
-#
-What studies are indicated by this word: dendrology
-tree
-#
-What studies are indicated by this word: microbiology
-microscopic organisms
-#
-What studies are indicated by this word: dermatology
-skin
-#
-What studies are indicated by this word: gerontology
-disease of older people
-#
-What studies are indicated by this word: herpetology
-amphibians and reptiles
-#
-What studies are indicated by this word: seismology
-earthqakes
-#
-What studies are indicated by this word: pathology
-diseases
-#
-What studies are indicated by this word: pharmacology
-drugs and medicine
-#
-What studies are indicated by this word: petrology
-rock
-#
-What studies are indicated by this word: anthropology
-humanity
-#
-What studies are indicated by this word: ethnology
-humans as cultulral beings
-#
-What studies are indicated by this word: conchology
-shell
-#
-What studies are indicated by this word: speleology
-caves
-#
-What studies are indicated by this word: Psephology
-Studies of elections and voting
-#
-What studies are indicated by this word: oenology
-wines and winemaking
-#
-What does the following suffix Mean? -cracy
-rule by
-#
-What does the following Suffix Mean? -archy
-rule by
-#
-What does the following Suffix Mean? -phobia 
-intense dislike of
-#
-What does the following Suffix Mean? -logy
-study of
-#
-What does the following Suffix Mean? -phile
-lover of
-#
-What does the following Suffix Mean? -mania
-madness for
-#
-What does the following Suffix Mean? -latry
-worship of
-#
-What does the following Suffix Mean? -manacy
-divination by
-#
-What does the following Suffix Mean? -phone
-sound/voice
-#
-What does the following Suffix Mean? -clast
-breaker of
-#
-What does diaphonous mean?
-Sufficiently thin so as to be translucent
-#
-What does demotic mean?
-relating to the common people; popular. 
-#
-What does anemophilous mean?
-Lover of the wind
-#
-What does the following root mean? andr
-man 
-#
-What does the following root mean? anthrop
-human being 
-#
-What does the following root mean? arch
-to rule or chief
-#
-What does the following root mean? arist 
-best 
-#
-What does the following root mean? aut
-self
-#
-What does the following root mean? bi
-life
-#
-What does the following root mean? chron
-time 
-#
-What does the following root mean? dem
-people 
-#
-What does the following root mean? gam
-marriage 
-#
-What does the following root mean? ge
-earth 
-#
-What does the following root mean? graph
-write
-#
-What does the following root mean? gynae-, gyn-
-woman 
-#
-What does the following root mean? kines-, kinet-, cine-
-motiont
-#
-What does the following root mean? cosm
-universe
-#
-What does the following root mean? crat
-ppower
-#
-What does the following root mean? log
-word/study 
-#
-What does the following root mean? man
-madness
-#
-What does the following root mean? mis
-hatred
-#
-What does the following root mean? morph
-shape
-#
-What does the following root mean? phan
-show
-#
-What does the following root mean? phil
-loving 
-#
-What does the following root mean? phob
-fear
-#
-What does the following root mean?pol-, polit
-city
-#
-What does the following root mean? psych
-mind or soul
-#
-What does the following root mean? soph
-wise
-#
-What does the following root mean? tele
-far away
-#
-What does the following root mean? the
-god
+What does this root mean?|paed- 
+child
 #
