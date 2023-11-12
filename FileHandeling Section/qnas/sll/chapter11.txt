@@ -48,7 +48,7 @@ Transliterate: αραχνη
 arachne = spider
 #
 Transliterate: χρονος
-chrorus = measure of time
+chronus = measure of time
 #
 Transliterate: ψυχη
 psuche = a living being
@@ -129,7 +129,7 @@ Give the transliteratio of: ρ rho
 r
 #
 Give the transliteratio of: ς σ sigma
-t
+s
 #
 Give the transliteratio of: τ tau
 t
