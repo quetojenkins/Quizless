@@ -4,7 +4,7 @@ import os
 def get_qnas(file_path):
     q = []
     a = []
-    with open(file_path, 'r') as file:
+    with open(file_path, 'r', encoding = 'utf8') as file:
         lines = file.readlines()
 
     # Iterate through the lines in the file
@@ -52,7 +52,9 @@ def get_num_correct(d):
     return count, len(d)
 
 def check_image(a):
-    if a[0] == "!":
+    if len(a) == 0:
+        return False
+    elif a[0] == "!":
         return True
     else:
         return False

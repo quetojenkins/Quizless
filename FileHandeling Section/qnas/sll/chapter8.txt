@@ -1,30 +1,30 @@
 #
 What qualities are described in: avuncular
-ff
+uncle||~loving~looks out for you
 #
 What qualities are described in: leonine
-ff
+lion||~brave~powerful~kingly
 #
 What qualities are described in: simian
-ff
+monkey|| agile~sneaky
 #
 What qualities are described in: nepotism
-ff
+~favoritism
 #
 What qualities are described in: feline
-ff
+cat like||~lithe~graceful~supple
 #
 What qualities are described in: vulpine
-ff
+fox like|| ~coniving~sly~sneaky
 #
 What qualities are described in: aquiline
-ff
+eagle like||~storng ~defined
 #
 What qualities are described in: sorority
-ff
+~sister hoood
 #
 What qualities are described in: capricious
-ff
+goat||~unpredictable~volatile
 #
 What is the collective noun for: lions
 pride
