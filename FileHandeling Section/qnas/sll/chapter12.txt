@@ -74,7 +74,6 @@ ear
 What does this root mean?|paed- 
 child
 #
-#
 What does this Greek root mean: andr-
 man
 #
@@ -502,7 +501,7 @@ T or F: Bats are photophilous creatures.
 T
 #
 T or F: An entomologist would enjoy observing apian behaviour.
-F
+T
 #
 T or F: A speleologist would, hopefully, not suffer from claustrophobia.
 T
