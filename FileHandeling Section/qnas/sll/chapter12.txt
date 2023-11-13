@@ -74,3 +74,460 @@ ear
 What does this root mean?|paed- 
 child
 #
+#
+What does this Greek root mean: andr-
+man
+#
+What does this Greek root mean: anthrop-
+human being
+#
+What does this Greek root mean: arch-
+to rule
+#
+What does this Greek root mean: arist-
+best
+#
+What does this Greek root mean: aut-
+self
+#
+What does this Greek root mean: bi-
+life
+#
+What does this Greek root mean: chron-
+time
+#
+What does this Greek root mean: dem-
+people
+#
+What does this Greek root mean: gam-
+marriage
+#
+What does this Greek root mean: ge-
+earth
+#
+What does this Greek root mean: graph-
+write, record
+#
+What does this Greek root mean: gyn-
+woman
+#
+What does this Greek root mean: kines-, kinet-, cine-
+motion
+#
+What does this Greek root mean: cosm-
+universe, order
+#
+What does this Greek root mean: crat-
+power, rule
+#
+What does this Greek root mean: log-
+word, study, explanation
+#
+What does this Greek root mean: man-
+madness
+#
+What does this Greek root mean: mis-
+hatred
+#
+What does this Greek root mean: morph-
+shape
+#
+What does this Greek root mean: phan-
+show
+#
+What does this Greek root mean: phil-
+loving
+#
+What does this Greek root mean: phob-
+fear
+#
+What does this Greek root mean: pol-, polit-
+city
+#
+What does this Greek root mean: psych-
+mind, soul
+#
+What does this Greek root mean: soph-
+wise
+#
+What does this Greek root mean: tele-
+far away
+#
+What does this Greek root mean: the-
+god
+#
+What fears are indicated in this word: agoraphobia
+open spaces, crowds
+#
+What fears are indicated in this word: necrophobia
+dead things, corpses
+#
+What fears are indicated in this word: triskaidekaphobia
+the number thirteen
+#
+What fears are indicated in this word: nyctophobia
+darkness
+#
+What fears are indicated in this word: heliophobia
+sunlight
+#
+What fears are indicated in this word: ailurophobia
+cats
+#
+What fears are indicated in this word: ornithophobia
+birds
+#
+What fears are indicated in this word: ponophobia
+overworking or fatigue
+#
+What fears are indicated in this word: zoophobia
+animals
+#
+What fears are indicated in this word: arachnophobia
+spiders
+#
+What fears are indicated in this word: thanatophobia
+death or dying
+#
+What fears are indicated in this word: homophobia
+homosexuality or fear of sameness
+#
+What fears are indicated in this word: photophobia
+light
+#
+What fears are indicated in this word: acrophobia
+heights
+#
+What fears are indicated in this word: xenophobia
+foreigners or strangers
+#
+What is this form of governance: patriarchy
+father
+#
+What is this form of governance: monarchy
+one
+#
+What is this form of governance: plutocracy
+wealth
+#
+What is this form of governance: gynaecocracy
+woman
+#
+What is this form of governance: oligarchy
+few
+#
+What is this form of governance: ochlocracy
+mob, crowd
+#
+What is this form of governance: gerontocracy
+old man
+#
+What is this form of governance: diarchy
+two
+#
+What is this form of governance: meritocracy
+earned, deserving
+#
+What is this form of governance: democracy
+people
+#
+What is this form of governance: technocracy
+skill, art
+#
+What is this form of governance: stratocracy
+army
+#
+What is this form of governance: aristocracy
+best
+#
+What is this form of governance: anarchy
+without
+#
+What is this form of governance: theocracy
+god
+#
+What studies are indicated by: ichthyology
+fish
+#
+What studies are indicated by: dendrology
+trees
+#
+What studies are indicated by: microbiology
+microorganisms
+#
+What studies are indicated by: dermatology
+skin
+#
+What studies are indicated by: gerontology
+aging
+#
+What studies are indicated by: herpetology
+amphibians and reptiles
+#
+What studies are indicated by: seismology
+earthquakes
+#
+What studies are indicated by: pathology
+diseases
+#
+What studies are indicated by: pharmacology
+drugs, medications
+#
+What studies are indicated by: petrology
+rocks
+#
+What studies are indicated by: anthropology
+humans, human societies
+#
+What studies are indicated by: ethnology
+cultures, cultural groups
+#
+What studies are indicated by: conchology
+shells, mollusks
+#
+What studies are indicated by: speleology
+caves
+#
+What studies are indicated by: oenology
+wine
+#
+What is this person crazy about: acromaniac
+height
+#
+What is this person crazy about: gamomaniac
+marriage
+#
+What is this person crazy about: xenomaniac
+foreigners or strangers
+#
+What is this person crazy about: megalomaniac
+greatness or power
+#
+What is this person crazy about: hippomaniac
+horses
+#
+What is this person crazy about: hedonomaniac
+pleasure or happiness
+#
+What is this person crazy about: pyromaniac
+fire
+#
+What is this person crazy about: cynomaniac
+dogs
+#
+What is this person crazy about: hypnomaniac
+sleep
+#
+What is this person crazy about: gymnomaniac
+nudity
+#
+a connoisseur of wine:
+oenophile
+#
+affection for mankind:
+philanthropy
+#
+thriving in strong light:
+photophilous
+#
+a lover of France or the French:
+Francophile
+#
+a lover of learning and literature:
+philologist
+#
+a bacterium that grows best in warm temperatures:
+thermophile
+#
+having an affinity for animals:
+zoophilous
+#
+fond of music:
+philharmonic
+#
+a friend or supporter of the Greeks:
+philhellene
+#
+a book lover:
+bibliophile
+#
+a tree-loving plant:
+philodendron
+#
+a connoisseur of high-fidelity sound reproduction:
+audiophile
+#
+having a strong affinity for water:
+hydrophilic
+#
+a tendency to bleed profusely:
+haemophilia
+#
+a lover of England or the English:
+Anglophile
+#
+if you have skin problems.
+dermatologist
+#
+if you are interested in the aspect and influence of the stars on your future.
+astrologer
+#
+in you are troubled concerning matters of the soul.
+theologian
+#
+in you are interested in the origin and development of your own species.
+anthropologist
+#
+if you need your planter’s wart removed.
+podiatrist
+#
+if you are experiencing problems associated with old age.
+gerontologist
+#
+if you need advice on the care and feeding of your honey bees.
+entomologist
+#
+if you find an ancient burial site on your property.
+archaeologist
+#
+if you discover natural gas on your property.
+geologist
+#
+if you are designing your own home.
+architect
+#
+if you are tracing your family tree.
+genealogist
+#
+if you want your pet parrot (now deceased) preserved by having it stuffed and mounted.
+taxidermist
+#
+if you want to buy a rare book.
+bibliopole
+#
+if you need to know the true meaning of a word.
+etymologist
+#
+if your children’s teeth need straightening.
+orthodontist
+#
+Replace the words in square brackets with one word: The scientists are engaged in investigated solar radiation, the ozone layer, sky brightness and other important [demographic phenomena].
+democrat
+#
+Replace the words in square brackets with one word: The fashion worn by many students today is [suitable for both sexes].
+androgynous
+#
+Replace the words in square brackets with one word: The terrorist group, Al-Qaeda, and the Bush administration were [chief opponents].
+archenemies
+#
+Replace the words in square brackets with one word: Uri Geller, a person well known for his [ability to move inanimate objects], became a millionaire by demonstrating his abilities in amazing shows.
+psychokinesis
+#
+Replace the words in square brackets with one word: The Trade Union leader, could be described by some as the epitome of a [leader who stirs up the people by appealing to their emotions and prejudices].
+demagogue
+#
+Replace the words in square brackets with one word: He became a reformer, and like all reformers, was a/an [person who attacked cherished beliefs and traditions, believing them to be wrong].
+iconoclast
+#
+Replace the words in square brackets with one word: After his third divorce, the actor declared himself [a person who hates marriage].
+misogamist
+#
+Replace the words in square brackets with one word: A [person who studies the annual rings of trees] is able to establish its age and date past events.
+dendrochronologist
+#
+Replace the words in square brackets with one word: A study of the [population’s statistics] was carried out in 2002.
+demographic phenomena
+#
+Replace the words in square brackets with one word: The [lives and legends of saints] is a really interesting subject to some.
+hagiology
+#
+delusions of power and grandeur
+megalomania
+#
+morbid anxiety about one’s health
+hypochondria
+#
+sleepwalking
+somnambulism
+#
+obsession in a single area
+monomania
+#
+uncontrollable urge to steal things of little value
+kleptomania
+#
+moods alternating between excitement and gloom
+manic-depression
+#
+chronic inability to fall asleep
+insomniac
+#
+loss of memory
+amnesia
+#
+delusions of persecution
+paranoia
+#
+abnormal attachment of a boy to mother
+Oedipus complex
+#
+uncontrollable craving for alcohol
+dipsomania
+#
+abnormal attachment of a girl to father
+Electra complex
+#
+split personality
+schizophrenia
+#
+overwhelming sadness
+melancholia
+#
+uncontrollable urge to set fires
+pyromania
+#
+T or F: Demotic writing refers to inscriptions supposedly written by devil-worshippers.
+F
+#
+T or F: A diaphanous gown should be worn to a formal dinner.
+T
+#
+T or F: A thermophile requires heat in order to grow.
+T
+#
+T or F: An anthropologist would be interested in ethnic matters.
+T
+#
+T or F: Bats are photophilous creatures.
+T
+#
+T or F: An entomologist would enjoy observing apian behaviour.
+F
+#
+T or F: A speleologist would, hopefully, not suffer from claustrophobia.
+T
+#
+T or F: Vampires are believed to practice haematophagy.
+T
+#
+T or F: Oenologist and viticulturist are synonyms.
+F
+#
+T or F: A psychologist deals with matters of the mind and the soul.
+T
+#
+T or F: A person who dates foreigners could be described as a xenophobe.
+F
+#
+T or F: A necrophile would enjoy working in a mortuary.
+T
+#
+T or F: Politician, policeman, and necropolis are etymologically linked.
+F
+#
+T or F: An anemophilous plant is pollinated by the wind.
+T
+#
+T or F: An ichthyopolist sells timber poles.
+F
+#
