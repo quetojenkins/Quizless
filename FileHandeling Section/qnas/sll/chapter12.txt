@@ -522,7 +522,7 @@ T or F: A necrophile would enjoy working in a mortuary.
 T
 #
 T or F: Politician, policeman, and necropolis are etymologically linked.
-F
+T 
 #
 T or F: An anemophilous plant is pollinated by the wind.
 T
