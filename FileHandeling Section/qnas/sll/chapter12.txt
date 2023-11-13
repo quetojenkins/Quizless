@@ -335,8 +335,8 @@ etymologist
 if your children’s teeth need straightening.
 orthodontist
 #
-Replace the words in square brackets with one word: The scientists are engaged in investigated solar radiation, the ozone layer, sky brightness and other important [demographic phenomena].
-democrat
+Replace the words in square brackets with one word: The scientists are engaged in investigated solar radiation, the ozone layer, sky brightness and other important [interesting occurances].
+phenomena
 #
 Replace the words in square brackets with one word: The fashion worn by many students today is [suitable for both sexes].
 androgynous
@@ -360,7 +360,7 @@ Replace the words in square brackets with one word: A [person who studies the an
 dendrochronologist
 #
 Replace the words in square brackets with one word: A study of the [population’s statistics] was carried out in 2002.
-demographic phenomena
+demographic
 #
 Replace the words in square brackets with one word: The [lives and legends of saints] is a really interesting subject to some.
 hagiology
