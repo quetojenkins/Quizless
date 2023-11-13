@@ -498,7 +498,7 @@ T or F: An anthropologist would be interested in ethnic matters.
 T
 #
 T or F: Bats are photophilous creatures.
-T
+F
 #
 T or F: An entomologist would enjoy observing apian behaviour.
 T
