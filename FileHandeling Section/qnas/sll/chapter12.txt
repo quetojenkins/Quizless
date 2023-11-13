@@ -489,7 +489,7 @@ T or F: Demotic writing refers to inscriptions supposedly written by devil-worsh
 F
 #
 T or F: A diaphanous gown should be worn to a formal dinner.
-T
+F
 #
 T or F: A thermophile requires heat in order to grow.
 T
