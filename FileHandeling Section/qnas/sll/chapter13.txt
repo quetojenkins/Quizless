@@ -3,10 +3,10 @@ This word contains a number. What is it? What is its definition: monocle
 an eyeglass for one eye (1)
 #
 This word contains a number. What is it? What is its definition: hemiplegia
-paralysis of one side of the body (10)
+paralysis of one side of the body (1/2)
 #
 This word contains a number. What is it? What is its definition: diplopia
-double vision (1)
+double vision (2)
 #
 This word contains a number. What is it? What is its definition: tripod
 a three-legged stand (3)
@@ -112,4 +112,49 @@ first, original
 #
 How was the metric system standardised?
 Before the development of the metric system, every nation used measurement units that had grown from local customs. For example, in Britain, three dried barleycorns were used as the standard measurement of an inch. This allowed for too much variation, so, at the end of the 18th century, the National Assembly of France asked the French Academy of Sciences to create a standard system of weights and measures. The metric system was born. When it was first conceived, one of the goals was the definition of a single unit from which the essential system of measurements could be constructed. This unit was the metre, so-called from the Greek word metron, ‘measure’. Originally, the French Academy of Sciences recommended that the metre be defined as ‘equal to one ten millionth of the length of the arc from the equator to the North Pole’ but now the standard length of the metre is defined in terms of the speed of light.
+#
+Replace the words in square brackets with one word: After his accident, the young man suffered from [paralysis on one side].
+hemiplegia
+#
+Replace the words in square brackets with one word: The photographer used film that was [sensitive to all colours].
+panchromatic
+#
+Replace the words in square brackets with one word: Penguins are well known to be ['one mate for life'] birds.
+monogamous
+#
+Replace the words in square brackets with one word: One of the most exciting Olympic events is the [5 event competition].
+pentathlon
+#
+Replace the words in square brackets with one word: [The study of the fossils of tiny extinct creatures] gives important information about ancient life forms.
+micropalaeontology
+#
+Replace the words in square brackets with one word: Wilbur Smith wrote a [series of four books] about the deeds and misdeeds of the same family.
+tetralogy
+#
+Replace the words in square brackets with one word: The Aston Martin car manufacturing company designed the [first model] of the James Bond car.
+prototype
+#
+Replace the words in square brackets with one word: Using the [instrument for measuring distance travelled], he was able to establish how far he had travelled.
+odometer
+#
+Replace the words in square brackets with one word: The lice, found on the child’s head were [visible to the naked eye].
+macroscopic
+#
+Replace the words in square brackets with one word: In summer, Kirstenbosch Gardens blooms with [thousands] of magnificent flowers and shrubs.
+myriad
+#
+Replace the words in square brackets with one word: In certain cultures the practice of [having many wives] is acceptable.
+polygyny
+#
+Replace the words in square brackets with one word: The main [leader] in the war against Iraq is George Bush.
+protagonist
+#
+Replace the words in square brackets with one word: The [division into two contradictory areas] between life in the city and life in the country is nothing new - Horace wrote about it in the 1st century B.C.
+dichotomy
+#
+Replace the words in square brackets with one word: The mathematics students were asked to draw a [figure with eight angles].
+octagon
+#
+Replace the words in square brackets with one word: [The study of living cells at a molecular level] is important for the advancement of science.
+nanobiotechnology
 #

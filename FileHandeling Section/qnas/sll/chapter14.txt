@@ -198,7 +198,7 @@ True or False: The metre as a unit of length is defined in terms of the speed of
 T
 #
 True or False: A photosensitive person is camera-shy.
-T
+F
 #
 True or False: The Oxford dictionary is a famous lexicon.
 T
